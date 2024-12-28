@@ -36,7 +36,7 @@ export default {
     document: {
       '@light': {
         color: 'black',
-        background: '#15141a',
+        background: '#BAB8B8',
       },
       '@dark': {
         color: '#f3f3f3',

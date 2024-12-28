@@ -18,7 +18,7 @@ export const Product = {
         target: s.href && '_blank',
         transition: 'defaultBezier, all, B',
         '@light': {
-          background: 'rgb(79, 80, 80);',
+          background: 'rgb(41, 41, 41);',
           ':hover': {
             background: 'rgb(117, 116, 116)',
           },
@@ -44,7 +44,7 @@ export const Product = {
           }
         }
         
-      }),
+  }),
   Img: {
     state: 'posters/0',
     props: {

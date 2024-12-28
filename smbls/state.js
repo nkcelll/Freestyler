@@ -8,26 +8,10 @@ export default {
       0: {
         posters: [
           {
-            poster: 'https://cdn.shoplightspeed.com/shops/613105/files/47101450/bataleon-2023-bataleon-womens-spirit-snow-deck.jpg',
-            src: './assets/images-menu/xuina.jpg',
-            // src: 'https://cdn.shoplightspeed.com/shops/613105/files/47101450/bataleon-2023-bataleon-womens-spirit-snow-deck.jpg',
-            value: 'https://cdn.shoplightspeed.com/shops/613105/files/47101450/bataleon-2023-bataleon-womens-spirit-snow-deck.jpg',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
           },
-          // {
-          //   poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi6fa9d23d/2450a20a-d84f-4328-87dc-579abb9e88c9-a0d04316-9d5c-4bea-9286-8728c23697ad-3b86a391-84e5-4479-a1bf-94319b55c41d.png',
-          //   src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi6fa9d23d/2450a20a-d84f-4328-87dc-579abb9e88c9-a0d04316-9d5c-4bea-9286-8728c23697ad-3b86a391-84e5-4479-a1bf-94319b55c41d.png',
-          //   value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi6fa9d23d/2450a20a-d84f-4328-87dc-579abb9e88c9-a0d04316-9d5c-4bea-9286-8728c23697ad-3b86a391-84e5-4479-a1bf-94319b55c41d.png',
-          // },
-          // {
-          //   poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi25a75f0f/5576ff61-2d24-4b0c-b425-3c6633cd3fb4-693c48d3-5ec4-405c-9f08-843e0934b92b-cf077982-ab55-481c-b7ab-8a0044e5eb41.png',
-          //   src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi25a75f0f/5576ff61-2d24-4b0c-b425-3c6633cd3fb4-693c48d3-5ec4-405c-9f08-843e0934b92b-cf077982-ab55-481c-b7ab-8a0044e5eb41.png',
-          //   value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi25a75f0f/5576ff61-2d24-4b0c-b425-3c6633cd3fb4-693c48d3-5ec4-405c-9f08-843e0934b92b-cf077982-ab55-481c-b7ab-8a0044e5eb41.png',
-          // },
-          // {
-          //   poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/ficd27663f/c5b4135f-c26f-4fb8-b6c9-c8858ff2a528-c04f2c52-ab79-4b2e-90aa-77e024b6caff-f18a54c1-b9a1-4442-b097-ad0a3409a51b.png',
-          //   src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/ficd27663f/c5b4135f-c26f-4fb8-b6c9-c8858ff2a528-c04f2c52-ab79-4b2e-90aa-77e024b6caff-f18a54c1-b9a1-4442-b097-ad0a3409a51b.png',
-          //   value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/ficd27663f/c5b4135f-c26f-4fb8-b6c9-c8858ff2a528-c04f2c52-ab79-4b2e-90aa-77e024b6caff-f18a54c1-b9a1-4442-b097-ad0a3409a51b.png',
-          // },
         ],
         key: 'new-project-0',
         date: '2024-06-17T21:28:41.264Z',
@@ -43,10 +27,9 @@ export default {
       1: {
         posters: [
           {
-            // poster: 'https://scontent.ftbs5-4.fna.fbcdn.net/v/t39.30808-6/406030209_820090093460254_7856391357640273072_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHuJahshv9ZDa37nVki2MIiLEPel4Lr5cwsQ96XguvlzOqIdNHUFYZ5rR8UfaQy_sQw9L27sYVduLRKZ3fwg7BN&_nc_ohc=ukL2G1BCYsgQ7kNvgERcjTU&_nc_zt=23&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=AmRymNoTdGRKZXoem8yFjwP&oh=00_AYA1iUrlww5xpUvEKr-XUi5erqseoBXalQFZ1B3JfKoP4Q&oe=676CEA64',
-            src: '/toko jange.jpg',
-            // src: 'https://scontent.ftbs5-4.fna.fbcdn.net/v/t39.30808-6/406030209_820090093460254_7856391357640273072_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHuJahshv9ZDa37nVki2MIiLEPel4Lr5cwsQ96XguvlzOqIdNHUFYZ5rR8UfaQy_sQw9L27sYVduLRKZ3fwg7BN&_nc_ohc=ukL2G1BCYsgQ7kNvgERcjTU&_nc_zt=23&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=AmRymNoTdGRKZXoem8yFjwP&oh=00_AYA1iUrlww5xpUvEKr-XUi5erqseoBXalQFZ1B3JfKoP4Q&oe=676CEA64',
-            // value: 'https://scontent.ftbs5-4.fna.fbcdn.net/v/t39.30808-6/406030209_820090093460254_7856391357640273072_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHuJahshv9ZDa37nVki2MIiLEPel4Lr5cwsQ96XguvlzOqIdNHUFYZ5rR8UfaQy_sQw9L27sYVduLRKZ3fwg7BN&_nc_ohc=ukL2G1BCYsgQ7kNvgERcjTU&_nc_zt=23&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=AmRymNoTdGRKZXoem8yFjwP&oh=00_AYA1iUrlww5xpUvEKr-XUi5erqseoBXalQFZ1B3JfKoP4Q&oe=676CEA64',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifaa891b9/6686a86b-cbf0-44cb-9d46-360e8d57dc04-08fb8884-d296-4439-b68e-f10ab58ea645-a54036b6-cf4b-4241-ad22-d34b16de7ac0.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifaa891b9/6686a86b-cbf0-44cb-9d46-360e8d57dc04-08fb8884-d296-4439-b68e-f10ab58ea645-a54036b6-cf4b-4241-ad22-d34b16de7ac0.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifaa891b9/6686a86b-cbf0-44cb-9d46-360e8d57dc04-08fb8884-d296-4439-b68e-f10ab58ea645-a54036b6-cf4b-4241-ad22-d34b16de7ac0.png',
           },
         ],
         key: 'new-project-1',
@@ -62,25 +45,10 @@ export default {
       2: {
         posters: [
           {
-            poster: 'https://scontent.ftbs5-4.fna.fbcdn.net/v/t39.30808-6/405769951_820040226798574_3072783959280393014_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEw7G7IH23cB6gvXjsqkLitOcTNvv3yG5U5xM2-_fIbleDfX0YiJgv5Ac8PkDiGaACM4-p-1sSjPmq5OawAoa_Q&_nc_ohc=AkHYZNeEHZEQ7kNvgFVEtt5&_nc_zt=23&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=ApD2u1Hg1XoKC4sK8GUpgpN&oh=00_AYC-jxYW2BsVlwZE1vQsKd5k3RbsPxSdEJeRudsh0O2Igg&oe=676CE6FB',
-            src: 'https://scontent.ftbs5-4.fna.fbcdn.net/v/t39.30808-6/405769951_820040226798574_3072783959280393014_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEw7G7IH23cB6gvXjsqkLitOcTNvv3yG5U5xM2-_fIbleDfX0YiJgv5Ac8PkDiGaACM4-p-1sSjPmq5OawAoa_Q&_nc_ohc=AkHYZNeEHZEQ7kNvgFVEtt5&_nc_zt=23&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=ApD2u1Hg1XoKC4sK8GUpgpN&oh=00_AYC-jxYW2BsVlwZE1vQsKd5k3RbsPxSdEJeRudsh0O2Igg&oe=676CE6FB',
-            value: 'https://scontent.ftbs5-4.fna.fbcdn.net/v/t39.30808-6/405769951_820040226798574_3072783959280393014_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEw7G7IH23cB6gvXjsqkLitOcTNvv3yG5U5xM2-_fIbleDfX0YiJgv5Ac8PkDiGaACM4-p-1sSjPmq5OawAoa_Q&_nc_ohc=AkHYZNeEHZEQ7kNvgFVEtt5&_nc_zt=23&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=ApD2u1Hg1XoKC4sK8GUpgpN&oh=00_AYC-jxYW2BsVlwZE1vQsKd5k3RbsPxSdEJeRudsh0O2Igg&oe=676CE6FB',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifad899a0/b30c342b-cf76-402b-8e5a-6cecfafbc050-fa31c13e-2dda-4874-b243-940b7a2dcb9d-0ec6d4de-305f-435c-a991-76ff150e2000.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifad899a0/b30c342b-cf76-402b-8e5a-6cecfafbc050-fa31c13e-2dda-4874-b243-940b7a2dcb9d-0ec6d4de-305f-435c-a991-76ff150e2000.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifad899a0/b30c342b-cf76-402b-8e5a-6cecfafbc050-fa31c13e-2dda-4874-b243-940b7a2dcb9d-0ec6d4de-305f-435c-a991-76ff150e2000.png',
           },
-          // {
-          //   poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi6fa9d23d/2450a20a-d84f-4328-87dc-579abb9e88c9-a0d04316-9d5c-4bea-9286-8728c23697ad-3b86a391-84e5-4479-a1bf-94319b55c41d.png',
-          //   src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi6fa9d23d/2450a20a-d84f-4328-87dc-579abb9e88c9-a0d04316-9d5c-4bea-9286-8728c23697ad-3b86a391-84e5-4479-a1bf-94319b55c41d.png',
-          //   value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi6fa9d23d/2450a20a-d84f-4328-87dc-579abb9e88c9-a0d04316-9d5c-4bea-9286-8728c23697ad-3b86a391-84e5-4479-a1bf-94319b55c41d.png',
-          // },
-          // {
-          //   poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi25a75f0f/5576ff61-2d24-4b0c-b425-3c6633cd3fb4-693c48d3-5ec4-405c-9f08-843e0934b92b-cf077982-ab55-481c-b7ab-8a0044e5eb41.png',
-          //   src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi25a75f0f/5576ff61-2d24-4b0c-b425-3c6633cd3fb4-693c48d3-5ec4-405c-9f08-843e0934b92b-cf077982-ab55-481c-b7ab-8a0044e5eb41.png',
-          //   value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi25a75f0f/5576ff61-2d24-4b0c-b425-3c6633cd3fb4-693c48d3-5ec4-405c-9f08-843e0934b92b-cf077982-ab55-481c-b7ab-8a0044e5eb41.png',
-          // },
-          // {
-          //   poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/ficd27663f/c5b4135f-c26f-4fb8-b6c9-c8858ff2a528-c04f2c52-ab79-4b2e-90aa-77e024b6caff-f18a54c1-b9a1-4442-b097-ad0a3409a51b.png',
-          //   src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/ficd27663f/c5b4135f-c26f-4fb8-b6c9-c8858ff2a528-c04f2c52-ab79-4b2e-90aa-77e024b6caff-f18a54c1-b9a1-4442-b097-ad0a3409a51b.png',
-          //   value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/ficd27663f/c5b4135f-c26f-4fb8-b6c9-c8858ff2a528-c04f2c52-ab79-4b2e-90aa-77e024b6caff-f18a54c1-b9a1-4442-b097-ad0a3409a51b.png',
-          // },
         ],
         key: 'lis',
         date: '2024-06-17T21:28:41.264Z',
@@ -105,9 +73,9 @@ export default {
         href: '',
         posters: [
           {
-            poster: 'https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/419879132_769067975242933_176827931072944577_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHEYtJCfKzpHSbtfMecp9urK0Gt2ieioGgrQa3aJ6KgaEHupLR52GDHdbQq2uCyf5PiN6lXzodB0avT-ywLUJRp&_nc_ohc=_-2NWOuawVMQ7kNvgG9OFdq&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=ALm-Yc9AQhO0H_C-MW74EUI&oh=00_AYBeNn-PVBhmB3wBjwT2EZDt-RXengzyahjcxwaYpORCfw&oe=676D0EFE',
-            src: 'https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/419879132_769067975242933_176827931072944577_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHEYtJCfKzpHSbtfMecp9urK0Gt2ieioGgrQa3aJ6KgaEHupLR52GDHdbQq2uCyf5PiN6lXzodB0avT-ywLUJRp&_nc_ohc=_-2NWOuawVMQ7kNvgG9OFdq&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=ALm-Yc9AQhO0H_C-MW74EUI&oh=00_AYBeNn-PVBhmB3wBjwT2EZDt-RXengzyahjcxwaYpORCfw&oe=676D0EFE',
-            value: 'https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/419879132_769067975242933_176827931072944577_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHEYtJCfKzpHSbtfMecp9urK0Gt2ieioGgrQa3aJ6KgaEHupLR52GDHdbQq2uCyf5PiN6lXzodB0avT-ywLUJRp&_nc_ohc=_-2NWOuawVMQ7kNvgG9OFdq&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=ALm-Yc9AQhO0H_C-MW74EUI&oh=00_AYBeNn-PVBhmB3wBjwT2EZDt-RXengzyahjcxwaYpORCfw&oe=676D0EFE',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
           },
         ],
       },
@@ -123,9 +91,9 @@ export default {
         href: '',
         posters: [
           {
-            poster: 'https://m.media-amazon.com/images/I/81L-x8uyy9L._AC_UY780_.jpg',
-            src: 'https://m.media-amazon.com/images/I/81L-x8uyy9L._AC_UY780_.jpg',
-            value: 'https://m.media-amazon.com/images/I/81L-x8uyy9L._AC_UY780_.jpg',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
           },
         ],
       },
@@ -141,9 +109,9 @@ export default {
         href: '',
         posters: [
           {
-            poster: 'https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/317886331_6055832207781767_6963750768748339781_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeExcyQUsFt4MLx5S9PysPRlUSNuu3jyqslRI267ePKqyT6MGr72If0UGunNF3c3nS1CskLmfzgTu5FN9jr-3bKq&_nc_ohc=kSgxzolEVykQ7kNvgE1N9mU&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&_nc_gid=AKO-rM_NgbxHxqtZAiVRkG3&oh=00_AYAeuGEiUigRZMxGbMnm5qSp2_LSfMiNafRPgk2ZFAJqEw&oe=676CDEE9',
-            src: 'https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/317886331_6055832207781767_6963750768748339781_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeExcyQUsFt4MLx5S9PysPRlUSNuu3jyqslRI267ePKqyT6MGr72If0UGunNF3c3nS1CskLmfzgTu5FN9jr-3bKq&_nc_ohc=kSgxzolEVykQ7kNvgE1N9mU&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&_nc_gid=AKO-rM_NgbxHxqtZAiVRkG3&oh=00_AYAeuGEiUigRZMxGbMnm5qSp2_LSfMiNafRPgk2ZFAJqEw&oe=676CDEE9',
-            value: 'https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/317886331_6055832207781767_6963750768748339781_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeExcyQUsFt4MLx5S9PysPRlUSNuu3jyqslRI267ePKqyT6MGr72If0UGunNF3c3nS1CskLmfzgTu5FN9jr-3bKq&_nc_ohc=kSgxzolEVykQ7kNvgE1N9mU&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&_nc_gid=AKO-rM_NgbxHxqtZAiVRkG3&oh=00_AYAeuGEiUigRZMxGbMnm5qSp2_LSfMiNafRPgk2ZFAJqEw&oe=676CDEE9',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
           },
         ],
       },
@@ -159,48 +127,12 @@ export default {
         href: '',
         posters: [
           {
-            poster: 'https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/314769289_5993949543970034_7046397706378721176_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeE5BYqxn2QnvrikCMR9iWTkJXvp-T41FqIle-n5PjUWonaoE39LxCfXlFU-iulXAh3NBl8bBZvpf0aeD9PlhrsV&_nc_ohc=PGJGqw3lBv4Q7kNvgGXyuL9&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=A9-JufWnpIy3PZ_f9gBvbW9&oh=00_AYDe_IznvQknG0rJtfBQfQxdzQgNui9lb5aMb9d9EelksQ&oe=676D074C',
-            src: 'https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/314769289_5993949543970034_7046397706378721176_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeE5BYqxn2QnvrikCMR9iWTkJXvp-T41FqIle-n5PjUWonaoE39LxCfXlFU-iulXAh3NBl8bBZvpf0aeD9PlhrsV&_nc_ohc=PGJGqw3lBv4Q7kNvgGXyuL9&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=A9-JufWnpIy3PZ_f9gBvbW9&oh=00_AYDe_IznvQknG0rJtfBQfQxdzQgNui9lb5aMb9d9EelksQ&oe=676D074C',
-            value: 'https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/314769289_5993949543970034_7046397706378721176_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeE5BYqxn2QnvrikCMR9iWTkJXvp-T41FqIle-n5PjUWonaoE39LxCfXlFU-iulXAh3NBl8bBZvpf0aeD9PlhrsV&_nc_ohc=PGJGqw3lBv4Q7kNvgGXyuL9&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=A9-JufWnpIy3PZ_f9gBvbW9&oh=00_AYDe_IznvQknG0rJtfBQfQxdzQgNui9lb5aMb9d9EelksQ&oe=676D074C',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
           },
         ],
       },
-      7: {
-        title: 'Rental',
-        key: 'new-project-7',
-        date: '2024-06-17T21:30:08.792Z',
-        author: 'Nika',
-        description: '',
-        category: 'Tech',
-        price: '',
-        brand: 'Light',
-        href: '',
-        posters: [
-          {
-            poster: 'https://www.buzzsboardsusa.com/cdn/shop/files/rd_snb-demo-full_1024x1024_49369c95-db99-4710-a023-a580cc49b96f_1200x1200.jpg?v=1698684505',
-            src: 'https://www.buzzsboardsusa.com/cdn/shop/files/rd_snb-demo-full_1024x1024_49369c95-db99-4710-a023-a580cc49b96f_1200x1200.jpg?v=1698684505',
-            value: 'https://www.buzzsboardsusa.com/cdn/shop/files/rd_snb-demo-full_1024x1024_49369c95-db99-4710-a023-a580cc49b96f_1200x1200.jpg?v=1698684505',
-          },
-        ],
-      },
-      // 8: {
-      //   title: 'New Project 8',
-      //   key: 'new-project-8',
-      //   date: '2024-06-17T21:30:09.592Z',
-      //   author: 'Nika',
-      //   description: '',
-      //   category: 'Tech',
-      //   price: '',
-      //   brand: 'Light',
-      //   href: '',
-      //   posters: [
-      //     {
-      //       poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi32eedde5/3ba2f161-e6f3-4c32-ae99-ffdd2a06d601-59434375-71ae-4fe2-8d20-d7cc53eb6d56-0ecd4c66-a988-4339-8f21-aff69801b850.png',
-      //       src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi32eedde5/3ba2f161-e6f3-4c32-ae99-ffdd2a06d601-59434375-71ae-4fe2-8d20-d7cc53eb6d56-0ecd4c66-a988-4339-8f21-aff69801b850.png',
-      //       value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi32eedde5/3ba2f161-e6f3-4c32-ae99-ffdd2a06d601-59434375-71ae-4fe2-8d20-d7cc53eb6d56-0ecd4c66-a988-4339-8f21-aff69801b850.png',
-      //     },
-      //   ],
-      // },
     },
     title: 'Products',
   },

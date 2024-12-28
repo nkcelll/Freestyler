@@ -9,6 +9,15 @@ export default {
     type: 'file',
     format: 'png',
   },
+  'tokojange.jpg': {
+    content: {
+      src: '/tokojange.jpeg'
+    },
+    code: '',
+    key: 'tokojange.jpeg',
+    type: 'file',
+    format: 'jpeg'
+  },
   'mainvideo.mp4': {
     content: {
       id: 'fi367a6b19',

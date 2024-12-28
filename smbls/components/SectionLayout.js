@@ -1,14 +1,16 @@
 // export const SectionLayout = {
-//   props: {
-//     inset: "0",
-//     minHeight: "100dvh",
-//     padding: "B",
-//     gap: "B1",
-//   },
-//   childElement: {
-//     Section: {
+//   // props: {
+//   //   inset: "0",
+//   //   minHeight: "800px",
+//   //   padding: "B",
+//   //   gap: "B1",
+//   // },
+//   childExtend: {
+//     box: {
 //       tag: "div",
-//       text: "aeeeeeeeeeeeeeeeeeeeeee",
+//       props: {
+//         text: 'asssssssssssss'
+//       }
 //     },
 //   },
 // };
