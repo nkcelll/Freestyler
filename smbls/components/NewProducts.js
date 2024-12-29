@@ -19,6 +19,7 @@ export const NewProducts = {
     props: {
       objectFit: 'cover',
       maxHeight: 'calc(100dvh - 77px)', 
+      aspectRatio : 'auto',
       src: '{{ src }}',
       borderRadius: '3px',
       filter: 'saturate(0)',
@@ -30,18 +31,18 @@ export const NewProducts = {
       },
     },
   },
-  P: {
-    text: '{{ title }}',
-    position: 'absolute',
-    bottom: '10px',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    color: 'black',
-    fontSize: '16px',
-    zIndex: '1',
-    width: '100%', 
-    textAlign: 'center', 
-  },
+  // P: {
+  //   text: '{{ title }}',
+  //   position: 'absolute',
+  //   bottom: '10px',
+  //   left: '50%',
+  //   transform: 'translateX(-50%)',
+  //   color: 'black',
+  //   fontSize: '16px',
+  //   zIndex: '1',
+  //   width: '100%', 
+  //   textAlign: 'center', 
+  // },
 };
 
   

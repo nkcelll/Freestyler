@@ -47,21 +47,21 @@
 //         },
 //       },
 //     },
-//     $propsCollection: () => [{
-//           href: '/tech',
-//           text: 'MEN',
-//         }, {
-//           href: '/tech',
-//           text: 'WOMAN'
-//         }, {
-//           href: '/tech',
-//           text: 'KIDS'
-//         }, {
-//           href: '/tech',
-//           text: 'Accessories'
-//         }, {
-//           href: '/tech',
-//           text: 'Rental / Tuning',
-//         }],
+    // $propsCollection: () => [{
+    //       href: '/tech',
+    //       text: 'MEN',
+    //     }, {
+    //       href: '/tech',
+    //       text: 'WOMAN'
+    //     }, {
+    //       href: '/tech',
+    //       text: 'KIDS'
+    //     }, {
+    //       href: '/tech',
+    //       text: 'Accessories'
+    //     }, {
+    //       href: '/tech',
+    //       text: 'Rental / Tuning',
+    //     }],
 //   },
 // };

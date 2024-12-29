@@ -3,6 +3,8 @@ export const Layout = {
   props: {
     overflow: 'hidden auto',
   }, 
+  NewListSidebar: {
+  },
   NewHeader: {
   },  
   NewMenu: {

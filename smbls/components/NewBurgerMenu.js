@@ -3,7 +3,8 @@ export const NewBurgerMenu = {
   tag:'button',
   props: {
     flex: 'row',
-    gap: 'A'
+    gap: 'A',
+    class: 'menu-button'
   },
   Img: {
     attr: {
@@ -18,6 +19,13 @@ export const NewBurgerMenu = {
       fontWeight: '400',
       fontSize: '14px',
       color: 'black'
+    }
+  },
+  on: {
+    click: () => {
+      const menu = document.querySelector('.menu-button')
+      NewListSidebar
+      console.log(menu, NewListSidebar)
     }
   }
 }

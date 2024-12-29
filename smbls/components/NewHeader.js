@@ -10,13 +10,16 @@ export const NewHeader = {
     width: '100dvw',
     height: '77px',
     gap: 'G 0',
+    inset: '0',
+    position: 'relative'
   },
   Logo: {
     // fontSize: 'G',
     props: {
-      display: 'flex', 
-      alignItems: 'center', 
-      justifyContent: 'center'
+      // display: 'flex', 
+      // alignItems: 'center', 
+      // justifyContent: 'center'
+      textAlign: 'center'
     }
   },
   SnowboardSvg: {
@@ -30,9 +33,12 @@ export const NewHeader = {
         src: 'https://i.gifer.com/3Who.gif',
       },
       props: {
-        maxHeight: '100%'
+        maxHeight: '100%',
+        position: 'absolute',
+        left: '46%',    
+        transform: 'translatex(10%)'
       }
-    }
+    },
   },
   DivFlexButtons:{
     extend: 'Flex',
@@ -44,12 +50,21 @@ export const NewHeader = {
     SearchBox: {
       extend: 'Flex',
       props: {
-        gap: '5px'
+        gap: '5px',
+        // ':hover': {
+        //   '& input': {
+        //     display: 'flex', // Show the input field on hover
+        //     width: '200px', // Transition width to 200px
+        //     transition: 'width 0.5s ease' // Smooth transition
+        //   }
+        // },
       },
       SearchButton: {
         tag: 'button',
+        attr: {
+          type: 'submit',
+        },
         props: {
-          type: 'button',
           border: 'none',
           backgroundColor: 'transparent',
           cursor: 'pointer',
@@ -58,24 +73,42 @@ export const NewHeader = {
           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi1cdb0162/cf1a1d28-df0d-4cd0-89a6-38a6171f3007-534866b3-4e0f-45ef-a802-219924fcca5c-b9e4e4c4-2309-4b14-903d-fc4b8c836caa.png',
         },
         on:{
-          mouseover:() => {
-            const searchBar = document.querySelector('.search-hidden')
-            if(searchBar && searchBar.type === 'hidden') {
-              searchBar.type = 'visible'
-            } 
+          mouseover:(ev) => {
+            const searchBar = document.querySelector('.input-search_hidden')
+            console.log(ev.currentTarget)
+            // if(searchBar && searchBar.type === 'hidden') {
+            //   searchBar.type = 'visible';
+            // } 
+            const searchButton = ev.currentTarget;
+            searchBar.style.display = 'flex'
+            
           },
         },
       },
       Input: {
         attr: {
           placeholder: 'Search...',
-          type: 'hidden',
-          class: 'search-hidden'
+          // type: 'hidden',
+          class: 'input-search_hidden'
         },
         props: {
           height: '5px',
           alignSelf: 'center',
+          display: 'none',
           width: '200px',
+          border: 'none',
+          ':focus': {
+            outline: 'none'
+
+          },
+          // transition: 'width 0.5s ease' 
+        },
+        on: {
+          keydown:(ev) => {
+            if(ev.key === 'Enter') {
+              return;
+            }
+          }
         }
       },
     },
