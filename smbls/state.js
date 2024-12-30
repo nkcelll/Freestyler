@@ -56,7 +56,7 @@ export default {
         category: 'Tech',
         brand: 'Light',
         price: '',
-        title: 'Googles',
+        title: 'Goggles',
         href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
         description: '',
         key_: 'light',

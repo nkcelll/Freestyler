@@ -1,4 +1,4 @@
-export const NewHeader = {
+export const MainHeader = {
   props: {
     // gridRow: 'span 2',
     display: 'flex',
@@ -14,32 +14,19 @@ export const NewHeader = {
     position: 'relative'
   },
   Logo: {
-    // fontSize: 'G',
     props: {
-      // display: 'flex', 
-      // alignItems: 'center', 
-      // justifyContent: 'center'
+      alignSelf: 'center', 
       textAlign: 'center'
     }
   },
-  SnowboardSvg: {
-    extend: 'Flex',
-    props: {
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    Img: {
-      attr: {
-        src: 'https://i.gifer.com/3Who.gif',
-      },
-      props: {
-        maxHeight: '100%',
-        position: 'absolute',
-        left: '46%',    
-        transform: 'translatex(10%)'
-      }
-    },
+
+
+  Nav: {
+
   },
+
+  
+  
   DivFlexButtons:{
     extend: 'Flex',
     props: {
@@ -51,13 +38,13 @@ export const NewHeader = {
       extend: 'Flex',
       props: {
         gap: '5px',
-        // ':hover': {
-        //   '& input': {
-        //     display: 'flex', // Show the input field on hover
-        //     width: '200px', // Transition width to 200px
-        //     transition: 'width 0.5s ease' // Smooth transition
-        //   }
-        // },
+        ':hover': {
+          '& input': {
+            display: 'flex', 
+            width: '1px', 
+            backgroundColor: '#E4E2E2'
+          }
+        },
       },
       SearchButton: {
         tag: 'button',
@@ -74,15 +61,23 @@ export const NewHeader = {
         },
         on:{
           mouseover:(ev) => {
-            const searchBar = document.querySelector('.input-search_hidden')
-            console.log(ev.currentTarget)
-            // if(searchBar && searchBar.type === 'hidden') {
-            //   searchBar.type = 'visible';
-            // } 
-            const searchButton = ev.currentTarget;
-            searchBar.style.display = 'flex'
+            const search = document.querySelector('.input-search_hidden')
+            search.style.display = 'flex'
+            search.style.width = '200px'
+            search.style.backgroundColor = '#E4E2E2'
+            search.style.border = '1px solid black'
+            
             
           },
+          click: (e) => {
+            const search = document.querySelector('.input-search_hidden')
+            
+            if(search.value) {
+              console.log(search.value)
+            } else {
+              e.preventDefault()
+            }
+          }
         },
       },
       Input: {
@@ -95,18 +90,21 @@ export const NewHeader = {
           height: '5px',
           alignSelf: 'center',
           display: 'none',
-          width: '200px',
-          border: 'none',
-          ':focus': {
-            outline: 'none'
 
-          },
-          // transition: 'width 0.5s ease' 
+          outline: 'none',
+          borderRadius: '5px',
+          // width: '0',
+          backgroundColor: '#E4E2E2',
+
+          border: 'none',
+          outlineWidth: '1px',
+          transition: 'all 0.7s ease',
         },
         on: {
           keydown:(ev) => {
+            const search = document.querySelector('.input-search_hidden')
             if(ev.key === 'Enter') {
-              return;
+              console.log(search.value)
             }
           }
         }
