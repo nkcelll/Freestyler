@@ -1,6 +1,6 @@
 export const MainHeader = {
   props: {
-    // gridRow: 'span 2',
+    position: 'relative',
     display: 'flex',
     flexFlow: 'row',
     // align: 'center space-between',
@@ -19,14 +19,15 @@ export const MainHeader = {
       textAlign: 'center'
     }
   },
-
-
   Nav: {
+    
+    // width: '358px',
 
+    // position:'absolute',
+    // inset: '0',
+    // left: '50%',
+    // transform: 'translateX(-50%)'
   },
-
-  
-  
   DivFlexButtons:{
     extend: 'Flex',
     props: {

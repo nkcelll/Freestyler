@@ -287,7 +287,7 @@ export const NewListSidebar = {
             },
             children: [
               {
-                tag: "a",
+                extend: 'Link',
                 attr: {
                   href: item.href,
                 },

@@ -1,12 +1,51 @@
 export const Nav = {
   extend: 'Flex',
+  props: {
+    gap: '25px',
+  },
   MenMenu: {
     tag: 'ul',
     attr: {
       id: '1'
     },
     props: {
-      listStyleType: 'none'
+      listStyleType: 'none',
+      padding: '0',
+      margin: '0',
+      
+    }
+  },
+  WomenMenu: {
+    tag: 'ul',
+    attr: {
+      id: '1'
+    },
+    props: {
+      listStyleType: 'none',
+      padding: '0',
+      margin: '0'
+    }
+  },
+  AccessoriesMenu: {
+    tag: 'ul',
+    attr: {
+      id: '1'
+    },
+    props: {
+      listStyleType: 'none',
+      padding: '0',
+      margin: '0'
+    }
+  },
+  SaleMenu: {
+    tag: 'ul',
+    attr: {
+      id: '1'
+    },
+    props: {
+      listStyleType: 'none',
+      padding: '0',
+      margin: '0'
     }
   },
 }

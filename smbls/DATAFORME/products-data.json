@@ -1,0 +1,497 @@
+[
+  {
+    "name": "Avant-Garde lamp",
+    "img": "/client/assets/products/avant-garde-lamp.webp",
+    "brand": "Modenza",
+    "category": "Chair",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. \n            Vexillologist yr dreamcatcher waistcoat, authentic chillwave \n            trust fund. Viral typewriter fingerstache pinterest pork belly \n            narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave \n            iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang \n            live-edge",
+    "priceCents": 17999,
+    "colorsAmount": ["red", "blue"],
+    "productAmount": 13,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Chic Chair",
+    "img": "/client/assets/products/chic-chair.webp",
+    "brand": "Luxora",
+    "category": "Chair",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights jianbing umami \n            mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher \n            waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache \n            pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork \n            chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "priceCents": 33999,
+    "colorsAmount": ["green", "purple"],
+    "productAmount": 2,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Coffee table",
+    "img": "/client/assets/products/coffee-table.jpg",
+    "brand": "Modenza",
+    "category": "Table",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr\n            dreamcatcher waistcoand. Viral typewriter",
+    "priceCents": 17999,
+    "colorsAmount": ["red", "yellow", "blue"],
+    "productAmount": 3,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Comfy Bed",
+    "img": "/client/assets/products/comfy-bed.jpg",
+    "brand": "Homestead",
+    "category": "Bed",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 12999,
+    "colorsAmount": ["purple"],
+    "productAmount": 4,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Contemporary Sofa",
+    "img": "/client/assets/products/contemporar-sofa.webp",
+    "brand": "Luxora",
+    "category": "Sofa",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 1599,
+    "colorsAmount": ["green", "purple"],
+    "productAmount": 8,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Cutting-Edge Bed",
+    "img": "/client/assets/products/cutting-edge bed.jpg",
+    "brand": "Homestead",
+    "category": "Bed",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 8599,
+    "colorsAmount": ["red", "yellow", "blue"],
+    "productAmount": 15,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Futuristic Shelves",
+    "img": "/client/assets/products/futuristic-shelves.jpg",
+    "brand": "Luxora",
+    "category": "Shelve",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 9499,
+    "colorsAmount": ["white", "black", "blue"],
+    "productAmount": 16,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Glass Table",
+    "img": "/client/assets/products/futuristic-shelves.jpg",
+    "brand": "Modenza",
+    "category": "Table",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 15999,
+    "colorsAmount": ["red"],
+    "productAmount": 19,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "King Bed",
+    "img": "/client/assets/products/sleek-bed.jpg",
+    "brand": "Homestead",
+    "category": "Bed",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 18999,
+    "colorsAmount": ["grey"],
+    "productAmount": 3,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Lounge Chair",
+    "img": "/client/assets/products/lounge-chair.webp",
+    "brand": "Luxora",
+    "category": "Chair",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 8999,
+    "colorsAmount": ["orange"],
+    "productAmount": 11,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Sleek Chair",
+    "img": "/client/assets/products/sleek-chair.jpg",
+    "brand": "Luxora",
+    "category": "Chair",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 18999,
+    "colorsAmount": ["black"],
+    "productAmount": 9,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Modern Table",
+    "img": "/client/assets/products/modern-table.webp",
+    "brand": "Modenza",
+    "category": "Table",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 33999,
+    "colorsAmount": ["maroon"],
+    "productAmount": 20,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Sleek Bed",
+    "img": "/client/assets/products/sleek-bed.jpg",
+    "brand": "Modenza",
+    "category": "Bed",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 53999,
+    "colorsAmount": ["pink", "green"],
+    "productAmount": 7,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Reclining Sofa",
+    "img": "/client/assets/products/velvet-sofa.jpg",
+    "brand": "Comfora",
+    "category": "Sofa",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 3299,
+    "colorsAmount": ["brown", "yellow"],
+    "productAmount": 6,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Wooden Shelves",
+    "img": "/client/assets/products/velvet-sofa.jpg",
+    "brand": "Artifex",
+    "category": "Shelve",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 11299,
+    "colorsAmount": ["red"],
+    "productAmount": 1,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Modern Table",
+    "img": "/client/assets/products/modern-table.webp",
+    "brand": "Modenza",
+    "category": "Table",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 33999,
+    "colorsAmount": ["red", "yellow", "blue"],
+    "productAmount": 3,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Sleek Bed",
+    "img": "/client/assets/products/sleek-bed.jpg",
+    "brand": "Modenza",
+    "category": "Bed",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 53999,
+    "colorsAmount": ["white", "black", "blue"],
+    "productAmount": 3,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Reclining Sofa",
+    "img": "/client/assets/products/velvet-sofa.jpg",
+    "brand": "Comfora",
+    "category": "Sofa",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 3299,
+    "colorsAmount": ["red", "yellow", "blue"],
+    "productAmount": 10,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Wooden Shelves",
+    "img": "/client/assets/products/velvet-sofa.jpg",
+    "brand": "Artifex",
+    "category": "Shelve",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 11299,
+    "colorsAmount": ["purple"],
+    "productAmount": 20,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Modern Table",
+    "img": "/client/assets/products/modern-table.webp",
+    "brand": "Modenza",
+    "category": "Table",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 33999,
+    "colorsAmount": ["green", "purple"],
+    "productAmount": 16,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Sleek Bed",
+    "img": "/client/assets/products/sleek-bed.jpg",
+    "brand": "Modenza",
+    "category": "Bed",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 53999,
+    "colorsAmount": ["green", "purple"],
+    "productAmount": 4,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Reclining Sofa",
+    "img": "/client/assets/products/velvet-sofa.jpg",
+    "brand": "Comfora",
+    "category": "Sofa",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 3299,
+    "colorsAmount": ["grey"],
+    "productAmount": 1,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Wooden Shelves",
+    "img": "/client/assets/products/velvet-sofa.jpg",
+    "brand": "Artifex",
+    "category": "Shelve",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 11299,
+    "colorsAmount": ["black"],
+    "productAmount": 4,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Modern Table",
+    "img": "/client/assets/products/modern-table.webp",
+    "brand": "Modenza",
+    "category": "Table",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 33999,
+    "colorsAmount": ["maroon"],
+    "productAmount": 7,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Sleek Bed",
+    "img": "/client/assets/products/sleek-bed.jpg",
+    "brand": "Modenza",
+    "category": "Bed",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 53999,
+    "colorsAmount": ["brown", "yellow"],
+    "productAmount": 6,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Reclining Sofa",
+    "img": "/client/assets/products/velvet-sofa.jpg",
+    "brand": "Comfora",
+    "category": "Sofa",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 3299,
+    "colorsAmount": ["pink", "green"],
+    "productAmount": 7,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Wooden Shelves",
+    "img": "/client/assets/products/velvet-sofa.jpg",
+    "brand": "Artifex",
+    "category": "Shelve",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 11299,
+    "colorsAmount": ["red", "blue"],
+    "productAmount": 8,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Contemporary Sofa",
+    "img": "/client/assets/products/contemporar-sofa.webp",
+    "brand": "Luxora",
+    "category": "Sofa",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 1599,
+    "colorsAmount": ["green", "purple"],
+    "productAmount": 2,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Cutting-Edge Bed",
+    "img": "/client/assets/products/cutting-edge bed.jpg",
+    "brand": "Homestead",
+    "category": "Bed",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr\n            dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter",
+    "priceCents": 8599,
+    "colorsAmount": ["green", "purple"],
+    "productAmount": 16,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Avant-Garde lamp",
+    "img": "/client/assets/products/avant-garde-lamp.webp",
+    "brand": "Modenza",
+    "category": "Chair",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights \n            jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. \n            Vexillologist yr dreamcatcher waistcoat, authentic chillwave \n            trust fund. Viral typewriter fingerstache pinterest pork belly \n            narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave \n            iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang \n            live-edge",
+    "priceCents": 17999,
+    "colorsAmount": ["red", "yellow", "blue"],
+    "productAmount": 8,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  },
+  {
+    "name": "Chic Chair",
+    "img": "/client/assets/products/chic-chair.webp",
+    "brand": "Luxora",
+    "category": "Chair",
+    "desc": "Cloud bread VHS hell of banjo bicycle rights jianbing umami \n            mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher \n            waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache \n            pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork \n            chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+    "priceCents": 33999,
+    "colorsAmount": ["white", "black", "blue"],
+    "productAmount": 9,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Sleek Bed",
+    "img": "/client/assets/products/sleek-bed.jpg",
+    "brand": "Modenza",
+    "category": "Bed",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 53999,
+    "colorsAmount": ["orange"],
+    "productAmount": 16,
+    "shipping": {
+      "cost": 0,
+      "type": "free",
+      "estimatedDelivery": "3-5 business days"
+    }
+  },
+  {
+    "name": "Reclining Sofa",
+    "img": "/client/assets/products/velvet-sofa.jpg",
+    "brand": "Comfora",
+    "category": "Sofa",
+    "desc": "Cwaistcoat, authentic chillwave of banjo bicycle rights \n            jif. Vexillologist yr\n            dreamcatcher waistcoat,chillwave trust fund. Viral typewriter",
+    "priceCents": 3299,
+    "colorsAmount": ["grey"],
+    "productAmount": 1,
+    "shipping": {
+      "cost": 500,
+      "type": "standard",
+      "estimatedDelivery": "5-7 business days"
+    }
+  }
+]

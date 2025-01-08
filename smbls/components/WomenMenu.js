@@ -1,11 +1,11 @@
-export const MenMenu = {
+export const WomenMenu = {
   extend: 'Flex',
   li: {
     style: {
       listStyleType: 'none',
     },
     a: {
-      text: 'MEN /',
+      text: 'WOMEN /',
       attr: {
         id: 'aTag'
       },
@@ -23,28 +23,28 @@ export const MenMenu = {
     },
     on: {
       mouseover: (e) => {
-        const dropdown = document.getElementById('men-hover-collection');
+        const dropdown = document.getElementById('women-hover-collection');
         if (dropdown) {
           dropdown.style.transition = 'opacity 0.2s ease';
-          dropdown.style.opacity = '1'; 
-          dropdown.style.pointerEvents = 'auto'; 
+          dropdown.style.opacity = '1';
+          dropdown.style.pointerEvents = 'auto';
         }
       },
       mouseout: (e) => {
-        const dropdown = document.getElementById('men-hover-collection');
+        const dropdown = document.getElementById('women-hover-collection');
         if (dropdown) {
           dropdown.style.opacity = '0'; 
-          dropdown.style.pointerEvents = 'none'; 
+          dropdown.style.pointerEvents = 'none';
         }
       },
     },
     MenList: {
       attr: {
-        id: 'men-hover-collection'
+        id: 'women-hover-collection'
       },
       props: {
         opacity: '0',
-        display:'none',
+        display:'flex',
         justifyContent: 'space-evenly',
         width: '100dvw',
         height: '60dvh',
@@ -335,6 +335,8 @@ export const MenMenu = {
           },
         },
       },
+      
+      
     }
   }
 }

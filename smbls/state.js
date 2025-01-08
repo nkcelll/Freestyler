@@ -20,7 +20,7 @@ export default {
         brand: '',
         price: '',
         title: 'Snowboards',
-        href: 'http://localhost:1234/snowboards',
+        href: 'http://localhost:1234/products',
         // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
         description: ''
       },
@@ -40,7 +40,7 @@ export default {
         brand: 'Nobull',
         category: 'Lifestyle',
         description: '',
-        href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        href: 'hhttp://localhost:1234/products',
       },
       2: {
         posters: [
@@ -57,7 +57,7 @@ export default {
         brand: 'Light',
         price: '',
         title: 'Goggles',
-        href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        href: 'hhttp://localhost:1234/products',
         description: '',
         key_: 'light',
       },
@@ -70,7 +70,7 @@ export default {
         category: 'Tech',
         price: '',
         brand: 'Light',
-        href: '',
+        href: 'http://localhost:1234/products',
         posters: [
           {
             poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
@@ -88,7 +88,7 @@ export default {
         category: 'Tech',
         price: '',
         brand: 'Light',
-        href: '',
+        href: 'http://localhost:1234/products',
         posters: [
           {
             poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
@@ -106,7 +106,7 @@ export default {
         category: 'Tech',
         price: '',
         brand: 'Light',
-        href: '',
+        href: 'http://localhost:1234/products',
         posters: [
           {
             poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
@@ -124,7 +124,7 @@ export default {
         category: 'Tech',
         price: '',
         brand: 'Light',
-        href: '',
+        href: 'http://localhost:1234/products',
         posters: [
           {
             poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
@@ -136,6 +136,33 @@ export default {
     },
     title: 'Products',
   },
+  /////////////////////////////////////////////////////////////////////
+
+  rawData: {
+    data: {
+      0: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+    }
+  },
+  /////////////////////////////////////////////////////////////////////
+
   route: '/products/new-project-0',
   routeInContent: '/new-project-0',
   debugging: false,

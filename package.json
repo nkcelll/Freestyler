@@ -10,6 +10,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "smbls": "latest"
   },
   "devDependencies": {
