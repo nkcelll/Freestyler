@@ -1,39 +1,49 @@
 export const ProductsLayout = {
   extend: 'Flex',
-
+  // Overlay: {
+  //   width: '100dvw',
+  //   height: '100dvh',
+  //   backgroundColor: 'red'
+  // },
+  
   MainHeader:{
     extend: 'Flex',
     props: {
       align: 'center',
+      position: 'sticky'
     },
   },
-  FilterSection: {
-    
+  MarkingText: {
   },
-  ProductsContent: {
-    // extend: 'Flex', 
-    // props: {
-    //   backgroundColor: 'red',
-    //   height: '480px',
-    //   width: '480px'
-    // },
-
-    // extends: 'Grid',
-    // templateColumns: 'repeat(3, 1fr)',
-    // '@tabletM': {
-    //   templateColumns: 'repeat(2, 1fr)',
-    // },
-    // '@mobileL': {
-    //   templateColumns: 'repeat(1, 1fr)',
-    //   heightRange: 'auto',
-    //   maxHeight: 'none',
-    // },
-    // gap: 'A',
-    // minHeight: '-webkit-fill-available',
-    // childExtends: 'Product',
-    // childrenAs: 'state',
-    // children: (el, s) => Object.values(s.products.data),
-    
+  GifTop: {
+  },
+  FilterSection: {
+  },
+  GridContent: {
+    extends: 'Grid',
+    width: '100dvw',
+    columns: 'repeat(4, 1fr)',
+    '@tabletM': {
+      columns: 'repeat(4, 1fr)',
+    },
+    '@tabletS': {
+      columns: 'repeat(3, 1fr)',
+    },
+    '@mobileL': {
+      columns: 'repeat(2, 1fr)',
+    },
+    '@mobile': {
+      columns: 'repeat(1, 1fr)',
+    },
+    backgroundColor: 'rgba(161, 157, 151, 0.5))',
+    childExtends: 'ProductsContent',
+    childrenAs: 'state',
+    children: (el, s) => Object.values(s.rawData.data),
+  },
+  GifBottom: {
+  },
+  Pagination: {
+  },
+  Footer: {
   }
-  
-}
+}  

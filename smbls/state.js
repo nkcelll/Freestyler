@@ -8,9 +8,9 @@ export default {
       0: {
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi91110fb5/b9df5ad7-381a-4fcf-92d0-7083670c4964-a5f174e8-6976-4d4b-8097-39484df6ab96-ef612887-2a4d-4c18-b841-35b7bd17939f.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi91110fb5/b9df5ad7-381a-4fcf-92d0-7083670c4964-a5f174e8-6976-4d4b-8097-39484df6ab96-ef612887-2a4d-4c18-b841-35b7bd17939f.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi91110fb5/b9df5ad7-381a-4fcf-92d0-7083670c4964-a5f174e8-6976-4d4b-8097-39484df6ab96-ef612887-2a4d-4c18-b841-35b7bd17939f.png',
           },
         ],
         key: 'new-project-0',
@@ -20,34 +20,34 @@ export default {
         brand: '',
         price: '',
         title: 'Snowboards',
-        href: 'http://localhost:1234/products',
+        href: '/products',
         // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
         description: ''
       },
       1: {
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifaa891b9/6686a86b-cbf0-44cb-9d46-360e8d57dc04-08fb8884-d296-4439-b68e-f10ab58ea645-a54036b6-cf4b-4241-ad22-d34b16de7ac0.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifaa891b9/6686a86b-cbf0-44cb-9d46-360e8d57dc04-08fb8884-d296-4439-b68e-f10ab58ea645-a54036b6-cf4b-4241-ad22-d34b16de7ac0.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifaa891b9/6686a86b-cbf0-44cb-9d46-360e8d57dc04-08fb8884-d296-4439-b68e-f10ab58ea645-a54036b6-cf4b-4241-ad22-d34b16de7ac0.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fia60caf6b/1d241dcb-703e-48f7-a29a-6e851c54de00-fafdc7f8-8bf4-4c7d-9693-ab6d579d7d0c-8e9ba01c-8c19-4396-a96e-a37cf7d8543b.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fia60caf6b/1d241dcb-703e-48f7-a29a-6e851c54de00-fafdc7f8-8bf4-4c7d-9693-ab6d579d7d0c-8e9ba01c-8c19-4396-a96e-a37cf7d8543b.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fia60caf6b/1d241dcb-703e-48f7-a29a-6e851c54de00-fafdc7f8-8bf4-4c7d-9693-ab6d579d7d0c-8e9ba01c-8c19-4396-a96e-a37cf7d8543b.png',
           },
         ],
         key: 'new-project-1',
         date: '2024-06-17T21:28:41.264Z',
         author: 'Nika',
-        title: 'Clothes',
+        title: 'Bindings',
         price: '',
         brand: 'Nobull',
         category: 'Lifestyle',
         description: '',
-        href: 'hhttp://localhost:1234/products',
+        href: '/products',
       },
       2: {
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifad899a0/b30c342b-cf76-402b-8e5a-6cecfafbc050-fa31c13e-2dda-4874-b243-940b7a2dcb9d-0ec6d4de-305f-435c-a991-76ff150e2000.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifad899a0/b30c342b-cf76-402b-8e5a-6cecfafbc050-fa31c13e-2dda-4874-b243-940b7a2dcb9d-0ec6d4de-305f-435c-a991-76ff150e2000.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifad899a0/b30c342b-cf76-402b-8e5a-6cecfafbc050-fa31c13e-2dda-4874-b243-940b7a2dcb9d-0ec6d4de-305f-435c-a991-76ff150e2000.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fia29a86b5/f1d4f6b6-89e2-4699-9751-a50023043e6e-aac1f4cf-5fc2-4997-9796-7741e445ef83-8ab70bcd-f37d-4dda-8b1b-50e00fd89561.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fia29a86b5/f1d4f6b6-89e2-4699-9751-a50023043e6e-aac1f4cf-5fc2-4997-9796-7741e445ef83-8ab70bcd-f37d-4dda-8b1b-50e00fd89561.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fia29a86b5/f1d4f6b6-89e2-4699-9751-a50023043e6e-aac1f4cf-5fc2-4997-9796-7741e445ef83-8ab70bcd-f37d-4dda-8b1b-50e00fd89561.png',
           },
         ],
         key: 'lis',
@@ -56,13 +56,13 @@ export default {
         category: 'Tech',
         brand: 'Light',
         price: '',
-        title: 'Goggles',
-        href: 'hhttp://localhost:1234/products',
+        title: 'Boots',
+        href: '/products',
         description: '',
         key_: 'light',
       },
       3: {
-        title: 'Helmets',
+        title: 'Goggles',
         key: 'new-project-3',
         date: '2024-06-17T21:28:45.814Z',
         author: 'Nika',
@@ -70,12 +70,12 @@ export default {
         category: 'Tech',
         price: '',
         brand: 'Light',
-        href: 'http://localhost:1234/products',
+        href: '/products',
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fidd784422/8f213138-9861-45f7-8af8-a513291bd5f1-635dfd76-e5e8-4d49-bb0c-c2fc59f364f9-57d5f119-eb3a-45dd-8cc2-ca7cd338cc92.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fidd784422/8f213138-9861-45f7-8af8-a513291bd5f1-635dfd76-e5e8-4d49-bb0c-c2fc59f364f9-57d5f119-eb3a-45dd-8cc2-ca7cd338cc92.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fidd784422/8f213138-9861-45f7-8af8-a513291bd5f1-635dfd76-e5e8-4d49-bb0c-c2fc59f364f9-57d5f119-eb3a-45dd-8cc2-ca7cd338cc92.png',
           },
         ],
       },
@@ -88,17 +88,17 @@ export default {
         category: 'Tech',
         price: '',
         brand: 'Light',
-        href: 'http://localhost:1234/products',
+        href: '/products',
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi1922fd49/d2fa0e82-fdbc-4ffd-9abf-fd8f06f93488-8a04af0f-eceb-4270-b812-69e4f8ea5427-f0ae804b-cfb9-4bde-a6a6-51a535e0d770.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi1922fd49/d2fa0e82-fdbc-4ffd-9abf-fd8f06f93488-8a04af0f-eceb-4270-b812-69e4f8ea5427-f0ae804b-cfb9-4bde-a6a6-51a535e0d770.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi1922fd49/d2fa0e82-fdbc-4ffd-9abf-fd8f06f93488-8a04af0f-eceb-4270-b812-69e4f8ea5427-f0ae804b-cfb9-4bde-a6a6-51a535e0d770.png',
           },
         ],
       },
       5: {
-        title: 'Neck Warmers',
+        title: 'Helmets',
         key: 'new-project-5',
         date: '2024-06-17T21:30:06.708Z',
         author: 'Nika',
@@ -106,17 +106,17 @@ export default {
         category: 'Tech',
         price: '',
         brand: 'Light',
-        href: 'http://localhost:1234/products',
+        href: '/products',
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi599dc1eb/6710c624-3897-428d-beaf-59a795d78a5d-aa4218da-6b02-477d-b306-726a68e11999-c497426a-0661-4223-9838-43e12b832f14.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi599dc1eb/6710c624-3897-428d-beaf-59a795d78a5d-aa4218da-6b02-477d-b306-726a68e11999-c497426a-0661-4223-9838-43e12b832f14.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi599dc1eb/6710c624-3897-428d-beaf-59a795d78a5d-aa4218da-6b02-477d-b306-726a68e11999-c497426a-0661-4223-9838-43e12b832f14.png',
           },
         ],
       },
       6: {
-        title: 'Accessory Kits',
+        title: 'Thermals',
         key: 'new-project-6',
         date: '2024-06-17T21:30:07.908Z',
         author: 'Nika',
@@ -124,20 +124,498 @@ export default {
         category: 'Tech',
         price: '',
         brand: 'Light',
-        href: 'http://localhost:1234/products',
+        href: '/products',
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi44ebe1ad/c61f0b01-0d68-4656-aa2d-ff0635bfd378-cc3c581c-08c7-4157-b158-297bd297655f-69da5f08-b20b-49fc-a02e-c94daa1c089c.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi44ebe1ad/c61f0b01-0d68-4656-aa2d-ff0635bfd378-cc3c581c-08c7-4157-b158-297bd297655f-69da5f08-b20b-49fc-a02e-c94daa1c089c.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi44ebe1ad/c61f0b01-0d68-4656-aa2d-ff0635bfd378-cc3c581c-08c7-4157-b158-297bd297655f-69da5f08-b20b-49fc-a02e-c94daa1c089c.png',
           },
         ],
       },
+
+
+      7: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fice19f592/2c00bc28-9c3c-41ba-b73b-57dffa94c808-51e4ab7a-0fdd-4c4e-88c2-7e173102b66d-a50bd0a4-ec2a-4662-abd8-6ee26bcabefd.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fice19f592/2c00bc28-9c3c-41ba-b73b-57dffa94c808-51e4ab7a-0fdd-4c4e-88c2-7e173102b66d-a50bd0a4-ec2a-4662-abd8-6ee26bcabefd.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fice19f592/2c00bc28-9c3c-41ba-b73b-57dffa94c808-51e4ab7a-0fdd-4c4e-88c2-7e173102b66d-a50bd0a4-ec2a-4662-abd8-6ee26bcabefd.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Jackets',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      8: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif9a55fda/60e225cf-611f-44c8-a01b-ae8b1998c6db-631a225b-2c3d-4fef-82e2-d6d66af12fa2-ebdfd200-8b7f-4155-9289-8bd92788c3f8.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif9a55fda/60e225cf-611f-44c8-a01b-ae8b1998c6db-631a225b-2c3d-4fef-82e2-d6d66af12fa2-ebdfd200-8b7f-4155-9289-8bd92788c3f8.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif9a55fda/60e225cf-611f-44c8-a01b-ae8b1998c6db-631a225b-2c3d-4fef-82e2-d6d66af12fa2-ebdfd200-8b7f-4155-9289-8bd92788c3f8.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Pants',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      9: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi2edcfbe5/4c8e6673-19d0-4973-b14a-7f2206ec5683-f38b3ea5-9141-4fd1-853e-bd24ba4ff2ba-7bba8f1e-794e-4da8-be7c-49d91d000e8b.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi2edcfbe5/4c8e6673-19d0-4973-b14a-7f2206ec5683-f38b3ea5-9141-4fd1-853e-bd24ba4ff2ba-7bba8f1e-794e-4da8-be7c-49d91d000e8b.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi2edcfbe5/4c8e6673-19d0-4973-b14a-7f2206ec5683-f38b3ea5-9141-4fd1-853e-bd24ba4ff2ba-7bba8f1e-794e-4da8-be7c-49d91d000e8b.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Sweatshirts',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      10: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi76387321/2bf169fc-5c1d-4b77-ad7a-4405e5d9791d-48c077e7-f504-44e7-a445-d90a1ec4d62b-1c35fee0-5405-47b9-97e9-d51770e0307e.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi76387321/2bf169fc-5c1d-4b77-ad7a-4405e5d9791d-48c077e7-f504-44e7-a445-d90a1ec4d62b-1c35fee0-5405-47b9-97e9-d51770e0307e.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi76387321/2bf169fc-5c1d-4b77-ad7a-4405e5d9791d-48c077e7-f504-44e7-a445-d90a1ec4d62b-1c35fee0-5405-47b9-97e9-d51770e0307e.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Top',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      11: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi89210aec/ba5923f2-7d48-4bfa-b153-f2f93cf3e343-d96944f0-1b93-402f-8067-1c5bffbcc622-ad0c7785-1dc1-42cc-a4b4-d6a01a96f99a.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi89210aec/ba5923f2-7d48-4bfa-b153-f2f93cf3e343-d96944f0-1b93-402f-8067-1c5bffbcc622-ad0c7785-1dc1-42cc-a4b4-d6a01a96f99a.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi89210aec/ba5923f2-7d48-4bfa-b153-f2f93cf3e343-d96944f0-1b93-402f-8067-1c5bffbcc622-ad0c7785-1dc1-42cc-a4b4-d6a01a96f99a.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Bag',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      12: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi9575f675/960b8719-4af3-4480-9f32-5dfb5fd112a6-30da626e-5597-4e9a-ac0c-5ae121d848ca-9b0db178-ff93-4abb-94ea-addbaa468be0.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi9575f675/960b8719-4af3-4480-9f32-5dfb5fd112a6-30da626e-5597-4e9a-ac0c-5ae121d848ca-9b0db178-ff93-4abb-94ea-addbaa468be0.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi9575f675/960b8719-4af3-4480-9f32-5dfb5fd112a6-30da626e-5597-4e9a-ac0c-5ae121d848ca-9b0db178-ff93-4abb-94ea-addbaa468be0.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Masks',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      13: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi608ac09b/3be6995b-f2d9-4d2b-90e5-6632906ecd9b-fb5a434b-7968-4b4d-9bf7-54316e4484e1-098ea6ed-624f-49dc-a598-068c307bb877.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi608ac09b/3be6995b-f2d9-4d2b-90e5-6632906ecd9b-fb5a434b-7968-4b4d-9bf7-54316e4484e1-098ea6ed-624f-49dc-a598-068c307bb877.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi608ac09b/3be6995b-f2d9-4d2b-90e5-6632906ecd9b-fb5a434b-7968-4b4d-9bf7-54316e4484e1-098ea6ed-624f-49dc-a598-068c307bb877.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Neck Warmers',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      14: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi8f986f0e/28093082-9d79-4260-953c-5add5fdba7eb-cf9a267b-8625-44ff-a1ec-9ff4e34a6770-0e7fc847-cfe6-4998-843c-2f9e0abd82e0.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi8f986f0e/28093082-9d79-4260-953c-5add5fdba7eb-cf9a267b-8625-44ff-a1ec-9ff4e34a6770-0e7fc847-cfe6-4998-843c-2f9e0abd82e0.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi8f986f0e/28093082-9d79-4260-953c-5add5fdba7eb-cf9a267b-8625-44ff-a1ec-9ff4e34a6770-0e7fc847-cfe6-4998-843c-2f9e0abd82e0.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Hoodies',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      15: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi6eb00477/c124b49c-b048-4262-98ff-a0d8c84d15e1-35a8e339-765c-4b05-94a4-cacf64ee6d5d-3f3e79f1-980b-4a24-a177-4f78dcd070c4.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi6eb00477/c124b49c-b048-4262-98ff-a0d8c84d15e1-35a8e339-765c-4b05-94a4-cacf64ee6d5d-3f3e79f1-980b-4a24-a177-4f78dcd070c4.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi6eb00477/c124b49c-b048-4262-98ff-a0d8c84d15e1-35a8e339-765c-4b05-94a4-cacf64ee6d5d-3f3e79f1-980b-4a24-a177-4f78dcd070c4.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Accessories',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      16: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib057993a/587260cd-f7cb-4ed9-b33b-5f72b9c1321b-2e2b0723-a2ea-4a14-ab43-3fd171dca184-9f651753-7cc1-41b6-aec8-65acd83ebf2f.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib057993a/587260cd-f7cb-4ed9-b33b-5f72b9c1321b-2e2b0723-a2ea-4a14-ab43-3fd171dca184-9f651753-7cc1-41b6-aec8-65acd83ebf2f.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib057993a/587260cd-f7cb-4ed9-b33b-5f72b9c1321b-2e2b0723-a2ea-4a14-ab43-3fd171dca184-9f651753-7cc1-41b6-aec8-65acd83ebf2f.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: '',
+        price: '',
+        title: 'Tuning / Tools',
+        href: '/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
     },
+    
     title: 'Products',
   },
-  /////////////////////////////////////////////////////////////////////
 
+  // products: {
+  //   data: {
+  //     0: {
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //         },
+  //       ],
+  //       key: 'new-project-0',
+  //       date: '2024-06-17T21:28:41.264Z',
+  //       author: 'Nika',
+  //       category: 'Tech',
+  //       brand: '',
+  //       price: '',
+  //       title: 'Snowboards',
+  //       href: '/products',
+  //       // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+  //       description: ''
+  //     },
+  //     1: {
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifaa891b9/6686a86b-cbf0-44cb-9d46-360e8d57dc04-08fb8884-d296-4439-b68e-f10ab58ea645-a54036b6-cf4b-4241-ad22-d34b16de7ac0.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifaa891b9/6686a86b-cbf0-44cb-9d46-360e8d57dc04-08fb8884-d296-4439-b68e-f10ab58ea645-a54036b6-cf4b-4241-ad22-d34b16de7ac0.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifaa891b9/6686a86b-cbf0-44cb-9d46-360e8d57dc04-08fb8884-d296-4439-b68e-f10ab58ea645-a54036b6-cf4b-4241-ad22-d34b16de7ac0.png',
+  //         },
+  //       ],
+  //       key: 'new-project-1',
+  //       date: '2024-06-17T21:28:41.264Z',
+  //       author: 'Nika',
+  //       title: 'Clothes',
+  //       price: '',
+  //       brand: 'Nobull',
+  //       category: 'Lifestyle',
+  //       description: '',
+  //       href: '/products',
+  //     },
+  //     2: {
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifad899a0/b30c342b-cf76-402b-8e5a-6cecfafbc050-fa31c13e-2dda-4874-b243-940b7a2dcb9d-0ec6d4de-305f-435c-a991-76ff150e2000.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifad899a0/b30c342b-cf76-402b-8e5a-6cecfafbc050-fa31c13e-2dda-4874-b243-940b7a2dcb9d-0ec6d4de-305f-435c-a991-76ff150e2000.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifad899a0/b30c342b-cf76-402b-8e5a-6cecfafbc050-fa31c13e-2dda-4874-b243-940b7a2dcb9d-0ec6d4de-305f-435c-a991-76ff150e2000.png',
+  //         },
+  //       ],
+  //       key: 'lis',
+  //       date: '2024-06-17T21:28:41.264Z',
+  //       author: 'Nika',
+  //       category: 'Tech',
+  //       brand: 'Light',
+  //       price: '',
+  //       title: 'Goggles',
+  //       href: '/products',
+  //       description: '',
+  //       key_: 'light',
+  //     },
+  //     3: {
+  //       title: 'Helmets',
+  //       key: 'new-project-3',
+  //       date: '2024-06-17T21:28:45.814Z',
+  //       author: 'Nika',
+  //       description: '',
+  //       category: 'Tech',
+  //       price: '',
+  //       brand: 'Light',
+  //       href: '/products',
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif4d5e45b/202e49e8-e4b6-463a-b548-c7fce5f9c8fd-c1e36e0d-8475-4ac2-9090-04dc1173496e-494eb9bf-ff75-4559-a2cc-d4ebd6d17be7.png',
+  //         },
+  //       ],
+  //     },
+  //     4: {
+  //       title: 'Gloves',
+  //       key: 'new-project-4',
+  //       date: '2024-06-17T21:28:47.098Z',
+  //       author: 'Nika',
+  //       description: '',
+  //       category: 'Tech',
+  //       price: '',
+  //       brand: 'Light',
+  //       href: '/products',
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid823d8ff/feb5a514-911a-4f5c-8825-1a8d605b026d-1f799558-8e03-41d4-8c71-a50e69befa1a-f1d7b572-7dca-488c-910b-ff87cd6722f5.png',
+  //         },
+  //       ],
+  //     },
+  //     5: {
+  //       title: 'Neck Warmers',
+  //       key: 'new-project-5',
+  //       date: '2024-06-17T21:30:06.708Z',
+  //       author: 'Nika',
+  //       description: '',
+  //       category: 'Tech',
+  //       price: '',
+  //       brand: 'Light',
+  //       href: '/products',
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib166ccf0/fdc927f1-9c37-48cb-a411-d4d3e8f0b9cd-db13d085-f070-4db3-846c-890976fff535-72df68ca-e255-497b-97e3-037f4073dd1a.png',
+  //         },
+  //       ],
+  //     },
+  //     6: {
+  //       title: 'Accessory Kits',
+  //       key: 'new-project-6',
+  //       date: '2024-06-17T21:30:07.908Z',
+  //       author: 'Nika',
+  //       description: '',
+  //       category: 'Tech',
+  //       price: '',
+  //       brand: 'Light',
+  //       href: '/products',
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif7433840/e999c224-678f-4549-ab61-68e4818383cd-359c177c-7f98-4357-b775-7e014bd070f1-adb5fa99-4d48-4641-8b94-0f91afa07e05.png',
+  //         },
+  //       ],
+  //     },
+
+
+  //     7: {
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //         },
+  //       ],
+  //       key: 'new-project-0',
+  //       date: '2024-06-17T21:28:41.264Z',
+  //       author: 'Nika',
+  //       category: 'Tech',
+  //       brand: '',
+  //       price: '',
+  //       title: 'Snowboards',
+  //       href: '/products',
+  //       // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+  //       description: ''
+  //     },
+  //     8: {
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //         },
+  //       ],
+  //       key: 'new-project-0',
+  //       date: '2024-06-17T21:28:41.264Z',
+  //       author: 'Nika',
+  //       category: 'Tech',
+  //       brand: '',
+  //       price: '',
+  //       title: 'Snowboards',
+  //       href: '/products',
+  //       // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+  //       description: ''
+  //     },
+  //     9: {
+  //       posters: [
+  //         {
+  //           poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //           src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //           value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+  //         },
+  //       ],
+  //       key: 'new-project-0',
+  //       date: '2024-06-17T21:28:41.264Z',
+  //       author: 'Nika',
+  //       category: 'Tech',
+  //       brand: '',
+  //       price: '',
+  //       title: 'Snowboards',
+  //       href: '/products',
+  //       // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+  //       description: ''
+  //     },
+  //   },
+    
+  //   title: 'Products',
+  // },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /////////////////////////////////////////////////////////////////////
   rawData: {
     data: {
       0: {
@@ -159,12 +637,228 @@ export default {
         // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
         description: ''
       },
-    }
+      1: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      2: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      3: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      4: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      5: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      6: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      7: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      8: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      9: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      10: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+      11: {
+        posters: [
+          {
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+          },
+        ],
+        key: 'new-project-0',
+        date: '2024-06-17T21:28:41.264Z',
+        author: 'Nika',
+        category: 'Tech',
+        brand: 'Bataleon',
+        price: '$199.99',
+        title: 'Snowboards',
+        href: 'http://localhost:1234/products',
+        // href: 'https://codepen.io/HighFlyer/full/GRLZYKw',
+        description: ''
+      },
+    },
+    title: 'ProductsData',
+  },
+
+  mapLocation: {
+    lat: '41.788072',
+    lng: '44.756767',
   },
   /////////////////////////////////////////////////////////////////////
-
-  route: '/products/new-project-0',
-  routeInContent: '/new-project-0',
+  route: '/products',
+  routeInContent: '',
+  // route: '/products/new-project-0',
+  // routeInContent: '/new-project-0',
   debugging: false,
   static: {
     title: 'Static',

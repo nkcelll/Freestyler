@@ -1,15 +1,25 @@
 export const products = {
+  
   extend: 'ProductsLayout',
   props: {
     flow: 'row wrap',
   },
+  
   MainHeader: {
   },
   MarkingText: {
   },
+  GifTop: {
+  },
   FilterSection: {
   },
-  ProductsContent:{
-
+  GridContent:{
   },
+  GifBottom: {
+  },
+  Pagination: {
+  },
+  Footer: {
+  }
 }
+

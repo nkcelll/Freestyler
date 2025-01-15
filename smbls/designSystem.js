@@ -77,11 +77,11 @@ export default {
       type: 'sans-serif',
     },
     Custom: {
-      isDefault: true, // Make this the default font
+      isDefault: true, 
       value: [
-        '"Urbanist"', // Your custom font
+        '"Urbanist"',
       ],
-      type: 'sans-serif', // Change to 'sans-serif' if Urbanist should be a sans-serif font
+      type: 'sans-serif',
     },
   },
   TYPOGRAPHY: {

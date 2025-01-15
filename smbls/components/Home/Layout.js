@@ -2,43 +2,109 @@ export const Layout = {
   extend: 'Flex',
   props: {
     overflow: 'hidden auto',
-  }, 
-  NewListSidebar: {
   },
-  NewHeader: {
-  },  
-  NewMenu: {
+  HomeListSidebar: {
+    // Sidebar styles (unchanged)
+  },
+  HomeHeader: {
+    // Header styles (unchanged)
+  },
+  Menu: {
     width: '120px',
     height: 'calc(100dvh - 77px)',
-    borderRight: '1px solid #A38A8A',
+    // borderRight: '1px solid #A38A8A',
     top: '0',
-    order: '1'
+    order: '1',
   },
   Content: {
-    flex: '7',
-    order: '2',
-    // borderTop: '1px solid #A38A8A',
     extends: 'Flex',
-    justifyContent: 'space-evenly',
 
-    gap: '10px',
+    attr: {
+      id: 'content-wheel',
+    },
+    flex: 1,
+    row: 'row',
+    whiteSpace: 'nowrap',
+    order: '2',
+    width: '100px',
+    overflowX: 'auto',
+    scrollSnapType: 'x mandatory',
+    overflowY: 'hidden',
+    gap: '30px',
     backgroundColor: '#E4E2E2',
-    // backgroundColor: '#141414',
     padding: '0 A 0 0',
-    minHeight: '-webkit-fill-available',
-    childExtends: 'NewProducts',
+    childExtends: 'HomeImageProducts',
     childrenAs: 'state',
     children: (el, s) => Object.values(s.products.data),
   },
+};
+document.addEventListener('DOMContentLoaded', () => {
+  const contentWheel = document.getElementById('content-wheel');
+  if (contentWheel) {
+    contentWheel.addEventListener('wheel', handleWheel, { passive: false });
+  } else {
+    console.error('#content-wheel element not found.');
+  }
+});
+
+let isScrolling = false;
+
+function handleWheel(e) {
+  const scroll = document.getElementById('content-wheel');
+  if (!scroll) return;
+
+  e.preventDefault();
+
+  if (!isScrolling) {
+    isScrolling = true;
+    requestAnimationFrame(() => {
+      scroll.scrollBy({
+        left: e.deltaY * 2, // Adjust scroll speed as needed
+        behavior: 'smooth',
+      });
+      isScrolling = false;
+    });
+  }
 }
 
 
 
 
 
+// export const Layout = {
+//   extend: 'Flex',
+//   props: {
+//     overflow: 'hidden auto',
+//   },
+//   HomeListSidebar: {
+//   },
+//   HomeHeader: {
 
+//   },
+//   Menu: {
+//     width: '120px',
+//     height: 'calc(100dvh - 77px)',
+//     borderRight: '1px solid #A38A8A',
+//     top: '0',
+//     order: '1'
+//   },
+//   Content: {
+//     flex: '7',
+//     order: '2',
+//     // borderTop: '1px solid #A38A8A',
+//     extends: 'Flex',
+//     justifyContent: 'space-evenly',
 
-
+//     gap: '10px',
+//     backgroundColor: '#E4E2E2',
+//     // backgroundColor: '#141414',
+//     padding: '0 A 0 0',
+//     minHeight: '-webkit-fill-available',
+//     childExtends: 'HomeImageProducts',
+//     childrenAs: 'state',
+//     children: (el, s) => Object.values(s.products.data),
+//   },
+// }
 
 // export const Layout = {
 //   extend: 'Flex',
@@ -88,7 +154,7 @@ export const Layout = {
 //         const {
 //           node
 //         } = el
-        
+
 //         node.playbackRate = 0.35
 //         node.volume = 0.2
 //         node.loop = true

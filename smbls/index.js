@@ -9,3 +9,7 @@ export { default as pages } from './pages';
 export * as functions from './functions';
 export * as methods from './methods';
 
+
+
+export { default as state2 } from './state2'
+

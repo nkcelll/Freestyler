@@ -1,4 +1,4 @@
-export const NewHeader = {
+export const HomeHeader = {
   props: {
     // gridRow: 'span 2',
     display: 'flex',
@@ -11,12 +11,12 @@ export const NewHeader = {
     height: '77px',
     gap: 'G 0',
     inset: '0',
-    position: 'relative'
+    position: 'relative',
   },
   Logo: {
     props: {
-      alignSelf: 'center', 
-    }
+      alignSelf: 'center',
+    },
   },
   SnowboardSvg: {
     extend: 'Flex',
@@ -31,12 +31,12 @@ export const NewHeader = {
       props: {
         maxHeight: '100%',
         position: 'absolute',
-        left: '46%',    
+        left: '46%',
         // transform: 'translatex(10%)'
-      }
+      },
     },
   },
-  DivFlexButtons:{
+  DivFlexButtons: {
     extend: 'Flex',
     props: {
       justifyContent: 'space-between',
@@ -49,10 +49,10 @@ export const NewHeader = {
         gap: '5px',
         ':hover': {
           '& input': {
-            display: 'flex', 
-            width: '1px', 
-            backgroundColor: '#E4E2E2'
-          }
+            display: 'flex',
+            width: '1px',
+            backgroundColor: '#E4E2E2',
+          },
         },
       },
       SearchButton: {
@@ -66,34 +66,31 @@ export const NewHeader = {
           cursor: 'pointer',
         },
         Img: {
-          src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi1cdb0162/cf1a1d28-df0d-4cd0-89a6-38a6171f3007-534866b3-4e0f-45ef-a802-219924fcca5c-b9e4e4c4-2309-4b14-903d-fc4b8c836caa.png',
+          src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi65e55c45/787d10da-8b01-4d27-ad6e-c9db8f5df28f-7a610c2d-2707-460d-8bbe-3948ca8cf389-be0fd83d-7d8e-4284-aae3-c2495d0cb97e.svg',
         },
-        on:{
-          mouseover:(ev) => {
-            const search = document.querySelector('.input-search_hidden')
-            search.style.display = 'flex'
-            search.style.width = '200px'
-            search.style.backgroundColor = '#E4E2E2'
-            search.style.border = '1px solid black'
-            
-            
+        on: {
+          mouseover: (ev) => {
+            const search = document.querySelector('.input-search_hidden');
+            search.style.display = 'flex';
+            search.style.width = '200px';
+            search.style.backgroundColor = '#E4E2E2';
+            search.style.border = '1px solid black';
           },
           click: (e) => {
-            const search = document.querySelector('.input-search_hidden')
-            
-            if(search.value) {
-              console.log(search.value)
+            const search = document.querySelector('.input-search_hidden');
+
+            if (search.value) {
+              console.log(search.value);
             } else {
-              e.preventDefault()
+              e.preventDefault();
             }
-          }
+          },
         },
       },
       Input: {
         attr: {
           placeholder: 'Search...',
-          // type: 'hidden',
-          class: 'input-search_hidden'
+          class: 'input-search_hidden',
         },
         props: {
           height: '5px',
@@ -102,7 +99,6 @@ export const NewHeader = {
 
           outline: 'none',
           borderRadius: '5px',
-          // width: '0',
           backgroundColor: '#E4E2E2',
 
           border: 'none',
@@ -110,36 +106,39 @@ export const NewHeader = {
           transition: 'all 0.7s ease',
         },
         on: {
-          keydown:(ev) => {
-            const search = document.querySelector('.input-search_hidden')
-            if(ev.key === 'Enter') {
-              console.log(search.value)
+          keydown: (ev) => {
+            const search = document.querySelector('.input-search_hidden');
+            if (ev.key === 'Enter') {
+              console.log(search.value);
             }
-          }
-        }
+          },
+        },
       },
     },
     UserButton: {
-      tag: 'button',
+      tag: 'a',
+      attr: {
+        href: '/account'
+      },
       props: {
         border: 'none',
         backgroundColor: 'transparent',
         cursor: 'pointer',
       },
       Img: {
-        src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fif6ace512/62096263-8481-49e3-8ae0-571d3e81b277-4052fc36-93d8-4886-aa22-f601541b5479-03daedeb-4895-4f3d-8b7f-1f036f994d70.png',
+        src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi2ebf1055/b0d2c691-460f-4adf-8b2e-0e626d545db1-58412f45-a750-4c43-98e2-f7406ff4b568-527bad1c-45eb-4d5c-b3c5-7b6cfcb674be.svg',
       },
     },
     CartButton: {
-      tag: 'button',
+      tag: 'a',
       props: {
         border: 'none',
         backgroundColor: 'transparent',
         cursor: 'pointer',
       },
       Img: {
-        src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi2ef0b719/d0174c26-9efa-4300-9434-936317502425-defbf31c-3924-46ba-9d3f-322e0e87256b-d26a7ac4-a25f-40b7-80f7-66779d6fabe7.png',
+        src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi84c2dad5/d42a458a-4d2f-4575-975d-865814329e98-c6165623-9ed5-4cf5-a979-1233da52198d-2f260202-7fc0-4022-90ee-0634b9e5e221.svg',
       },
     },
   },
-}
+};

@@ -4,46 +4,45 @@ export const Product = {
     'Flex',
   ],
   props: (el, s) => ({
-        // heightRange: 'H',
-        scrollToTop: true,
-        routerOptions: {
-          scrollToTop: true,
-        },
-        position: 'relative',
-        padding: 'A A 0',
-        aspectRatio: '450 / 600',
-        flow: 'y',
-        fontWeight: '400',
-        href: s.href || '/item/' + s.key,
-        target: s.href && '_blank',
-        transition: 'defaultBezier, all, B',
-        '@light': {
-          background: 'rgb(41, 41, 41);',
-          ':hover': {
-            background: 'rgb(117, 116, 116)',
-          },
-        },
-        '@dark': {
-          background: '#181818',
-          ':hover': {
-            background: '#080808',
-          },
-        },
-        ':hover': {
-          '& img': {
-            transform: 'translate3d(-50%, -70%, 1px)',
-          },
-          '& button': {
-            transform: 'translate3d(0, 0, 1px)',
-            opacity: 1,
-          },
-          '& > p': {
-            margin: 'A 0 A2',
-            transform: 'translate3d(0, 0, 1px)',
-            opacity: 1,
-          }
-        }
-        
+    // heightRange: 'H',
+    scrollToTop: true,
+    routerOptions: {
+      scrollToTop: true,
+    },
+    position: 'relative',
+    padding: 'A A 0',
+    aspectRatio: '450 / 600',
+    flow: 'y',
+    fontWeight: '400',
+    href: s.href || '/item/' + s.key,
+    target: s.href && '_blank',
+    transition: 'defaultBezier, all, B',
+    '@light': {
+      background: 'rgb(41, 41, 41);',
+      ':hover': {
+        background: 'rgb(117, 116, 116)',
+      },
+    },
+    '@dark': {
+      background: '#181818',
+      ':hover': {
+        background: '#080808',
+      },
+    },
+    ':hover': {
+      '& img': {
+        transform: 'translate3d(-50%, -70%, 1px)',
+      },
+      '& button': {
+        transform: 'translate3d(0, 0, 1px)',
+        opacity: 1,
+      },
+      '& > p': {
+        margin: 'A 0 A2',
+        transform: 'translate3d(0, 0, 1px)',
+        opacity: 1,
+      }
+    }
   }),
   Img: {
     state: 'posters/0',

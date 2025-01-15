@@ -1,5 +1,10 @@
 export const MarkingText = {
   extend: 'Flex',
+  props: {
+    backgroundColor: 'red',
+    width: '100dvw',
+    height: '64px',
+  },
 
   MarkingInner: {
     attr: {
@@ -8,48 +13,45 @@ export const MarkingText = {
     props: {
       display: 'flex',
       flow: 'row', 
-      width: '100vw',
-      height: '50px', 
-      gap: '15px',
-      overflow: 'hidden',
+      flow: 'row nowrap',
+      width: '100%',
+      // gap: '15px',
       backgroundColor: '#CAC7C7',
-      overflow: 'hidden', 
-      position: 'relative', 
     },
     
-    P: [
-      {
-        text: 'Shipping within 3-4 days |'
-      },
-      {
-        text:'Free delivery over 100GEL |'
-      },
-    ]
+    // P: [
+    //   {
+    //     text: 'Shipping within 3-4 days |'
+    //   },
+    //   {
+    //     text:'Free delivery over 100GEL |'
+    //   },
+    // ]
   }
 };
 
-window.addEventListener('DOMContentLoaded', () => {
-  const pDuplication = () => {
-    const container = document.getElementById('marquee_container')
-    if(!container) return new Error('Container not found')
+// window.addEventListener('DOMContentLoaded', () => {
+//   const pDuplication = () => {
+//     const container = document.getElementById('marquee_container')
+//     if(!container) return new Error('Container not found')
 
-    MarkingText.MarkingInner.P.forEach(item => {
-      for(let i = 0; i <= 2; i++ ) {
-        const paragraph = document.createElement('p')
-        paragraph.innerText = item.text
-        paragraph.style.fontSize = '14px'
-        container.appendChild(paragraph)
-        // MarkingText.appendChild(pe)
-      }
+//     MarkingText.MarkingInner.P.forEach(item => {
+//       for(let i = 0; i <= 2; i++ ) {
+//         const paragraph = document.createElement('p')
+//         paragraph.innerText = item.text
+//         paragraph.style.fontSize = '14px'
+//         container.appendChild(paragraph)
+//         // MarkingText.appendChild(pe)
+//       }
       
 
-    })
+//     })
     
-  }
-  pDuplication()
-  // pDuplication()
-  // pDuplication()
-})
+//   }
+//   pDuplication()
+//   // pDuplication()
+//   // pDuplication()
+// })
 
 
 

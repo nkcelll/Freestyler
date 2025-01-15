@@ -1,7 +1,8 @@
 export const main = {
   extend: 'Layout',
   props: {
-    flow: 'row wrap',
+    // flow: 'row wrap',
+    flow: 'wrap',
   },
   NewMenu: {
     // height: '700px',
@@ -10,6 +11,7 @@ export const main = {
     // height: 'calc(100dvh - 77px)'
   },
   Content: {
+    
     // extends: 'Flex',
     // backgroundColor: '#723E3E',
     // justifyContent: 'space-between',
