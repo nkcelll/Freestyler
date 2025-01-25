@@ -53,7 +53,7 @@ export const MainFilterBox = {
       flow: 'y',
     },
     SortBy: {},
-    GenterFilter: {},
+    GenderFilter: {},
   },
 };
 

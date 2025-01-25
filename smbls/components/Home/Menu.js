@@ -1,11 +1,15 @@
 export const Menu = {
   props: {
-      display: 'flex',
+      display: 'none',
       flexFlow: 'column',
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: '#E4E2E2',
-      height: '1003px'
+      height: 'auto',
+      '@tabletM': {
+        display: 'flex',
+        backgroundColor: 'red'
+      },
   },
   NewBurgerMenu:{
     props: {

@@ -1,29 +1,32 @@
 export const MainHeader = {
   props: {
-    position: 'relative',
     display: 'flex',
     flexFlow: 'row',
-    // align: 'center space-between',
     justifyContent: 'space-between',
-    backgroundColor: 'rgb(228, 226, 226)',
-    padding: '1px 15px',
-    width: '100dvw',
+    backgroundColor: '#E4E2E2',
+    padding: '0 20px',
+    width: '100%',
     height: '77px',
     gap: 'G 0',
     inset: '0',
     position: 'relative',
   },
   Logo: {
+    attr: {
+      href: '/'
+    },
     props: {
       alignSelf: 'center',
-      textAlign: 'center',
     },
   },
-  Nav: {},
+  Nav: {
+    
+  },
   DivFlexButtons: {
     extend: 'Flex',
     props: {
       justifyContent: 'space-between',
+      alignItems: 'center',
       padding: '0 A',
       gap: '20px',
     },

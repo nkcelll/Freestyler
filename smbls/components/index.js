@@ -25,6 +25,8 @@ export * from "./Assets/Logo";
 export * from './Assets/Icons/IconFilter'
 export * from './Assets/Icons/IconClose'
 export * from './Assets/Icons/IconArrowDown'
+export * from './Assets/Icons/IconArrowLeft'
+export * from './Assets/Icons/IconArrowRight'
 
 /////////////////////////////////// Filter Section///////////////////////////
 export* from './Filter Components/SortBy'
@@ -40,3 +42,13 @@ export * from "./TestComponent";
 
 /////////////////////////////////////////////////// REGISTER /////////////////////////////////////
 export * from './Registration/RegisterForm'
+
+/////////////////////////////////////////////////////////// Per Products ////////////////////////////////
+export * from './PerProduct/PerProduct'
+export * from './PerProduct/PerProductDetails'
+export * from './PerProduct/PerProductLayout'
+export * from './PerProduct/DropdownMenus/Detail'
+export * from './PerProduct/DropdownMenus/TechSpecs'
+export * from './PerProduct/DropdownMenus/Features'
+export * from './PerProduct/Recomendations'
+export * from './PerProduct/RecomendationProdList'

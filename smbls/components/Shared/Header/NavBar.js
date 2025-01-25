@@ -2,9 +2,16 @@ export const Nav = {
   extend: 'Flex',
   props: {
     gap: '25px',
+
     flex: '1',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    //////////////////////// RESPONSIVE
+    '@tabletS': {
+      display: 'none'
+    },
+    ////////////////////////
   },
+  
   MenMenu: {
     tag: 'ul',
     attr: {

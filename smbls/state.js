@@ -8,9 +8,9 @@ export default {
       0: {
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi91110fb5/b9df5ad7-381a-4fcf-92d0-7083670c4964-a5f174e8-6976-4d4b-8097-39484df6ab96-ef612887-2a4d-4c18-b841-35b7bd17939f.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi91110fb5/b9df5ad7-381a-4fcf-92d0-7083670c4964-a5f174e8-6976-4d4b-8097-39484df6ab96-ef612887-2a4d-4c18-b841-35b7bd17939f.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi91110fb5/b9df5ad7-381a-4fcf-92d0-7083670c4964-a5f174e8-6976-4d4b-8097-39484df6ab96-ef612887-2a4d-4c18-b841-35b7bd17939f.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi2d96b5f3/bf75a8b1-2c1e-4ad7-a7b5-4ada44a23ab9-92e01583-ac4f-463f-9671-86024b2ae4b1-4440e00c-67df-4234-ba09-6170a9af0abb.png',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi2d96b5f3/bf75a8b1-2c1e-4ad7-a7b5-4ada44a23ab9-92e01583-ac4f-463f-9671-86024b2ae4b1-4440e00c-67df-4234-ba09-6170a9af0abb.png',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi2d96b5f3/bf75a8b1-2c1e-4ad7-a7b5-4ada44a23ab9-92e01583-ac4f-463f-9671-86024b2ae4b1-4440e00c-67df-4234-ba09-6170a9af0abb.png',
           },
         ],
         key: 'new-project-0',

@@ -1,25 +1,29 @@
-export const ProductsContent = {
-  extend: ['Flex', 'Link'],
+export const RecomendationProdList = {
+  extend: [
+    'Link',
+    'Flex'
+  ],
   props: () => ({
-    height: '480px',
-    width: 'auto',
+    height: '100%',
+    width: '80%',
+    gap: '15px',
     align: 'center',
-    justifyContent: 'space-between',
-    border: '0 solid black',
-    borderRight: '1px solid grey',
-    borderBottom: '1px solid grey',
     flow: 'y',
-    href: '/product'
+    justifyContent: 'space-between',
+    // backgroundColor: 'red'
+    // flow: 'y',
+    // href: '/product'
   }),
   Img: {
     state: 'posters/0',
     props: {
       src: '{{ src }}',
-      width: '100px',
-      height: 'auto',
+      width: '300px',
+      height: '300px',
+      objectFit: 'cover'
     },
   },
-  titleBody: {
+  lebod: {
     extend: ['Link', 'Flex'],
     props: {
       flow: 'y',
@@ -28,7 +32,6 @@ export const ProductsContent = {
       // padding: 'A A 0 A',
       padding: '0 0 0 28px',
       justifyContent: 'space-evenly',
-      borderTop: '1px solid grey',
     },
     H: {
       text: '{{ title }}',  
@@ -43,4 +46,3 @@ export const ProductsContent = {
     },
   },
 }
-

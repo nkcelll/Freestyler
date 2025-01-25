@@ -1,4 +1,4 @@
-export const GenterFilter = {
+export const GenderFilter = {
   extend: 'Flex',
   props: {
     width: '100%',

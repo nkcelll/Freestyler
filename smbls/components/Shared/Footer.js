@@ -1,9 +1,11 @@
 export const Footer = {
   extend: 'Flex',
   props: {
-    width: '100dvw',
+    width: '100%',
+    // width: '100dvw',
     flow: 'y',
     gap: '5px',
+    padding: '0 20px',
   },
   Section: {
     extend: 'Flex',
@@ -13,6 +15,7 @@ export const Footer = {
       boxSizing: 'border-box',
       justifyContent: 'space-between',
       // justifyContent: 'space-evenly',
+      // padding: '0 20px',
       flow: 'x',
     },
     Freestyler: {
@@ -22,7 +25,7 @@ export const Footer = {
         height: '100%',
         flow: 'y',
         gap: '20px',
-        padding: '20px 0 0 42px',
+        padding: '20px 0 0 0',
         // padding: '20px 42px 0 42px',
       },
 
@@ -267,7 +270,8 @@ export const Footer = {
         width: '400px',
         flow: 'y',
         gap: '30px',
-        padding: '20px 42px 0 0',
+        // padding: '20px 42px 0 0',
+        padding: '20px 0 0 0',
       },
       H: {
         text: 'Add adventure to your inbox',

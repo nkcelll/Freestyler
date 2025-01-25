@@ -4,10 +4,17 @@ export const Layout = {
     overflow: 'hidden auto',
   },
   HomeListSidebar: {
-    // Sidebar styles (unchanged)
   },
-  HomeHeader: {
-    // Header styles (unchanged)
+  MainHeader: {
+    '@tabletM': {
+    
+    },
+    '@tabletS': {
+    },
+    '@mobileL': {
+      
+    
+    },
   },
   Menu: {
     width: '120px',
@@ -24,20 +31,90 @@ export const Layout = {
     },
     flex: 1,
     row: 'row',
-    whiteSpace: 'nowrap',
+    width: '100%',
+    height: 'calc(100vh - 77px)',
     order: '2',
-    width: '100px',
     overflowX: 'auto',
+    overflow: 'hidden',
     scrollSnapType: 'x mandatory',
     overflowY: 'hidden',
     gap: '30px',
     backgroundColor: '#E4E2E2',
-    padding: '0 A 0 0',
+    // padding: '0 A 0 0',
+    padding: '0 20px',
+
     childExtends: 'HomeImageProducts',
     childrenAs: 'state',
     children: (el, s) => Object.values(s.products.data),
   },
+  //   flex: 1,
+  //   row: 'row',
+  //   whiteSpace: 'nowrap',
+  //   order: '2',
+  //   width: '100px',
+  //   overflowX: 'auto',
+  //   overflow: 'hidden',
+  //   scrollSnapType: 'x mandatory',
+  //   overflowY: 'hidden',
+  //   gap: '30px',
+  //   backgroundColor: '#E4E2E2',
+  //   padding: '0 A 0 0',
+  //   childExtends: 'HomeImageProducts',
+  //   childrenAs: 'state',
+  //   children: (el, s) => Object.values(s.products.data),
+  // },
 };
+
+
+//   Content: {
+//     extends: 'Flex',
+
+//     attr: {
+//       id: 'content-wheel',
+//     },
+//     flex: 1,
+//     row: 'row',
+//     // width: '100%',
+    
+//     // height: 'calc(100vh - 77px)',
+//     order: '2',
+//     overflowX: 'auto',
+//     overflow: 'hidden',
+//     scrollSnapType: 'x mandatory',
+//     overflowY: 'hidden',
+//     gap: '30px',
+//     backgroundColor: '#E4E2E2',
+//     // padding: '0 A 0 0',
+//     padding: '0 20px',
+
+//     childExtends: 'HomeImageProducts',
+//     childrenAs: 'state',
+//     children: (el, s) => Object.values(s.products.data),
+//   },
+//   //   flex: 1,
+//   //   row: 'row',
+//   //   whiteSpace: 'nowrap',
+//   //   order: '2',
+//   //   width: '100px',
+//   //   overflowX: 'auto',
+//   //   overflow: 'hidden',
+//   //   scrollSnapType: 'x mandatory',
+//   //   overflowY: 'hidden',
+//   //   gap: '30px',
+//   //   backgroundColor: '#E4E2E2',
+//   //   padding: '0 A 0 0',
+//   //   childExtends: 'HomeImageProducts',
+//   //   childrenAs: 'state',
+//   //   children: (el, s) => Object.values(s.products.data),
+//   // },
+// };
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const contentWheel = document.getElementById('content-wheel');
   if (contentWheel) {
@@ -47,25 +124,49 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-let isScrolling = false;
+
 
 function handleWheel(e) {
   const scroll = document.getElementById('content-wheel');
   if (!scroll) return;
 
   e.preventDefault();
-
-  if (!isScrolling) {
-    isScrolling = true;
-    requestAnimationFrame(() => {
-      scroll.scrollBy({
-        left: e.deltaY * 2, // Adjust scroll speed as needed
-        behavior: 'smooth',
-      });
-      isScrolling = false;
-    });
-  }
+  scroll.scrollBy({
+    left: e.deltaY * 2, // Adjust scroll speed as needed
+    behavior: 'smooth',
+  });
 }
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const contentWheel = document.getElementById('content-wheel');
+//   if (contentWheel) {
+//     contentWheel.addEventListener('wheel', handleWheel, { passive: false });
+//   } else {
+//     console.error('#content-wheel element not found.');
+//   }
+// });
+
+// let isScrolling = false;
+
+// function handleWheel(e) {
+//   const scroll = document.getElementById('content-wheel');
+//   if (!scroll) return;
+
+//   e.preventDefault();
+
+//   if (!isScrolling) {
+//     isScrolling = true;
+//     requestAnimationFrame(() => {
+//       scroll.scrollBy({
+//         left: e.deltaY * 2, // Adjust scroll speed as needed
+//         behavior: 'smooth',
+//       });
+//       isScrolling = false;
+//     });
+//   }
+// }
 
 
 
