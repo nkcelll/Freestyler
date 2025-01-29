@@ -17,11 +17,16 @@ export const Layout = {
     },
   },
   Menu: {
-    width: '120px',
+    // width: '120px',
+    display: 'none !important',
+    width: '60px',
     height: 'calc(100dvh - 77px)',
     // borderRight: '1px solid #A38A8A',
     top: '0',
     order: '1',
+    '@tabletS': {
+        display: 'flex !important',
+      },
   },
   Content: {
     extends: 'Flex',
@@ -46,6 +51,10 @@ export const Layout = {
     childExtends: 'HomeImageProducts',
     childrenAs: 'state',
     children: (el, s) => Object.values(s.products.data),
+
+    '@tabletS': {
+      padding: '0 0 0 0',
+      },
   },
   //   flex: 1,
   //   row: 'row',

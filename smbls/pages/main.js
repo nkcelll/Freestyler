@@ -7,7 +7,6 @@ export const main = {
   NewMenu: {
     // height: '700px',
     // width: '133px',
-
     // height: 'calc(100dvh - 77px)'
   },
   Content: {

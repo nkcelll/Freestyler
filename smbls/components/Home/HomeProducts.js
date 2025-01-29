@@ -23,7 +23,7 @@ export const HomeImageProducts = {
       height: '93%', 
       flex: '0 0 auto', 
       src: '{{ src }}',
-      borderRadius: '3px',
+      borderRadius: '3px 3px 0 0',
       filter: 'saturate(0)',
       transform: 'scale(1)',
       transition: 'transform 0.6s ease, filter 0.6s ease',
