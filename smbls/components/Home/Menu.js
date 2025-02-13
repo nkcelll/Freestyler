@@ -21,19 +21,24 @@ export const Menu = {
       backgroundColor: 'transparent',
       cursor: 'pointer',
       align: 'center',
+      outline: 'none'
     },
-  },
-  on: {
-    click: (e) => {
-      const openMenu = document.getElementById('menu-button')
-      const open = document.getElementById('side-menu')
-      const close = document.getElementById('close-menu-button')
-      
-      if(openMenu) {
-        open.style.visibility = 'visible'
+    on: {
+      click: (e) => {
+        const openSideMenu = document.getElementById('side-menu');
+        const openOverlay = document.querySelector('.overlay');
+    
+        if (e.currentTarget) {
+          // openSideMenu.style.visibility = 'visible';
+          openSideMenu.style.opacity = '1';
+          openSideMenu.style.transform = 'translateX(0)';
+          openSideMenu.style.pointerEvents = 'auto';
+
+          openOverlay.style.visibility = 'visible';
+          openOverlay.style.opacity = '0.9';
+          openOverlay.style.pointerEvents = 'auto';
+        }
       }
-      
     }
-  }
-  
+  },
 };

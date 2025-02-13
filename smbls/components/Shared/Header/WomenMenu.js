@@ -59,7 +59,7 @@ export const WomenMenu = {
         justifyContent: 'space-evenly',
         width: '100%',
         height: '500px',
-        backgroundColor: '#ADA5A5',
+        backgroundColor: 'rgb(214, 214, 214)',
         position: 'absolute',
         inset: '0',
         top: '77px',
@@ -73,7 +73,7 @@ export const WomenMenu = {
         props: {
           justifyContent: 'center',
           gap: '200px',
-          borderTop: '1px solid #632E2E',
+          // borderTop: '1px solid #632E2E',
           margin: '70px 0 0 0',
           width: '85%',
         },
@@ -82,7 +82,7 @@ export const WomenMenu = {
           tag: 'ul',
           props: {
             flow: 'y',
-            borderRight: '1px solid #632E2E',
+            borderRight: '1px solid black',
             height: '350px',
             padding: 'B1 0 0 0',
           },
@@ -90,7 +90,7 @@ export const WomenMenu = {
             text: 'SNOWBOARDS',
             props: {
               margin: '0',
-              fontSize: '20px',
+              fontSize: '16px',
               textAlign: 'end',
               padding: '0 A 0 0',
               fontWeight: '200',
@@ -155,6 +155,7 @@ export const WomenMenu = {
                       fontWeight: '400',
                       letterSpacing: '1.3px',
                       lineHeight: '25px',
+                      fontSize: '14px'
                     },
                   },
                 ],
@@ -166,7 +167,7 @@ export const WomenMenu = {
           tag: 'ul',
           props: {
             flow: 'y',
-            borderRight: '1px solid #632E2E',
+            borderRight: '1px solid black',
             height: '350px',
             padding: 'B1 0 0 0',
           },
@@ -174,7 +175,7 @@ export const WomenMenu = {
             text: 'CLOTHES',
             props: {
               margin: '0',
-              fontSize: '20px',
+              fontSize: '16px',
               textAlign: 'end',
               padding: '0 A 0 0',
               fontWeight: '200',
@@ -235,6 +236,7 @@ export const WomenMenu = {
                       fontWeight: '400',
                       letterSpacing: '1.3px',
                       lineHeight: '25px',
+                      fontSize: '14px'
                     },
                   },
                 ],
@@ -246,16 +248,16 @@ export const WomenMenu = {
           tag: 'ul',
           props: {
             flow: 'y',
-            borderRight: '1px solid #632E2E',
+            borderRight: '1px solid black',
             height: '350px',
             padding: 'B1 0 0 0',
             width: 'auto',
           },
           a: {
-            text: `MEN's ACCESSORIES`,
+            text: `WOMEN's ACCESSORIES`,
             props: {
               margin: '0',
-              fontSize: '20px',
+              fontSize: '16px',
               textAlign: 'end',
               padding: '0 A 0 0',
               fontWeight: '200',
@@ -340,6 +342,7 @@ export const WomenMenu = {
                       fontWeight: '400',
                       letterSpacing: '1.3px',
                       lineHeight: '25px',
+                      fontSize: '14px'
                     },
                   },
                 ],

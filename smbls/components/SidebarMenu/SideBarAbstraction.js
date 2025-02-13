@@ -84,7 +84,7 @@ const category = ({ topCat, id, url, subCategories, prefix }) => ({
     P: {
       text: topCat,
       props: {
-        fontWeight: '600',
+        fontWeight: '400',
       },
     },
     IconArrowDown: {
@@ -94,8 +94,6 @@ const category = ({ topCat, id, url, subCategories, prefix }) => ({
   on: {
     click: (e) => {
       const subList = document.getElementById(`${prefix}-${id}`);
-      console.log(subList);
-
       const SubCategoryListWrap = subList.querySelector(
         `.${prefix}-sub-category-dropdown`
       );
@@ -140,7 +138,7 @@ const subCategoriesComponent = ({ subCat, url }) => ({
   P: {
     text: subCat,
     props: {
-      fontWeight: '400',
+      fontWeight: '200',
     },
   },
   attr: {

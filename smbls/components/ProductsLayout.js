@@ -1,3 +1,4 @@
+import LocomotiveScroll from "locomotive-scroll"
 export const ProductsLayout = {
   extend: 'Flex',
   // Overlay: {
@@ -5,6 +6,9 @@ export const ProductsLayout = {
   //   height: '100dvh',
   //   backgroundColor: 'red'
   // },
+  attr: {
+    'data-scroll-container': ''
+  },
   
   MainHeader:{
     extend: 'Flex',
@@ -20,6 +24,9 @@ export const ProductsLayout = {
   FilterSection: {
   },
   GridContent: {
+    attr: {
+      id: 'product-page-scroll'
+    },
     extends: 'Grid',
     width: '100dvw',
     columns: 'repeat(4, 1fr)',
@@ -46,4 +53,6 @@ export const ProductsLayout = {
   },
   Footer: {
   }
-}  
+} 
+
+

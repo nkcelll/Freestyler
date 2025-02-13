@@ -6,6 +6,9 @@ export const Nav = {
     flex: '1',
     justifyContent: 'center',
     //////////////////////// RESPONSIVE
+    '@tabletM': {
+
+    },
     '@tabletS': {
       display: 'none'
     },
@@ -14,9 +17,7 @@ export const Nav = {
   
   MenMenu: {
     tag: 'ul',
-    attr: {
-      id: '1'
-    },
+    
     props: {
       listStyleType: 'none',
       padding: '0',
@@ -26,9 +27,7 @@ export const Nav = {
   },
   WomenMenu: {
     tag: 'ul',
-    attr: {
-      id: '1'
-    },
+    
     props: {
       listStyleType: 'none',
       padding: '0',
@@ -37,9 +36,7 @@ export const Nav = {
   },
   AccessoriesMenu: {
     tag: 'ul',
-    attr: {
-      id: '1'
-    },
+    
     props: {
       listStyleType: 'none',
       padding: '0',
@@ -48,9 +45,7 @@ export const Nav = {
   },
   SaleMenu: {
     tag: 'ul',
-    attr: {
-      id: '1'
-    },
+    
     props: {
       listStyleType: 'none',
       padding: '0',

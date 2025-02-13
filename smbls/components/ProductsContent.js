@@ -29,6 +29,7 @@ export const ProductsContent = {
       padding: '0 0 0 28px',
       justifyContent: 'space-evenly',
       borderTop: '1px solid grey',
+      borderBottom: '1px solid grey',
     },
     H: {
       text: '{{ title }}',  
@@ -43,4 +44,6 @@ export const ProductsContent = {
     },
   },
 }
+
+
 

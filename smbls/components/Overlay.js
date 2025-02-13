@@ -3,5 +3,5 @@ export const Overlay = {
     height: '100dvh',
     backgroundColor: 'red',
     position: 'absolute',
-    inset: '0'
+    inset: '0',
 }

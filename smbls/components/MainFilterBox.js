@@ -45,6 +45,12 @@ export const MainFilterBox = {
         cursor: 'pointer',
       },
       IconClose: {},
+      on: {
+        click: () => {
+          const closeSide = document.getElementById('main-filter_sidebar')
+          closeSide.style.visibility = 'hidden'
+        }
+      }
     },
   },
   FilterWrap: {

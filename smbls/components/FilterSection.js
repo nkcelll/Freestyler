@@ -34,19 +34,14 @@ export const FilterSection = {
       text: 'Filter & Sort',
       margin: '0',
     },
+    on: {
+      click: () => {
+        const sortSide = document.getElementById('main-filter_sidebar')
+        sortSide.style.visibility = 'visible'
+      }
+    }
     
   },
-    // on: {
-  //   click: () => {
-  //     const closeFilterList = document.getElementById('close-filter_list')
-  //     const filterVisible = document.getElementById('main-filter_sidebar')
-  //     console.log(closeFilterList);
-  //     if(closeFilterList) {
-  //       filterVisible.style.visibility = 'hidden'
-  //     }
-  //   }
-  // },
-  
   MainFilterBox: {}
   // MainFilterBox: {
   //   extend: 'Flex',
