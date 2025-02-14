@@ -40,16 +40,18 @@ export const SideMenuBox = {
     },
     props: {
       width: '320px',
-      height: 'auto',
+      height: '100dvh',
       flow: 'y',
       justifyContent: 'space-between',
-      backgroundColor: '#E4E2E2',
+      backgroundColor: '#fff',
+      // backgroundColor: '#E4E2E2',
       position: 'absolute',
       zIndex: '150',
       inset: 0,
       top: '-77px',
-      gap: '30px',
-      overflow: 'scroll',
+      whiteSpace: 'none',
+      // gap: '30px',
+      overflow: 'hidden',
       opacity: '0',
       transition: 'opacity 0.5s ease, transform 0.5s ease',
       transform: 'translateX(-100%)',
@@ -58,7 +60,10 @@ export const SideMenuBox = {
       extend: 'Flex',
       props: {
         gap: '30px',
+        flexGrow: '1',
         flow: 'y',
+        overflowY: 'auto'
+        // overflow: 'scroll'
       },
       CloseListButton: {
         extend: 'Flex',
@@ -123,20 +128,25 @@ export const SideMenuBox = {
     },
     SocialsLink: {
       extend: 'Flex',
+      // style: {
+      //   marginTop: 'auto'
+      // },
       props: {
         flow: 'x',
-        height: 'auto',
+        height: '100px',
         justifyItems: 'center',
+        align: 'center',
+        // padding: '20px 0',
         textAlign: 'center',
-        margin: '0 0 50px 0',
-        // backgroundColor: 'red'
+        marginTop: 'auto',
+        flexShrink: '0',
       },
-
       childExtend: {
         extend: ['Link', 'Flex'],
         props: {
           gap: '20px',
           padding: '0 0 0 15px',
+          margin: 'auto',
         },
       },
       $socialCollection: () => [

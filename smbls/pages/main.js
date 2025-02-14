@@ -5,10 +5,19 @@ export const main = {
     flow: 'wrap',
   },
   NewMenu: {
-    // height: '700px',
-    // width: '133px',
-    // height: 'calc(100dvh - 77px)'
+  
   },
+  // Menu: {
+  //   display: 'none !important',
+  //   width: '60px',
+  //   flex: 3,
+  //   height: 'calc(100vh - 77px)',
+  //   top: '0',
+  //   order: '1',
+  //   '@tabletS': {
+  //     display: 'flex !important',
+  //   },
+  // },
   Content: {
     
     // extends: 'Flex',

@@ -1,4 +1,4 @@
-
+import { ScrollbarStyles } from "../components";
 export const product = {
   extend: 'PerProductLayout',
 
@@ -17,3 +17,5 @@ export const product = {
 
   // }
 }
+
+document.head.appendChild(document.createElement('style')).textContent = ScrollbarStyles.textContent;

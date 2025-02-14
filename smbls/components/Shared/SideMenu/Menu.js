@@ -2,6 +2,7 @@ export const Menu = {
   attr: {
     id: 'all-menu-button'
   },
+  
   props: {
     display: 'none',
     flexFlow: 'column',

@@ -33,10 +33,22 @@ export default {
   GRADIENT: {
   },
   THEME: {
+    // document: {
+    //   '@light': {
+    //     color: 'white',
+    //     background: 'transparent',
+    //   '-webkit-tap-highlight-color': 'transparent'
+    //   },
+    //   '@dark': {
+    //     color: '#f3f3f3',
+    //     background: 'black',
+    //   },
+    // },
     document: {
       '@light': {
         color: 'black',
         background: '#BAB8B8',
+      '-webkit-tap-highlight-color': 'transparent'
       },
       '@dark': {
         color: '#f3f3f3',
@@ -49,7 +61,7 @@ export default {
     },
     transparent: {
       color: 'currentColor',
-      background: 'transparent',
+      background: 'transparent',      
     },
     primary: {
       '@dark': {

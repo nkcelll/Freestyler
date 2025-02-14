@@ -1,3 +1,4 @@
+import { ScrollbarStyles } from "../components";
 export const products = {
   
   extend: 'ProductsLayout',
@@ -5,21 +6,23 @@ export const products = {
     flow: 'row wrap',
   },
   
-  MainHeader: {
-  },
-  MarkingText: {
-  },
-  GifTop: {
-  },
-  FilterSection: {
-  },
-  GridContent:{
-  },
-  GifBottom: {
-  },
-  Pagination: {
-  },
-  Footer: {
-  }
+  // MainHeader: {
+  // },
+  // MarkingText: {
+  // },
+  // GifTop: {
+  // },
+  // FilterSection: {
+  // },
+  // GridContent:{
+  // },
+  // GifBottom: {
+  // },
+  // Pagination: {
+  // },
+  // Footer: {
+  // }
+  
 }
+document.head.appendChild(document.createElement('style')).textContent = ScrollbarStyles.textContent;
 

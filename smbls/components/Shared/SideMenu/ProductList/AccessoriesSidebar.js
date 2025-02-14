@@ -1,4 +1,4 @@
-import { SideBarAbstaction } from "./SideBarAbstraction";
+import { SideBarAbstaction } from "../SideBarAbstraction";
 
 export const AccessoriesSidebar = {
   Accessories: SideBarAbstaction ({

@@ -6,6 +6,12 @@ export const Logo = {
     Img: {
       src: 'logo.png',
       props: {
+        '@tabletS': {
+          width: '80px'
+        },
+        '@mobileL': {
+          width: '70px'
+        },
     }, 
     attr: {
       src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fibc5687cc/6b21cead-3973-4afd-b6a7-de77ded230a2-32958694-6bd4-4b2e-93de-005057238fae-4a9309f3-dd53-4ea0-809c-9b9c638dfd0f.svg'

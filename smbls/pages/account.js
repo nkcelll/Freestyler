@@ -1,4 +1,4 @@
-
+import { ScrollbarStyles } from "../components";
 export const account = {
   MainHeader: {
 
@@ -12,3 +12,4 @@ export const account = {
   
 }
 
+document.head.appendChild(document.createElement('style')).textContent = ScrollbarStyles.textContent;

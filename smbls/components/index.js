@@ -1,24 +1,24 @@
 export * from "./Home/Layout";
-export * from "./Home/Header";
-export * from "./Home/Menu";
+export * from "./Shared/Header/Header";
+export * from "./Shared/SideMenu/Menu";
 export * from "./Home/HomeProducts";
 export * from "./Home/ProductRow";
-export * from "./Home/BurgerMenu";
-export * from "./Home/HomeListSidebar";
+export * from "./Shared/SideMenu/BurgerMenu";
 ///////////////////////////////////
-export * from './Shared/Header/MainHeader'
 export * from './Shared/Header/NavBar'
 export * from "./Shared/Header/MenMenu"; ///////////// testing 
 export * from "./Shared/Header/WomenMenu"; /////////// testing
 export * from "./Shared/Header/AccessoriesMenu";
 export * from "./Shared/Header/SaleMenu";
-export * from './MarkingText'
-export * from './ProductsContent'
-export * from './FilterSection'
-export * from "./ProductsLayout";
-export * from './GifTop'
-export * from './GifBottom'
-export * from './Pagination'
+export * from './MainProducts/MarkingText'
+export * from './MainProducts/ProductsContent'
+export * from './MainProducts/Filter Components/FilterSection'
+export * from "./MainProducts/ProductsLayout";
+export * from './MainProducts/GifTop'
+export * from './MainProducts/GifBottom'
+export * from './MainProducts/Pagination'
+export * from './MainProducts/Filter Components/FilterAbstract'
+export * from './MainProducts/Filter Components/FilterMenu'
 export * from './Shared/Footer'
 ///////////////////////////////////
 export * from "./Assets/Logo";
@@ -29,11 +29,13 @@ export * from './Assets/Icons/IconArrowLeft'
 export * from './Assets/Icons/IconArrowRight'
 export * from './Assets/Icons/IconArrowUp'
 export * from './Assets/Icons/IconSearch'
+export * from './Assets/Icons/IconChevLeft'
+export * from './Assets/Icons/IconChevRight'
 
 /////////////////////////////////// Filter Section///////////////////////////
-export* from './Filter Components/SortBy'
-export* from './Filter Components/GenderFilter'
-export * from './MainFilterBox'
+export* from './MainProducts/Filter Components/FilterList/SortBy'
+export* from './MainProducts/Filter Components/FilterList/GenderFilter'
+export * from './MainProducts/Filter Components/MainFilterBox'
 /////////////////////////////////// ///////////////////////////
 
 export * from './Overlay'
@@ -65,12 +67,12 @@ export * from './PerProduct/RecomendationProdList'
 
 
 //////////////////////////////////// Menu Sidebar /////////
-export * from './SidebarMenu/SideBarAbstraction'
-export * from './Home/SideMenuBox'
-export * from './SidebarMenu/SnowboarSidebar'
-export * from './SidebarMenu/MenSidebar'
-export * from './SidebarMenu/WomenSidebar'
-export * from './SidebarMenu/AccessoriesSidebar'
+export * from './Shared/SideMenu/SideBarAbstraction'
+export * from './Shared/SideMenu/SideMenuBox'
+export * from './Shared/SideMenu/ProductList/SnowboarSidebar'
+export * from './Shared/SideMenu/ProductList/MenSidebar'
+export * from './Shared/SideMenu/ProductList/WomenSidebar'
+export * from './Shared/SideMenu/ProductList/AccessoriesSidebar'
 
 
 

@@ -5,18 +5,16 @@ export const Layout = {
     width: '100vw',
     height: 'auto',
   },
-  HomeListSidebar: {},
+  // HomeListSidebar: {},
   MainHeader: {
     '@tabletM': {},
     '@tabletS': {},
     '@mobileL': {},
   },
   Menu: {
-    // width: '120px',
     display: 'none !important',
     width: '60px',
     height: 'calc(100vh - 77px)',
-    // borderRight: '1px solid #A38A8A',
     top: '0',
     order: '1',
     '@tabletS': {
@@ -52,13 +50,17 @@ export const Layout = {
   },
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+function initializeSmoothScroll() {
   const scrollContainer = document.getElementById('content-wheel');
+
+  if (!scrollContainer) {
+    setTimeout(initializeSmoothScroll, 100);  
+    return;
+  }
 
   let targetScrollLeft = scrollContainer.scrollLeft;
   let currentScrollLeft = scrollContainer.scrollLeft;
   let isAnimating = false;
-
   const easeFactor = 0.07;
 
   function smoothScroll() {
@@ -77,8 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function handleWheel(e) {
     e.preventDefault();
     targetScrollLeft += e.deltaY * 2;
-    const maxScrollLeft =
-    scrollContainer.scrollWidth - scrollContainer.clientWidth;
+    const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
     targetScrollLeft = Math.max(0, Math.min(targetScrollLeft, maxScrollLeft));
 
     if (!isAnimating) {
@@ -86,9 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
       requestAnimationFrame(smoothScroll);
     }
   }
-  if (scrollContainer) {
-    scrollContainer.addEventListener('wheel', handleWheel, { passive: false });
-  } else {
-    console.error('#content-wheel element not found.');
-  }
-});
+
+  scrollContainer.addEventListener('wheel', handleWheel, { passive: false });
+}
+document.addEventListener("DOMContentLoaded", initializeSmoothScroll);
+
