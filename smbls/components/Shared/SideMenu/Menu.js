@@ -12,6 +12,7 @@ export const Menu = {
     // width: '15px',
     height: 'auto',
     position:'relative',
+    zIndex: '15'
   },
   NewBurgerMenu: {
     attr: {
@@ -30,7 +31,6 @@ export const Menu = {
         const openOverlay = document.querySelector('.overlay');
     
         if (e.currentTarget) {
-          // openSideMenu.style.visibility = 'visible';
           openSideMenu.style.opacity = '1';
           openSideMenu.style.transform = 'translateX(0)';
           openSideMenu.style.pointerEvents = 'auto';
@@ -38,6 +38,8 @@ export const Menu = {
           openOverlay.style.visibility = 'visible';
           openOverlay.style.opacity = '0.9';
           openOverlay.style.pointerEvents = 'auto';
+
+          document.body.style.overflow = 'hidden'
         }
       }
     }

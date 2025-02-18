@@ -12,7 +12,6 @@ export const FilterMenu = {
     padding: '0',
     backgroundColor: 'transparent',
     position: 'relative',
-    cursor: 'pointer',
     padding: '12px 46px',
     outline: 'none',
   },
@@ -27,7 +26,7 @@ export const FilterMenu = {
   on: {
     click: (e) => {
       const openSideMenu = document.getElementById('side-filter');
-      const openOverlay = document.querySelector('.overlay');
+      const openOverlay = document.getElementById('main-filter-overlay');
 
       if (e.currentTarget) {
         // openSideMenu.style.visibility = 'visible';

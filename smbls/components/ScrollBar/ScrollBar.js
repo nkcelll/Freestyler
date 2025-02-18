@@ -2,7 +2,7 @@ export const ScrollbarStyles = {
   Tag: 'style',
   textContent: `
     ::-webkit-scrollbar {
-      width: 12px;
+      width: 8px;
     }
 
     ::-webkit-scrollbar-track {
@@ -39,13 +39,13 @@ export const ScrollbarStyles = {
     /* Responsive */
     @media (max-width: 1600px) {
       body::-webkit-scrollbar {
-        width: 12px;
+        width: 8px;
       }
     }  
 
     @media (max-width: 1024px) {
       body::-webkit-scrollbar {
-        width: 6px;
+        width: 2px;
       }
     }
 

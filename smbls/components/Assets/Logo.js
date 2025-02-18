@@ -10,7 +10,7 @@ export const Logo = {
           width: '80px'
         },
         '@mobileL': {
-          width: '70px'
+          width: '66px'
         },
     }, 
     attr: {

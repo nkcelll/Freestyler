@@ -38,8 +38,6 @@ export* from './MainProducts/Filter Components/FilterList/GenderFilter'
 export * from './MainProducts/Filter Components/MainFilterBox'
 /////////////////////////////////// ///////////////////////////
 
-export * from './Overlay'
-
 
 export * from "./Editorjs";
 export * from "./TestComponent";
@@ -84,4 +82,4 @@ export * from './Shared/SideMenu/ProductList/AccessoriesSidebar'
 
 ///////// Dependency
 
-export * from './ScrollBar/Scroll'
+export * from './ScrollBar/ScrollBar'

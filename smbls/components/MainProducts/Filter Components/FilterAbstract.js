@@ -7,9 +7,11 @@ export const FilterAbstract = ({
   extend: ['Flex'],
   props: {
     flow: 'y',
+    cursor: 'pointer'
   },
   attr: {
     id: mainID,
+    class: 'filter-box',
   },
   Category: {
     extend: 'Flex',
@@ -28,10 +30,13 @@ export const FilterAbstract = ({
     },
     P: {
       text: title,
-      // fontSize: '16px'
+      fontWeight: '700',
     },
     IconArrowDown: {
       id: `${prefix}-main-top-icon`,
+      attr: {
+        'data-filter-icon': 'true',
+      },
     },
   },
   on: {
@@ -40,21 +45,60 @@ export const FilterAbstract = ({
         `${prefix}-main-category-dropdown`
       );
       const icon = document.getElementById(`${prefix}-main-top-icon`);
+
       if (dropdown.contains(e.target)) {
-        filterCategories.forEach(({ id }) => {
-          const topDropdown = document.getElementById(`${prefix}-${id}`);
-          toggleDropdown(topDropdown);
+        const filterIsOpen = document.querySelectorAll('.filter-box');
+        const currentTarget = document.getElementById(mainID);
+
+        filterIsOpen.forEach((filter) => {
+          if (filter !== currentTarget) {
+            const subDropdown = filter.querySelectorAll('.filter-dropdown');
+            subDropdown.forEach((item) => toggleDropdown(item, false));
+
+            const iconsRotate = filter.querySelectorAll('[data-filter-icon]');
+            iconsRotate.forEach(
+              (icon) => (icon.style.transform = 'rotate(0deg)')
+            );
+          }
         });
-      }
-      if (dropdown.contains(e.target)) {
-        const currenIconTransform = icon.style.transform;
-        currenIconTransform === 'rotate(180deg)'
-          ? (icon.style.transform = 'rotate(0deg)')
-          : (icon.style.transform = 'rotate(180deg)');
+        filterCategories.forEach(({ id }) => {
+          const currentDD = document.getElementById(`${prefix}-${id}`);
+          const isExpanded = currentDD.getAttribute('aria-expanded') === 'true';
+          toggleDropdown(currentDD, !isExpanded);
+        });
+
+        icon.style.transform =
+          icon.style.transform === 'rotate(180deg)'
+            ? 'rotate(0deg)'
+            : 'rotate(180deg)';
       }
     },
   },
+  // on: {
+  //   click: (e) => {
+  //     const dropdown = document.getElementById(
+  //       `${prefix}-main-category-dropdown`
+  //     );
+  //     const icon = document.getElementById(`${prefix}-main-top-icon`);
+  //     if (dropdown.contains(e.target)) {
+  //       filterCategories.forEach(({ id }) => {
+  //         const topDropdown = document.getElementById(`${prefix}-${id}`);
+  //         console.log(dropdown !== dropdown);
 
+  //         if(dropdown !== dropdown) {
+  //           toggleDropdown(topDropdown)
+  //         }
+  //         toggleDropdown(topDropdown);
+  //       });
+  //     }
+  //     if (dropdown.contains(e.target)) {
+  //       const currenIconTransform = icon.style.transform;
+  //       currenIconTransform === 'rotate(180deg)'
+  //         ? (icon.style.transform = 'rotate(0deg)')
+  //         : (icon.style.transform = 'rotate(180deg)');
+  //     }
+  //   },
+  // },
   $filterCollection: () =>
     filterCategories.map((res) => inputSec({ ...res, prefix })),
 });
@@ -64,6 +108,7 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
   attr: {
     id: `${prefix}-${id}`,
     'aria-expanded': 'false',
+    class: 'filter-dropdown',
   },
   props: {
     padding: '0 20px',
@@ -155,13 +200,11 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
   },
 });
 
-const toggleDropdown = (dropdown) => {
-  const isExpanded = dropdown.getAttribute('aria-expanded') === 'false';
-
+const toggleDropdown = (dropdown, isOpen) => {
   dropdown.style.transition =
     'opacity 0.2s ease, max-height 0.5s ease, visibility 0.5s ease';
 
-  if (isExpanded) {
+  if (isOpen) {
     dropdown.style.maxHeight = dropdown.scrollHeight + '40px';
     dropdown.style.visibility = 'visible';
     dropdown.style.opacity = '1';

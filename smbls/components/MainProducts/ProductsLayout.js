@@ -24,8 +24,6 @@ export const ProductsLayout = {
   },
   GifTop: {
     '@tabletS': {
-      width: 'calc(100dvw - 40px)',
-      margin: '0 0 0 40px'
     },
 
   },
@@ -36,22 +34,6 @@ export const ProductsLayout = {
     //   display: 'flex !important',
     // },
     '@tabletS': {
-      width: 'calc(100dvw - 40px)',
-      margin: '0 0 0 40px'
-    },
-  },
-  Menu: {
-    display: 'none !important',
-  
-    '@tabletS': {
-      display: 'flex !important',  
-      width: '40px',
-      height: 'calc(100vh - 77px)',
-      position: 'fixed', 
-      flex: 2,
-      top: '77px',  
-      left: '0', 
-      zIndex: '200', 
     },
   },
   GridContent: {
@@ -67,8 +49,7 @@ export const ProductsLayout = {
     },
     '@tabletS': {
       columns: 'repeat(3, 1fr)',
-      width: 'calc(100dvw - 40px)',
-      margin: '0 0 0 40px'
+      // width: 'calc(100dvw - 40px)',
       // width: 'calc(90%-60px)',
     },
     '@mobileL': {

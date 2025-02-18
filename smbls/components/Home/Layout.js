@@ -11,16 +11,32 @@ export const Layout = {
     '@tabletS': {},
     '@mobileL': {},
   },
-  Menu: {
-    display: 'none !important',
-    width: '60px',
-    height: 'calc(100vh - 77px)',
-    top: '0',
-    order: '1',
-    '@tabletS': {
-      display: 'flex !important',
-    },
-  },
+  
+  // Menu: {
+  //   display: 'none !important',
+  //   width: '60px',
+  //   height: 'calc(100vh - 77px)',
+  //   top: '0',
+  //   '@tabletS': {
+  //     display: 'flex !important',
+  //   },
+  //   '@mobileL': {
+  //     display: 'none !important',
+  //   },
+  // },
+  // Menu: {
+  //   display: 'none !important',
+  //   width: '60px',
+  //   height: 'calc(100vh - 77px)',
+  //   top: '0',
+  //   order: '1',
+  //   '@tabletS': {
+  //     display: 'flex !important',
+  //   },
+  //   '@mobileL': {
+  //     display: 'none !important',
+  //   },
+  // },
   Content: {
     extends: 'Flex',
     attr: {
@@ -44,7 +60,8 @@ export const Layout = {
     children: (el, s) => Object.values(s.products.data),
 
     '@tabletS': {
-      padding: '0 20px 0 0',
+      // padding: '0 20px 0 0',
+      padding: '0 20px ',
       width: '100%',
     },
   },
