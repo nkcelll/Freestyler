@@ -1,3 +1,5 @@
+import PerProductSpecsDropdown from '../../../functions/domEvents/PerProductSpecsDropdown';
+
 export const TechSpecs = {
   extend: 'Flex',
   props: {
@@ -18,45 +20,49 @@ export const TechSpecs = {
       backgroundColor: '#E4E2E2',
       padding: '15px 0',
     },
-    H1: {
+    H5: {
       text: 'Specs',
       props: {
         fontSize: '18px',
-        fontWeight: '400',
+        fontWeight: '600',
         letterSpacing: '1.2px',
       },
     },
     IconArrowDown: {},
     on: {
-      click: () => {
-        const detailDrop = document.getElementById('specs-dropdown_toggle');
-        if (detailDrop) {
-          const isHidden = detailDrop.style.opacity === '0' || detailDrop.style.opacity === '';
-          detailDrop.style.opacity = isHidden ? '1' : '0';
-          detailDrop.style.maxHeight = isHidden ? detailDrop.scrollHeight + 'px' : '0';
-        }
+      click: (e) => {
+        const specs = document.getElementById('specs-dropdown_toggle');
+        const icon = e.currentTarget.querySelector('.arrow-down-icon');
+        PerProductSpecsDropdown(specs, icon);
       },
     },
-    
   },
-  
+
   SpecsDropDown: {
     extend: 'Flex',
     attr: {
       id: 'specs-dropdown_toggle',
     },
     props: {
-      display: 'flex', 
-      flexWrap: 'wrap', 
-      gap: '15px', 
-      width: '100%', 
-      maxHeight: '0', 
-      opacity: '0', 
-      overflow: 'hidden', 
-      transition: 'max-height 0.5s ease, opacity 0.5s ease', 
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '15px',
+      width: '100%',
+      maxHeight: '0',
+      opacity: '0',
+      overflow: 'hidden',
+      transition: 'max-height 0.5s ease, opacity 0.5s ease',
       backgroundColor: '#E4E2E2',
-
-
+      '@mobileL': {
+        justifyContent: 'flex-start',
+      },
+    },
+    childExtend: {
+      extend: 'Flex',
+      props: {
+        height: 'auto',
+        width: 'auto',
+      },
     },
     $collection: () => [
       {
@@ -94,23 +100,25 @@ export const TechSpecs = {
       },
     ],
   },
-  
 };
 
 const specs = (liSpec, pSpec) => ({
   extend: 'Flex',
   props: {
     display: 'flex',
-    flexDirection: 'column', 
-    width: '350px', 
+    flexDirection: 'column',
+    // width: '350px',
+    width: '200px',
+    margin: '20px 0',
     borderRight: '1px solid grey',
-    margin: '20px 0'
-
+    '@mobileL': {
+      width: '160px',
+    },
   },
   li: {
     text: liSpec,
     style: {
-      listStyle: 'none'
+      listStyle: 'inside',
     },
     props: {
       fontSize: '16px',

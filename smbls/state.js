@@ -330,6 +330,25 @@ export default {
     title: 'Products',
   },
 
+  productsAmountPerPage:{
+    amount: 8
+  },
+  sizes: {
+    sizeText: ['156', '200', 156, ] 
+  },
+  productQuantity: {
+    quantity: 1,
+    text: '1'
+  },
+  productDescription: {
+    description: 'Built for steep lines, deep days and powerful all-terrain riding. Built for steep lines, deep days and powerful all-terrain riding. Built for steep lines, deep days and powerful all-terrain riding.'
+  },
+  modal: {
+    data: {
+      
+    }
+  },
+
   // products: {
   //   data: {
   //     0: {
@@ -621,9 +640,9 @@ export default {
       0: {
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fiaeeec316/a0fc2573-ea9f-4fa3-804b-5ce486a1f8c3-5393a5ba-85a6-4593-bae6-5fd6da0ee77f-fd4227ef-2304-4c9a-b801-b48a3c6f180b.webp',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fiaeeec316/a0fc2573-ea9f-4fa3-804b-5ce486a1f8c3-5393a5ba-85a6-4593-bae6-5fd6da0ee77f-fd4227ef-2304-4c9a-b801-b48a3c6f180b.webp',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fiaeeec316/a0fc2573-ea9f-4fa3-804b-5ce486a1f8c3-5393a5ba-85a6-4593-bae6-5fd6da0ee77f-fd4227ef-2304-4c9a-b801-b48a3c6f180b.webp',
           },
         ],
         key: 'new-project-0',
@@ -640,9 +659,9 @@ export default {
       1: {
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi522ef96f/a0a1be21-cf57-47cf-9c0f-a5fbac224f23-0b4f0fca-28d8-432c-958d-01637f1357eb-12f2054f-33f5-4ed5-8c7c-b4cb8d87f3b0.webp',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi522ef96f/a0a1be21-cf57-47cf-9c0f-a5fbac224f23-0b4f0fca-28d8-432c-958d-01637f1357eb-12f2054f-33f5-4ed5-8c7c-b4cb8d87f3b0.webp',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi522ef96f/a0a1be21-cf57-47cf-9c0f-a5fbac224f23-0b4f0fca-28d8-432c-958d-01637f1357eb-12f2054f-33f5-4ed5-8c7c-b4cb8d87f3b0.webp',
           },
         ],
         key: 'new-project-0',
@@ -659,9 +678,9 @@ export default {
       2: {
         posters: [
           {
-            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
-            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi146901d0/564773fd-1826-4006-b6c2-afaf9981d963-94405f21-c2fe-4699-b1cd-e9ffbd9ff95e-f39d2fdd-0dd6-479c-9e18-20bd8479f101.png',
+            poster: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi61ef1bd5/0ebe62b5-1a0c-4da3-91ab-0b84a98b3ec7-11e9d2d9-c4bb-4a4c-ab19-2c5c38786699-ff8fabe9-5fff-4838-95d4-750b74c2e673.jpeg',
+            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi61ef1bd5/0ebe62b5-1a0c-4da3-91ab-0b84a98b3ec7-11e9d2d9-c4bb-4a4c-ab19-2c5c38786699-ff8fabe9-5fff-4838-95d4-750b74c2e673.jpeg',
+            value: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi61ef1bd5/0ebe62b5-1a0c-4da3-91ab-0b84a98b3ec7-11e9d2d9-c4bb-4a4c-ab19-2c5c38786699-ff8fabe9-5fff-4838-95d4-750b74c2e673.jpeg',
           },
         ],
         key: 'new-project-0',

@@ -1,128 +1,125 @@
+import { ModalImage } from "./ProdComponents/ModalImage";
+
 export const PerProducts = {
   extend: 'Flex',
   props: {
     width: '100%',
     height: 'auto',
-    // overflow: 'hidden auto',
-    // overflowY: 'scroll',
-    // justifyContent: 'space-between',
-    // overflow: 'hidden',
     gap: '30px',
-    position: 'relative',
+    // position: 'relative',
     padding: '20px',
     backgroundColor: '#E4E2E2',
-    
-  },
-  ImageGallery: {
-    extend: 'Grid',
-    props: {
-      width: '100%',
-      // height: '600px',
-      columns: 'repeat(2, 1fr)',
-      rows: 'repeat(2, 600px)',
-      gap: '15px', 
-      
+    // flex: '1 1',
+    '@mobileL': {
+      flow: 'y',
     },
-    $collection: () => [
-      {
-        Img: {
-          attr: {
-            src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-            // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
-          },
-          props: {
-            width: '100%',
-            height: '100%', 
-            
-            // objectFit: 'cover'
-          },
-        },  
-      },
-      {
-        Img: {
-          attr: {
-            src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-            // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
-          },
-          props: {
-            width: '100%',
-            height: '100%', 
-            
-            // objectFit: 'cover'
-          },
-        },  
-      },
-      {
-        Img: {
-          attr: {
-            src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-            // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
-          },
-          props: {
-            width: '100%',
-            height: '100%', 
-            
-            objectFit: 'cover'
-          },
-        },  
-      },
-      {
-        Img: {
-          attr: {
-            src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-            // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
-          },
-          props: {
-            width: '100%',
-            height: '100%', 
-            
-            objectFit: 'cover'
-          },
-        },  
-      },
-    ]
   },
-  // Img: {
-  //   attr: {
-  //     src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-  //     // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
-  //   },
+  ProductImages: {
+    width: '100%'
+  },
+  // ImageGallery: {
+  //   extend: 'Grid',
   //   props: {
-  //     width: '100%',
-  //     height: '100%',
-  //     padding: '30px 30px',
-  //     objectFit: 'cover'
+  //     width: '50%',
+  //     // height: '600px',
+  //     columns: 'repeat(2, 1fr)',
+  //     rows: 'repeat(2, 600px)',
+  //     gap: '15px',
+  //     '@tabletL': {},
   //   },
-  // }, 
-  
+  //   $collection: () => [
+  //     {
+  //       Img: {
+  //         attr: {
+  //           src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+  //           // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
+  //         },
+  //         props: {
+  //           maxWidth: '100%',
+  //           maxHeight: '100%',
+
+  //           // objectFit: 'cover'
+  //         },
+  //       },
+  //     },
+  //     {
+  //       Img: {
+  //         attr: {
+  //           src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+  //           // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
+  //         },
+  //         props: {
+  //           width: '100%',
+  //           height: '100%',
+
+  //           // objectFit: 'cover'
+  //         },
+  //       },
+  //     },
+  //     {
+  //       Img: {
+  //         attr: {
+  //           src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+  //           // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
+  //         },
+  //         props: {
+  //           width: '100%',
+  //           height: '100%',
+
+  //           objectFit: 'cover',
+  //         },
+  //       },
+  //     },
+  //     {
+  //       Img: {
+  //         attr: {
+  //           src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+  //           // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
+  //         },
+  //         props: {
+  //           width: '100%',
+  //           height: '100%',
+
+  //           objectFit: 'cover',
+  //         },
+  //       },
+  //     },
+  //   ],
+  // },
   MainProduct: {
     extend: 'Flex',
-    
     props: {
-      width: 'auto',
-      height: '80vh',
+      width: '50%',
+      // height: '80vh',
+      // height: '800px',
+      height: 'fit-content',
       flow: 'y',
-      justifyContent: 'space-between',
-      // backgroundColor: 'red',
+      // gap: '40px',
+      gap: '30px',
+      // justifyContent: 'space-between',
       position: 'sticky',
-      top: '77px'
-      
+      top: '77px',
+      '@tabletL': {
+        width: '50%',
+        gap: '20px',
+        height: 'auto',
+      },
+      '@tabletS': {
+        width: '50%',
+        height: 'fit-content',
+      },
+      '@mobileL': {
+        width: '100%',
+        gap: '30px',
+        height: 'auto',
+      },
     },
     H1: {
       text: 'Bataleon Ecko mode',
       props: {
         fontSize: '32px',
         margin: '0',
-        fontWeight: '500'
-      },
-    },
-    Description: {
-      tag: 'p',
-      props: {
-        text: 'Built for steep lines, deep days and powerful all-terrain riding. Built for steep lines, deep days and powerful all-terrain riding. Built for steep lines, deep days and powerful all-terrain riding.',
-        fontSize: '18px',
-        margin: '0',
-        fontWeight: '200'
+        fontWeight: '500',
       },
     },
     p: {
@@ -130,37 +127,62 @@ export const PerProducts = {
       props: {
         fontSize: '18px',
         margin: '0',
-        fontWeight: '400'
-      }
+        fontWeight: '600',
+      },
     },
-
     Size: {
       extend: 'Flex',
       props: {
         flow: 'y',
-        gap: '15px'
+        gap: '15px',
       },
       Label: {
-        text: 'Select Size:',
+        text: 'Select Size :',
+        props: {
+          fontSize: '18px',
+          fontWeight: '600',
+        },
       },
       SizeBox: {
         extend: 'Flex',
         props: {
           width: 'auto',
           height: 'auto',
-          gap: '15px'
-
+          gap: '15px',
+          flow: 'row wrap',
         },
-        $collection: () => [
-          {
-            form: sizeLabel('154'),
-          },
-          {
-            form: sizeLabel(),
-          },
-        ],
+
+        // $collection: (el, s) => (s.sizes?.sizeText || []).map(size => ({
+        //   childExtend: 'inputSize',
+        //   children: {
+        //     text: size
+        //   }
+
+        // })),
+        $collection: (el, s) =>
+          (s.sizes?.sizeText || []).map((size) => ({
+            extend: 'inputSize',
+            props: {
+              text: size,
+            },
+          })),
+        // $collection: (el, s) => ({
+        //   extend: 'inputSize',
+        //   text: ({
+        //     state
+        //   }) => state.sizes.sizeText.map((size) => size)
+        // })
       },
-      
+    },
+    Description: {
+      tag: 'p',
+      text: ({ state }) => state.productDescription.description,
+      props: {
+        // text: 'Built for steep lines, deep days and powerful all-terrain riding. Built for steep lines, deep days and powerful all-terrain riding. Built for steep lines, deep days and powerful all-terrain riding.',
+        fontSize: '18px',
+        margin: '0',
+        fontWeight: '200',
+      },
     },
     Quantity: {
       extend: 'Flex',
@@ -168,114 +190,56 @@ export const PerProducts = {
         flow: 'y',
       },
       P: {
-        text: 'Quantity:',
+        text: 'Amount:',
       },
-      ButtonQuantity: {
-        extend: 'Flex',
-        props: {
-          flow: 'x',
-          gap: '15px',
-          width: '120px',
-          border: '1px solid grey'
-        },
-        Button: {
-          props: {
-            border: 'none',
-            borderRadius: '0',
-            width: '40px',
-            height: '25px',
-            alignSelf: 'center',
-            padding: '0',
-            backgroundColor: 'transparent'
-          },
-          Img: {
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi8e13f2be/e28e5bec-7ca8-49ed-9e65-8f4b59c7d2b1-dc3b3e6b-f161-4e22-8ab9-d60f24ada9f5-199cfb95-bcf6-4a71-bb93-45ea975ede8e.svg',
-          },
-        },
-        P: {
-          text: '1',
-        },
-        button: {
-          props: {
-            border: 'none',
-            borderRadius: '0',
-            width: '40px',
-            height: '25px',
-            alignSelf: 'center',
-            padding: '0',
-            cursor: 'pointer',
-            backgroundColor: 'transparent'
-          },
-          Img: {
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi096f6eac/b12b40ea-80e4-43f3-a018-252a28ef8ce6-72875be9-8994-4a5e-bb68-83df8069c58f-bf8dfd6b-bab5-46f3-8387-5567bb328eec.svg',
-          },
-        },
-      },
-      
+      IncDecButton: {},
     },
     AddToCart: {
       extend: 'Flex',
       props: {
-        width: '50%',
+        width: '100%',
         height: '50px',
         // backgroundColor: 'red',
-        justifyContent: 'flex-end'
+        justifyContent: 'center',
+        
       },
       Button: {
         extend: 'Flex',
         text: 'Add to cart',
+        style: {
+          border: '1px solid black',
+          borderRadius: '0',
+          transition: 'background-color 0.2s ease, color 0.2s ease',
+          
+        },
         props: {
-          width: '50%',
           height: '100%',
           alignSelf: 'center',
           justifySelf: 'center',
-          border: '1px solid black',
-          borderRadius: '3px',
           backgroundColor: 'transparent',
           fontWeight: '400',
-        }
-      }
+          ':hover': {
+            backgroundColor: 'black',
+            color: 'white',
+          },
+          '@tabletS': {
+            width: '100%',
+            height: '50px'
+          },
+          '@mobileL': {
+            width: '100%',
+            backgroundColor: 'black',
+            color: 'white'
+          },
+          '@mobileM': {
+            width: '100%',
+            backgroundColor: 'black',
+            color: 'white'
+          },
+        },
+      },
     },
-    
+    ShippingPolicy: {},
   },
+  
 };
-
-const sizeLabel = (sizeText) => ({
-  extend: 'Flex',
-  props: {
-    width: '100%',
-    height: 'auto',
-    flow: 'x',
-    alignItems: 'center',
-    gap: '10px',
-    padding: '5px',
-    cursor: 'pointer',
-  },
-  Input: {
-    attr: {
-      type: 'radio',
-      name: 'size',
-      value: sizeText,
-    },
-    props: {
-      width: '40px',
-      height: '40px',
-      // accentColor: '#FF5722',
-      border: '1px solid #333',
-      borderRadius: '2px',
-      appearance: 'none', 
-      backgroundColor: 'transparent',
-      // textAlign: 'center',
-      cursor: 'pointer',
-    },
-    
-  },
-  Span: {
-    content: sizeText,
-    
-    transform: 'translate(-50%, -50%)',
-    fontSize: '14px',
-    color: '#333',
-    pointerEvents: 'none', 
-  },
-});

@@ -1,0 +1,137 @@
+export const inputSize = {
+  extend: 'Flex',
+  props: (el, s) => ({
+    width: 'auto',
+    height: 'auto',
+    flow: 'x',
+    alignItems: 'center',
+    gap: '10px',
+    padding: '5px',
+    cursor: 'pointer',
+    padding: 0
+  }),
+  children: (el, s) => [
+    {
+      extend: 'Input',
+      attr: {
+        state: 'sizes',
+        type: 'radio',
+        name: 'size',
+        value: el.props.text, 
+      },
+      props: {
+        width: '40px',
+        height: '40px',
+        border: '1px solid #333',
+        borderRadius: '2px',
+        appearance: 'none',
+        backgroundColor: 'transparent',
+        cursor: 'pointer',
+        position: 'relative',
+        margin: 0,
+        padding: 0,
+        '::before': {
+          content: `"${el.props.text}"`, 
+          position: 'absolute',
+          inset: '0',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'transparent',
+          border: '1px solid black',
+          transition: 'background-color 0.2s ease, border-color 0.2s ease',
+        },
+        ':checked::before': {
+          backgroundColor: 'black',
+          color: 'white',
+        },
+      },
+    },
+  ],
+};
+
+
+
+
+
+// export const inputSize = {
+//   extend: 'Flex',
+//   props: {
+//     width: 'auto',
+//     height: 'auto',
+//     flow: 'x',
+//     alignItems: 'center',
+//     gap: '10px',
+//     padding: '5px',
+//     cursor: 'pointer',
+
+//   },
+//   Input: {
+//     attr: {
+//       state: 'sizes',
+//       type: 'radio',
+//       name: 'size',
+//       value: '{{sizes}}',
+//     },
+//     props: {
+//       width: '25px',
+//       height: '40px',
+//       border: '1px solid #333',
+//       borderRadius: '2px',
+//       appearance: 'none',
+//       backgroundColor: 'transparent',
+//       cursor: 'pointer',
+//       position: 'relative',
+//       '::before': {
+//         content: `""`,
+//         // content: `"${sizeText}"`,
+//         position: 'absolute',
+//         inset: '0',
+//         width: '100%',
+//         height: '100%',
+//         display: 'flex',
+//         padding: 'auto',
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         backgroundColor: 'transparent',
+//         border: '1px solid black',
+//         borderRadius: '0',
+//         transition: 'background-color 0.2s ease, border-color 0.2s ease',
+//       },
+//       ':checked::before': {
+//         backgroundColor: 'black',
+//         border: '1px solid black',
+//         borderRadius: '0',
+//         transition: 'background-color 0.2s ease, border-color 0.2s ease',
+//       },
+//       // '::after': {
+//       //   content: '""',
+//       //   position: 'absolute',
+//       //   top: '45%',
+//       //   left: '50%',
+//       //   width: '10px',
+//       //   height: '5px',
+//       //   borderLeft: '1px solid white',
+//       //   borderBottom: '1px solid white',
+//       //   transform: 'translate(-50%, -50%) rotate(-45deg)',
+//       //   opacity: '0',
+//       //   transition: 'opacity 0.2s ease',
+//       // },
+
+//       ':checked::after': {
+//         content: `""`,
+//         // content: `"${sizeText}"`,  
+//         position: 'absolute',
+//         justifyContent: 'center',
+//         alignItems: 'center',
+
+//         top: '50%',
+//         left: '50%',
+//         transform: 'translate(-50%, -50%)',
+//         color: 'white',
+//         fontWeight: 'bold',
+//         opacity: '1',
+//       },
+//     },
+//   },
+// }

@@ -1,17 +1,15 @@
+import PerProductSpecsDropdown from '../../../functions/domEvents/PerProductSpecsDropdown';
+
 export const Detail = {
   extend: 'Flex',
   props: {
     width: '100%',
     height: 'auto',
-    // height: '60px',
     flow: 'y',
     borderBottom: '1px solid grey',
   },
   Button: {
     extend: 'Flex',
-    attr: {
-      id: 'detail-button'
-    },
     style: {
       justifyContent: 'space-between',
     },
@@ -26,26 +24,16 @@ export const Detail = {
       text: 'Product Details',
       props: {
         fontSize: '18px',
-        fontWeight: '400',
+        fontWeight: '600',
         letterSpacing: '1px',
       },
     },
     IconArrowDown: {},
     on: {
-      click: () => {
-        const detailDrop = document.getElementById('detail-dropdown_toggle');
-        const button = document.getElementById('detail-button')
-
-        if (button) {
-          // Toggle dropdown state
-          if (detailDrop.style.opacity === '0' || detailDrop.style.opacity === '') {
-            detailDrop.style.opacity = '1';
-            detailDrop.style.maxHeight = detailDrop.scrollHeight + 'px';
-          } else {
-            detailDrop.style.opacity = '0';
-            detailDrop.style.maxHeight = '0';
-          }
-        }
+      click: (e) => {
+        const icon = e.currentTarget.querySelector('.arrow-down-icon');
+        const detail = document.getElementById('detail-dropdown_toggle');
+        PerProductSpecsDropdown(detail, icon);
       },
     },
   },
@@ -57,11 +45,11 @@ export const Detail = {
     },
     props: {
       width: '100%',
-      maxHeight: '0', 
+      maxHeight: '0',
       flow: 'y',
       overflow: 'hidden',
       opacity: '0',
-      maxHeight:'0',
+      maxHeight: '0',
       backgroundColor: '#E4E2E2',
       transition: 'max-height 0.5s ease, opacity 0.5s ease',
     },
@@ -71,7 +59,7 @@ export const Detail = {
         fontSize: '14px',
         letterSpacing: '1.1px',
         lineHeight: '180%',
-        padding:'10px',
+        padding: '10px',
         margin: '0px',
         maxHeight: '',
         // height: 'auto',

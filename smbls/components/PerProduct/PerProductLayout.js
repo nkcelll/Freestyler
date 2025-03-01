@@ -1,8 +1,9 @@
 export const PerProductLayout = {
-  extend: 'Block',
+  extend: 'Flex',
+  // extend: 'Block',
   props: {
     width: '100%',
-    height: 'auto', 
+    height: 'auto',
   },
   MainHeader: {
     position: 'sticky',
@@ -10,16 +11,11 @@ export const PerProductLayout = {
     zIndex: '100',
   },
   PerProducts: {
-    props: {
-      flex: '1', 
-      // overflow: 'auto', 
-      // paddingBottom: '100px',
-    },
   },
-  PerProductDetails: {},
+  PerProductDetails: {
+  },
   Recomendations: {
-    
   },
-  
-  Footer: {},
+  Footer: {
+  },
 };

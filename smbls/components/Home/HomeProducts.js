@@ -37,7 +37,7 @@ export const HomeImageProducts = {
       text: '{{ title }}',
       color: 'black',
       fontSize: '14px',
-      fontWeight: '400',
+      fontWeight: '600',
       zIndex: '1',
       width: '100%',
       textAlign: 'center',

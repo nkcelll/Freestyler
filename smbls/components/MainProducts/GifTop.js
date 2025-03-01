@@ -2,7 +2,7 @@ export const GifTop = {
   extend: 'Flex',
   props: {
     height: '64px',
-    width: '100dvw',
+    width: '100%',
   },
   giffing: {
     img: {

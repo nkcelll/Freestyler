@@ -1,39 +1,41 @@
+import { closeSideMenuBox } from '../../../functions/domEvents/toggleSideboxes';
+
 export const SideMenuBox = {
-  OverlayBox: {
+  Overlay: {
     attr: {
-      class: 'overlay',
+      // class: 'overlay',
+      id: 'side-menu-overlay',
     },
     props: {
       width: '100dvw',
       height: '100dvh',
-      position: 'absolute',
-      right: '-20px',
-      top: '-26px',
-      // left: '20px',
-      zIndex: '120',
-      pointerEvents: 'auto',
+      position: 'fixed',
+      right: '0',
+      top: '0',
+      zIndex: '110',
       visibility: 'hidden',
       backgroundColor: 'rgb(63, 63, 63)',
-      transition: 'opacity 0.5s ease, transform 0.5s ease',
+      transition: 'opacity 0.5s ease, transform 4s ease',
     },
     on: {
       click: (e) => {
-        const sideMenu = document.getElementById('side-menu');
-        const closeOverlay = document.querySelector('.overlay');
+        // const sideMenu = document.getElementById('side-menu');
+        // const closeOverlay = document.querySelector('.overlay');
 
-        if (e.target === closeOverlay) {
-          setTimeout(() => {
-            closeOverlay.style.opacity = '0';
-            closeOverlay.style.visibility = 'hidden';
-            closeOverlay.style.pointerEvents = 'none';
+        // if (e.target === closeOverlay) {
+        //   setTimeout(() => {
+        //     closeOverlay.style.opacity = '0';
+        //     closeOverlay.style.visibility = 'hidden';
+        //     closeOverlay.style.pointerEvents = 'none';
 
-            sideMenu.style.transform = 'translateX(0)';
-            sideMenu.style.opacity = '0';
-            sideMenu.style.pointerEvents = 'none';
+        //     sideMenu.style.transform = 'translateX(100%)';
+        //     sideMenu.style.opacity = '0';
+        //     sideMenu.style.pointerEvents = 'none';
 
-            document.body.style.overflow = 'visible'
-          }, 15);
-        }
+        //     document.body.style.overflow = 'visible'
+        //   }, 15);
+        // }
+        closeSideMenuBox('side-menu', 'side-menu-overlay');
       },
     },
   },
@@ -48,26 +50,26 @@ export const SideMenuBox = {
       flow: 'y',
       justifyContent: 'space-between',
       backgroundColor: '#fff',
-      position: 'absolute',
+      position: 'fixed',
       zIndex: '150',
-      inset: 0,
-      top: '-26px',
+      right: '0',
+      // inset: 0,
+      top: '0',
       whiteSpace: 'none',
       overflow: 'hidden',
-      opacity: '0',
+      // opacity: '0',
       transition: 'opacity 0.5s ease, transform 0.5s ease',
       transform: 'translateX(100%)',
-      // transform: 'translateX(100%)',
     },
-    Container: {
+    BoxContainer: {
       extend: 'Flex',
       props: {
         gap: '30px',
         flexGrow: '1',
         flow: 'y',
-        overflow: 'auto'
+        overflow: 'auto',
       },
-      CloseListButton: {
+      CloseButton: {
         extend: 'Flex',
         props: {
           width: '100%',
@@ -92,26 +94,26 @@ export const SideMenuBox = {
 
           on: {
             click: (e) => {
-              const closeMenu = document.getElementById('side-menu');
-              const overlay = document.querySelector('.overlay');
+              // const closeMenu = document.getElementById('side-menu');
+              // const overlay = document.querySelector('.overlay');
 
-              if (
-                e.currentTarget === closeMenu ||
-                closeMenu.style.opacity === '1'
-              ) {
-                setTimeout(() => {
-                  closeMenu.style.transform = 'translateX(0)';
-                  // closeMenu.style.transform = 'translateX(100%)';
-                  closeMenu.style.opacity = '0';
-                  closeMenu.style.pointerEvents = 'none';
+              // if (
+              //   e.currentTarget === closeMenu ||
+              //   closeMenu.style.opacity === '1'
+              // ) {
+              //   setTimeout(() => {
+              //     closeMenu.style.transform = 'translateX(100%)';
+              //     closeMenu.style.opacity = '0';
+              //     closeMenu.style.pointerEvents = 'none';
 
-                  overlay.style.opacity = '0';
-                  overlay.style.visibility = 'hidden';
-                  overlay.style.pointerEvents = 'none';
+              //     overlay.style.opacity = '0';
+              //     overlay.style.visibility = 'hidden';
+              //     overlay.style.pointerEvents = 'none';
 
-                  document.body.style.overflow = 'visible'
-                }, 10);
-              }
+              //     document.body.style.overflow = 'visible'
+              //   }, 10);
+              // }
+              closeSideMenuBox('side-menu', 'side-menu-overlay');
             },
           },
         },
@@ -131,15 +133,12 @@ export const SideMenuBox = {
     },
     SocialsLink: {
       extend: 'Flex',
-      // style: {
-      //   marginTop: 'auto'
-      // },
+
       props: {
         flow: 'x',
         height: '100px',
         justifyItems: 'center',
         align: 'center',
-        // padding: '20px 0',
         textAlign: 'center',
         marginTop: 'auto',
         flexShrink: '0',

@@ -5,38 +5,16 @@ export const Layout = {
     width: '100vw',
     height: 'auto',
   },
+  style: {
+    scrollbarWidth: 'none', // Firefox
+    msOverflowStyle: 'none', // IE/Edge
+  },
   // HomeListSidebar: {},
   MainHeader: {
     '@tabletM': {},
     '@tabletS': {},
     '@mobileL': {},
   },
-  
-  // Menu: {
-  //   display: 'none !important',
-  //   width: '60px',
-  //   height: 'calc(100vh - 77px)',
-  //   top: '0',
-  //   '@tabletS': {
-  //     display: 'flex !important',
-  //   },
-  //   '@mobileL': {
-  //     display: 'none !important',
-  //   },
-  // },
-  // Menu: {
-  //   display: 'none !important',
-  //   width: '60px',
-  //   height: 'calc(100vh - 77px)',
-  //   top: '0',
-  //   order: '1',
-  //   '@tabletS': {
-  //     display: 'flex !important',
-  //   },
-  //   '@mobileL': {
-  //     display: 'none !important',
-  //   },
-  // },
   Content: {
     extends: 'Flex',
     attr: {

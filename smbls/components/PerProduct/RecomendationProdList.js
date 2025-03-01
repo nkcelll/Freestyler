@@ -4,15 +4,12 @@ export const RecomendationProdList = {
     'Flex'
   ],
   props: () => ({
-    height: '100%',
-    width: '80%',
+    // width: '100%',
+    // height: '100%',
     gap: '15px',
     align: 'center',
     flow: 'y',
     justifyContent: 'space-between',
-    // backgroundColor: 'red'
-    // flow: 'y',
-    // href: '/product'
   }),
   Img: {
     state: 'posters/0',
@@ -20,7 +17,7 @@ export const RecomendationProdList = {
       src: '{{ src }}',
       width: '300px',
       height: '300px',
-      objectFit: 'cover'
+      objectFit: 'cover',
     },
   },
   lebod: {

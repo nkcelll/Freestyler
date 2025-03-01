@@ -1,9 +1,10 @@
 import { ScrollbarStyles } from "../components";
 export const products = {
   
-  extend: 'ProductsLayout',
+  extend: ['ProductsLayout', 'Flex'],
   props: {
     flow: 'row wrap',
+    width: '100%'
   },
   
   // MainHeader: {

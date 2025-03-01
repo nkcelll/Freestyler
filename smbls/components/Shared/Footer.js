@@ -1,16 +1,20 @@
 export const Footer = {
   extend: 'Flex',
   props: {
-    width: '100dvw',
+    width: '100%',
     flow: 'y',
     gap: '5px',
     padding: '0 20px',
+    backgroundColor: '#E4E2E2',
+    borderTop: '1px solid grey',
+    overflow: 'hidden',
     '@tabletS': {
       display: 'flex',
       flow: 'y',
       gap: '50px',
       width: '100%',
       height: 'auto',
+      
     },
   },
   Section: {
@@ -149,6 +153,7 @@ export const Footer = {
         flow: 'y',
         gap: '15px',
         padding: '20px 0 0 0',
+        transition: 'max-height 0.5s ease, opacity 0.5s ease',
         '@tabletS': {
           gap: '20px',
           width: '100%',
@@ -172,7 +177,7 @@ export const Footer = {
             text: 'FAQ',
             fontSize: '16px',
             letterSpacing: '1.25px',
-            fontWeight: '500',
+            fontWeight: '600',
             margin: '0',
           },
         },
@@ -199,6 +204,7 @@ export const Footer = {
         props: {
           flow: 'y',
           gap: '10px',
+          transition: 'max-height 0.5s ease, opacity 0.5s ease',
           '@tabletS': {
             maxHeight: '0',
             opacity: '0',
@@ -281,7 +287,7 @@ export const Footer = {
             text: 'Policy',
             fontSize: '16px',
             letterSpacing: '1.25px',
-            fontWeight: '500',
+            fontWeight: '600',
             margin: '0',
           },
         },
@@ -305,6 +311,7 @@ export const Footer = {
         props: {
           flow: 'y',
           gap: '10px',
+          transition: 'max-height 0.5s ease, opacity 0.5s ease',
           '@tabletS': {
             maxHeight: '0',
             opacity: '0',
@@ -362,6 +369,7 @@ export const Footer = {
         height: 'auto',
         flow: 'y',
         padding: '20px 0 0 0',
+        transition: 'max-height 0.5s ease, opacity 0.5s ease',
         '@tabletS': {
           gap: '20px',
           width: '100%',
@@ -384,7 +392,7 @@ export const Footer = {
             text: 'Contact',
             fontSize: '16px',
             letterSpacing: '1.25px',
-            fontWeight: '500',
+            fontWeight: '600',
             margin: '0',
           },
         },
@@ -409,6 +417,7 @@ export const Footer = {
           flow: 'y',
           justifyContent: 'space-between',
           height: '100%',
+          transition: 'max-height 0.5s ease, opacity 0.5s ease',
           '@tabletS': {
             maxHeight: '0',
             opacity: '0',
@@ -527,7 +536,7 @@ export const Footer = {
         text: 'Add adventure to your inbox',
         letterSpacing: '1px',
         fontSize: '16px',
-        fontWeight: '500',
+        fontWeight: '600',
         margin: '0',
         borderBottom: '1px solid grey',
       },
@@ -547,30 +556,48 @@ export const Footer = {
               type: 'email',
               placeholder: 'Email address',
             },
+            props: {
+              borderRadius: '0',
+            },
             style: {
               backgroundColor: 'transparent',
               border: '1px solid grey',
-              borderRadius: '0',
               width: '100%',
               padding: '10px',
               fontSize: '14px',
-              outline: 'none',
               ':focus': {
                 outline: 'none',
               },
             },
           },
-          Button: {
-            attr: {
-              type: 'submit',
-            },
+          // Button: {
+          //   attr: {
+          //     type: 'submit',
+          //   },
+          //   style: {
+          //     borderRadius: '0',
+          //   },
+          //   props: {
+          //     backgroundColor: 'rgba(138, 84, 84, 0.5);',
+          //     border: 'none',
+          //     width: '1px',
+          //   },
+          //   Img: {
+          //     src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi692710b8/c16e4fe8-3b80-45ad-bf28-d35abe23d410-debdd4b5-8a04-4607-aa3d-bd132d48ce52-6f7d43a4-8cce-4a56-bdb5-b047b7f8d961.svg',
+          //   },
+          // },
+          ButtonSubmit: {
             style: {
               borderRadius: '0',
+              '-webkit-tap-highlight-color': 'transparent',
             },
             props: {
-              backgroundColor: 'rgba(138, 84, 84, 0.5);',
+              backgroundColor: 'white;',
               border: 'none',
-              width: '1px',
+              width: '100px',
+              ':hover': {
+                backgroundColor: 'none',
+              },
             },
             Img: {
               src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi692710b8/c16e4fe8-3b80-45ad-bf28-d35abe23d410-debdd4b5-8a04-4607-aa3d-bd132d48ce52-6f7d43a4-8cce-4a56-bdb5-b047b7f8d961.svg',
@@ -623,6 +650,7 @@ export const Footer = {
         a: {
           attr: {
             href: 'https://www.facebook.com/FreeStylerShop',
+            target: '_blank',
           },
           Img: {
             src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/ficedd977b/8ea779c8-5857-4611-ae88-d015ae936e9a-03606ae3-21c8-4771-b62a-596aebd4b745-994c27f9-5bb4-48e3-8280-1e453f143db0.svg',
@@ -643,6 +671,7 @@ export const Footer = {
         a: {
           attr: {
             href: 'https://www.instagram.com/freestylershop',
+            target: '_blank',
           },
           Img: {
             src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid618a2a0/eead73a4-316a-4300-b8aa-b6632e690ecd-49359f4d-9e6b-40d7-b1ae-b0f0dd778798-b21fcd26-1392-4f1e-89c4-5a1fe812e2e0.svg',
@@ -654,11 +683,11 @@ export const Footer = {
     },
   },
 };
+
 function toggleDropdown(footerClass, isOpen, icon) {
   const responsive = window.matchMedia('(max-width: 1024px)');
-  footerClass.style.transition =
-    'opacity 0.1s ease, max-height 0.5s ease, visibility 0.5s ease';
-  // const icon = document.querySelectorAll('.icon-rotate');
+  footerClass.style.transition = 'max-height 0.5s ease, opacity 0.5s ease';
+
   if (responsive.matches) {
     if (isOpen) {
       footerClass.style.maxHeight = footerClass.scrollHeight + 'px';
@@ -680,8 +709,6 @@ function toggleDropdown(footerClass, isOpen, icon) {
   }
 }
 
-window.addEventListener('resize', initFooterSize);
-
 function initFooterSize() {
   const faq = document.getElementById('faq');
   const policy = document.getElementById('policy');
@@ -691,6 +718,8 @@ function initFooterSize() {
   const icon3 = document.getElementById('contact-icon-rotate');
 
   function resetElementStyles(element) {
+    if (!element) return;
+
     if (element) {
       element.style.maxHeight = '';
       element.style.opacity = '';
@@ -704,7 +733,9 @@ function initFooterSize() {
   resetElementStyles(policy);
   resetElementStyles(contact);
 
-  icon1.style.transform = '';
-  icon2.style.transform = '';
-  icon3.style.transform = '';
+  if (icon1) icon1.style.transform = '';
+  if (icon2) icon2.style.transform = '';
+  if (icon3) icon3.style.transform = '';
 }
+
+window.addEventListener('resize', initFooterSize);

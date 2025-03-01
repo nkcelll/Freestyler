@@ -8,6 +8,7 @@ export const IconArrowDown = {
     },
     props: {
       cursor: 'pointer',
+      transform: 'rotate(0deg)'
     }
   }
 }

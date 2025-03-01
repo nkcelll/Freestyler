@@ -1,17 +1,14 @@
 export const ScrollbarStyles = {
   Tag: 'style',
   textContent: `
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-
+    
     ::-webkit-scrollbar-track {
       background: rgb(190, 190, 190);
     }
 
     ::-webkit-scrollbar-thumb {
       background: #888;
-      border-radius: 40px;
+      border-radius: 10px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -37,9 +34,14 @@ export const ScrollbarStyles = {
     }
 
     /* Responsive */
+    @media (min-width: 1600px) {
+      body::-webkit-scrollbar {
+        width: 14px;
+      }
+    }  
     @media (max-width: 1600px) {
       body::-webkit-scrollbar {
-        width: 8px;
+        width: 12px;
       }
     }  
 
@@ -56,3 +58,7 @@ export const ScrollbarStyles = {
     }
   `,
 };
+
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }

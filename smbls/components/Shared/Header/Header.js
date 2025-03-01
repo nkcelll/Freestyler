@@ -1,4 +1,8 @@
+import { openSideMenuBox } from '../../../functions/domEvents/toggleSideboxes';
 export const MainHeader = {
+  attr: {
+    id: 'main-header',
+  },
   props: {
     display: 'flex',
     flexFlow: 'row',
@@ -9,7 +13,10 @@ export const MainHeader = {
     height: '77px',
     gap: 'G 0',
     inset: '0',
-    position: 'relative',
+    zIndex: '100',
+    position: 'sticky',
+    top: '0',
+    transition: 'top 0.3s ease',
   },
   Logo: {
     attr: {
@@ -23,12 +30,10 @@ export const MainHeader = {
   Nav: {
     props: {
       gap: '25px',
-      width: '100%',
+      width: 'auto',
       height: '100%',
-      // flex: '1',
       justifyContent: 'center',
-      '@tabletS': {
-      },
+      '@tabletS': {},
     },
   },
   //////////
@@ -41,13 +46,12 @@ export const MainHeader = {
       gap: '20px',
       '@mobileS': {
         gap: '20px',
-        padding: 0
-      }
+        padding: 0,
+      },
     },
     SearchBox: {
       extend: 'Flex',
-      props: {
-      },
+      props: {},
       SearchButton: {
         tag: 'button',
         attr: {
@@ -57,7 +61,7 @@ export const MainHeader = {
           border: 'none',
           backgroundColor: 'transparent',
           cursor: 'pointer',
-          padding: 0
+          padding: 0,
         },
         Img: {
           attr: {
@@ -73,9 +77,9 @@ export const MainHeader = {
           click: (e) => {
             const searchClick = document.getElementById('search-input-expand');
             if (searchClick) {
-              searchClick.style.opacity = '1'
-              searchClick.style.pointerEvents = 'auto'
-              searchClick.style.top = '0'
+              searchClick.style.opacity = '1';
+              searchClick.style.pointerEvents = 'auto';
+              searchClick.style.top = '0';
             }
           },
         },
@@ -86,7 +90,7 @@ export const MainHeader = {
             id: 'search-input-expand',
           },
           props: {
-            width: '100dvw',
+            width: '100%',
             height: 'auto',
             position: 'absolute',
             zIndex: '200',
@@ -126,6 +130,11 @@ export const MainHeader = {
                 border: '1px solid black',
                 backgroundColor: 'transparent',
                 letterSpacing: '2px',
+                style: {
+                  ':focus': {
+                    outline: 'none',
+                  },
+                },
               },
             },
             Button: {
@@ -134,7 +143,6 @@ export const MainHeader = {
               },
               style: {
                 padding: 0,
-
               },
               props: {
                 position: 'absolute',
@@ -163,14 +171,12 @@ export const MainHeader = {
             },
           },
         },
-        ////////////////////////////////////////////
       },
     },
-
     UserButton: {
       tag: 'a',
       attr: {
-        href: '/account',
+        href: '/login',
       },
       props: {
         border: 'none',
@@ -191,12 +197,32 @@ export const MainHeader = {
       Img: {
         src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi84c2dad5/d42a458a-4d2f-4575-975d-865814329e98-c6165623-9ed5-4cf5-a979-1233da52198d-2f260202-7fc0-4022-90ee-0634b9e5e221.svg',
       },
+      Cart: {},
+      on: {
+        click: () => {
+          openSideMenuBox('cart-box-side', 'cart-overlay');
+        },
+      },
     },
     Menu: {
       '@tabletS': {
         display: 'flex',
-        color:'green'
       },
     },
   },
 };
+
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function () {
+  const header = document.getElementById('main-header');
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    header.style.top = '-77px';
+  } else {
+    header.style.top = '0';
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});

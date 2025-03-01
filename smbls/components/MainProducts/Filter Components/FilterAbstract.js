@@ -74,31 +74,6 @@ export const FilterAbstract = ({
       }
     },
   },
-  // on: {
-  //   click: (e) => {
-  //     const dropdown = document.getElementById(
-  //       `${prefix}-main-category-dropdown`
-  //     );
-  //     const icon = document.getElementById(`${prefix}-main-top-icon`);
-  //     if (dropdown.contains(e.target)) {
-  //       filterCategories.forEach(({ id }) => {
-  //         const topDropdown = document.getElementById(`${prefix}-${id}`);
-  //         console.log(dropdown !== dropdown);
-
-  //         if(dropdown !== dropdown) {
-  //           toggleDropdown(topDropdown)
-  //         }
-  //         toggleDropdown(topDropdown);
-  //       });
-  //     }
-  //     if (dropdown.contains(e.target)) {
-  //       const currenIconTransform = icon.style.transform;
-  //       currenIconTransform === 'rotate(180deg)'
-  //         ? (icon.style.transform = 'rotate(0deg)')
-  //         : (icon.style.transform = 'rotate(180deg)');
-  //     }
-  //   },
-  // },
   $filterCollection: () =>
     filterCategories.map((res) => inputSec({ ...res, prefix })),
 });
@@ -177,7 +152,6 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
       },
     },
   },
-
   Span: {
     text: spanText,
     props: {

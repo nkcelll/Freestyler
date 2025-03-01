@@ -1,3 +1,5 @@
+import { closeSideMenuBox } from "../../../functions/domEvents/toggleSideboxes";
+
 export const MainFilterBox = {
   OverlayBox: {
     attr: {
@@ -6,33 +8,33 @@ export const MainFilterBox = {
     props: {
       width: '100dvw',
       height: '100dvh',
-      position: 'absolute',
+      position: 'fixed',
       right: '0',
-      top: '-151px',
+      top: '0',
       zIndex: '120',
-      // pointerEvents: 'auto',
       visibility: 'hidden',
       backgroundColor: 'rgb(63, 63, 63)',
       transition: 'opacity 0.5s ease, transform 4s ease',
     },
     on: {
       click: (e) => {
-        const sideMenu = document.getElementById('side-filter');
-        const closeOverlay = document.getElementById('main-filter-overlay');
+        // const sideMenu = document.getElementById('side-filter');
+        // const closeOverlay = document.getElementById('main-filter-overlay');
 
-        if (e.target === closeOverlay) {
-          setTimeout(() => {
-            closeOverlay.style.opacity = '0';
-            closeOverlay.style.visibility = 'hidden';
-            closeOverlay.style.pointerEvents = 'none';
+        // if (e.target === closeOverlay) {
+        //   setTimeout(() => {
+        //     closeOverlay.style.opacity = '0';
+        //     closeOverlay.style.visibility = 'hidden';
+        //     closeOverlay.style.pointerEvents = 'none';
 
-            sideMenu.style.transform = 'translateX(100%)';
-            sideMenu.style.opacity = '0';
-            sideMenu.style.pointerEvents = 'none';
+        //     sideMenu.style.transform = 'translateX(100%)';
+        //     sideMenu.style.opacity = '0';
+        //     sideMenu.style.pointerEvents = 'none';
 
-            document.body.style.overflow = 'visible';
-          }, 15);
-        }
+        //     document.body.style.overflow = 'visible';
+        //   }, 15);
+        // }
+        closeSideMenuBox('side-filter', 'main-filter-overlay')
       },
     },
   },
@@ -42,17 +44,18 @@ export const MainFilterBox = {
       id: 'side-filter',
     },
     props: {
-      position: 'absolute',
-      top: '-151px',
+      // position: 'absolute',
+      position: 'fixed',
+      top: '0',
       right: '0',
       zIndex: '200',
       backgroundColor: '#fff',
       width: '320px',
-      height: '100vh',
+      height: '100dvh',
       flow: 'y',
       gap: '30px',
       overflow: 'auto',
-      opacity: '0',
+      // opacity: '0',
       transition: 'opacity 0.5s ease, transform 0.5s ease',
       transform: 'translateX(100%)',
       '@screenL<': {
@@ -83,23 +86,23 @@ export const MainFilterBox = {
           maxWidth: '10px',
           backgroundColor: 'transparent',
         },
-        IconClose: {
-        },
+        IconClose: {},
         on: {
           click: () => {
-            const closeSide = document.getElementById('side-filter');
-            const closeOverlay = document.getElementById('main-filter-overlay');
-            // const closeOverlay = document.querySelector('.overlay');
-            setTimeout(() => {
-              closeSide.style.transform = 'translateX(100%)';
-              closeSide.style.opacity = '0';
-              closeSide.style.pointerEvents = 'none';
+            // const closeSide = document.getElementById('side-filter');
+            // const closeOverlay = document.getElementById('main-filter-overlay');
+            // // const closeOverlay = document.querySelector('.overlay');
+            // setTimeout(() => {
+            //   closeSide.style.transform = 'translateX(100%)';
+            //   closeSide.style.opacity = '0';
+            //   closeSide.style.pointerEvents = 'none';
 
-              closeOverlay.style.opacity = '0';
-              closeOverlay.style.visibility = 'hidden';
-              closeOverlay.style.pointerEvents = 'none';
-              document.body.style.overflow = 'visible';
-            }, 10);
+            //   closeOverlay.style.opacity = '0';
+            //   closeOverlay.style.visibility = 'hidden';
+            //   closeOverlay.style.pointerEvents = 'none';
+            //   document.body.style.overflow = 'visible';
+            // }, 10);
+            closeSideMenuBox('side-filter', 'main-filter-overlay')
           },
         },
       },

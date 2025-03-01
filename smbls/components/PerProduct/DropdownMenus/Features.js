@@ -1,3 +1,5 @@
+import PerProductSpecsDropdown from '../../../functions/domEvents/PerProductSpecsDropdown';
+
 export const Features = {
   extend: 'Flex',
   props: {
@@ -22,107 +24,142 @@ export const Features = {
       text: 'Features',
       props: {
         fontSize: '18px',
-        fontWeight: '400',
+        fontWeight: '600',
         letterSpacing: '1.2px',
       },
     },
     IconArrowDown: {},
     on: {
-      click: () => {
-        const detailDrop = document.getElementById('feature-dropdown_toggle');
-        if (detailDrop) {
-          const isHidden = detailDrop.style.opacity === '0' || detailDrop.style.opacity === '';
-          detailDrop.style.opacity = isHidden ? '1' : '0';
-          detailDrop.style.maxHeight = isHidden ? detailDrop.scrollHeight + 'px' : '0';
-        }
+      click: (e) => {
+        const feature = document.getElementById('feature-dropdown_toggle');
+        const icon = e.currentTarget.querySelector('.arrow-down-icon');
+        PerProductSpecsDropdown(feature, icon);
       },
     },
-    
   },
-  
   FeatureDropDown: {
     extend: 'Flex',
     attr: {
       id: 'feature-dropdown_toggle',
     },
     props: {
-      display: 'flex', 
-      flexWrap: 'wrap', 
-      gap: '30px', 
-      // justifyContent: 'space-between',
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '30px',
       wrap: 'row wrap',
-      width: '100%', 
-      maxHeight: '0', 
-      opacity: '0', 
-      overflow: 'hidden', 
-      transition: 'max-height 0.5s ease, opacity 0.5s ease', 
+      width: '100%',
+      maxHeight: '0',
+      opacity: '0',
+      overflow: 'hidden',
+      transition: 'max-height 0.5s ease, opacity 0.5s ease',
       backgroundColor: '#E4E2E2',
-
-
+    },
+    childExtend: {
+      extend: 'Flex',
+      props: {
+        height: 'auto',
+        width: 'auto',
+      },
     },
     $collection: () => [
       {
-        div: features('Surfy Float', 'A Swallow Tail paired with a modest 5mm of taper delivers increased float and a surf-inspired ride for the deepest days.'),
+        div: features(
+          'Surfy Float',
+          'A Swallow Tail paired with a modest 5mm of taper delivers increased float and a surf-inspired ride for the deepest days.'
+        ),
       },
       {
-        div: features('Powerful and Precise', 'Our Camber Bend encourages powerful turns and poppy precision.'),
+        div: features(
+          'Powerful and Precise',
+          'Our Camber Bend encourages powerful turns and poppy precision.'
+        ),
       },
       {
-        div: features('Lightweight and Full of Energy', 'The carbon-reinforced fiberglass core matrix creates a stiff, fine-tuned flex and feel thats loaded with energy.'),
+        div: features(
+          'Lightweight and Full of Energy',
+          'The carbon-reinforced fiberglass core matrix creates a stiff, fine-tuned flex and feel thats loaded with energy.'
+        ),
       },
       {
-        div: features('Directional Control', 'Its directional shape and flex keep you carving and slashing with total control.'),
+        div: features(
+          'Directional Control',
+          'Its directional shape and flex keep you carving and slashing with total control.'
+        ),
       },
       {
-        div: features('Surfy Float', 'A Swallow Tail paired with a modest 5mm of taper delivers increased float and a surf-inspired ride for the deepest days.'),
+        div: features(
+          'Surfy Float',
+          'A Swallow Tail paired with a modest 5mm of taper delivers increased float and a surf-inspired ride for the deepest days.'
+        ),
       },
       {
-        div: features('Powerful and Precise', 'Our Camber Bend encourages powerful turns and poppy precision.'),
+        div: features(
+          'Powerful and Precise',
+          'Our Camber Bend encourages powerful turns and poppy precision.'
+        ),
       },
       {
-        div: features('Directional Control', 'Its directional shape and flex keep you carving and slashing with total control.'),
+        div: features(
+          'Directional Control',
+          'Its directional shape and flex keep you carving and slashing with total control.'
+        ),
       },
       {
-        div: features('Surfy Float', 'A Swallow Tail paired with a modest 5mm of taper delivers increased float and a surf-inspired ride for the deepest days.'),
+        div: features(
+          'Surfy Float',
+          'A Swallow Tail paired with a modest 5mm of taper delivers increased float and a surf-inspired ride for the deepest days.'
+        ),
       },
       {
-        div: features('Powerful and Precise', 'Our Camber Bend encourages powerful turns and poppy precision.'),
+        div: features(
+          'Powerful and Precise',
+          'Our Camber Bend encourages powerful turns and poppy precision.'
+        ),
       },
       {
-        div: features('Directional Control', 'Its directional shape and flex keep you carving and slashing with total control.'),
+        div: features(
+          'Directional Control',
+          'Its directional shape and flex keep you carving and slashing with total control.'
+        ),
       },
       {
-        div: features('Surfy Float', 'A Swallow Tail paired with a modest 5mm of taper delivers increased float and a surf-inspired ride for the deepest days.'),
+        div: features(
+          'Surfy Float',
+          'A Swallow Tail paired with a modest 5mm of taper delivers increased float and a surf-inspired ride for the deepest days.'
+        ),
       },
       {
-        div: features('Powerful and Precise', 'Our Camber Bend encourages powerful turns and poppy precision.'),
+        div: features(
+          'Powerful and Precise',
+          'Our Camber Bend encourages powerful turns and poppy precision.'
+        ),
       },
-      
-      
     ],
   },
-  
 };
 
 const features = (liSpec, pSpec) => ({
   extend: 'Flex',
   style: {
-    paddingRight: '20px'
-
+    paddingRight: '20px',
   },
   props: {
     display: 'flex',
-    flexDirection: 'column', 
-    width: '400px', 
+    flexDirection: 'column',
+    width: '400px',
     borderRight: '1px solid grey',
     margin: '20px 0',
-    
-
+    '@mobileL': {
+      width: '160px',
+    },
+    '@tabletS': {
+      width: '300px',
+    },
   },
   li: {
     text: liSpec,
     style: {
-      listStyle: 'none'
+      listStyle: 'none',
     },
     props: {
       fontSize: '16px',

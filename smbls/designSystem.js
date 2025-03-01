@@ -44,15 +44,18 @@ export default {
     //     background: 'black',
     //   },
     // },
+    
     document: {
       '@light': {
         color: 'black',
+        // color: 'black',
         background: '#BAB8B8',
       '-webkit-tap-highlight-color': 'transparent'
       },
       '@dark': {
         color: '#f3f3f3',
         background: 'black',
+        '-webkit-tap-highlight-color': 'transparent'
       },
     },
     none: {
@@ -114,6 +117,7 @@ export default {
       h6: {
       },
       body: {
+        
       },
     },
     '@screenL': {
