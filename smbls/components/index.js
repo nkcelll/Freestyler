@@ -97,7 +97,9 @@ export * from './Cart/Cart'
 export * from './Cart/ProductList'
 
 /////////// Checkout
-export * from './Checkout/Checkout'
+export * from './Checkout/CheckoutLayout'
+export * from './Checkout/PersonalInformation'
+export * from './Checkout/Order'
 
 
 

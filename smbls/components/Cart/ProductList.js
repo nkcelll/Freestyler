@@ -1,4 +1,4 @@
-import { ButtonRemoveItem } from "../Shared/components/ButtonRemoveItem";
+import { ButtonRemoveItem } from '../Shared/components/ButtonRemoveItem';
 
 export const ProductList = {
   extend: 'Flex',
@@ -45,7 +45,7 @@ export const ProductList = {
       width: 'auto',
       height: 'auto',
       justifyContent: 'space-between',
-      align: 'center'
+      align: 'center',
     },
     Total: {
       text: '499.99$',
@@ -56,12 +56,9 @@ export const ProductList = {
         alignSelf: 'flex-start',
       },
     },
-    ButtonRemoveItem: {
-
-    }
-  }
-  
-}
+    ButtonRemoveItem: {},
+  },
+};
 
 const ProductDetails = (text) => ({
   extend: 'Flex',

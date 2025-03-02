@@ -58,9 +58,9 @@ export const MainFilterBox = {
       // opacity: '0',
       transition: 'opacity 0.5s ease, transform 0.5s ease',
       transform: 'translateX(100%)',
-      '@screenL<': {
-        width: '600px',
-      },
+      // '@screenL<': {
+      //   width: '600px',
+      // },
     },
 
     CloseListButton: {

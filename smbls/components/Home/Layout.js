@@ -6,8 +6,8 @@ export const Layout = {
     height: 'auto',
   },
   style: {
-    scrollbarWidth: 'none', // Firefox
-    msOverflowStyle: 'none', // IE/Edge
+    scrollbarWidth: 'none', 
+    msOverflowStyle: 'none',
   },
   // HomeListSidebar: {},
   MainHeader: {

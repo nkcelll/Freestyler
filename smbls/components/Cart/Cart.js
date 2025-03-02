@@ -1,6 +1,4 @@
 import { closeSideMenuBox } from '../../functions/domEvents/toggleSideboxes';
-import { ButtonSubmit } from '../Shared/components/ButtonSubmit';
-import { ProductList } from './ProductList';
 
 export const Cart = {
   extend: 'Flex',
@@ -36,7 +34,7 @@ export const Cart = {
       width: '400px',
       height: '100%',
       backgroundColor: '#E4E2E2',
-      transform: 'translateX(100%)', /////////////
+      transform: 'translateX(100%)', 
       transition: 'transform 0.5s ease-in-out',
       cursor: 'default',
       top: '0',
@@ -131,11 +129,9 @@ export const Cart = {
         },
         style: {
           scrollbarWidth: 'none',
-          msOverflowStyle: 'none', 
+          msOverflowStyle: 'none',
         },
-        ProductList: {
-
-        },
+        ProductList: {},
         /////////// Test Case
         // ProductLista: {
         //   extend: 'Flex',
@@ -208,7 +204,6 @@ export const Cart = {
               height: 'auto',
               justifyContent: 'space-between',
               margin: '0',
-             
             },
           },
           $estimatedTotal: () => [
@@ -221,17 +216,17 @@ export const Cart = {
           props: {
             width: '100%',
             height: '60px',
-            justifyContent: 'center'
+            justifyContent: 'center',
           },
           a: {
             extend: 'Flex',
             text: 'Check Out',
             attr: {
-              href: '/checkout'
+              href: '/checkout',
             },
             style: {
               listStyleType: 'none',
-              textDecoration: 'none'
+              textDecoration: 'none',
             },
             props: {
               width: '100%',
@@ -254,10 +249,8 @@ export const Cart = {
             },
           },
         },
-        
       },
     },
-    
   },
 };
 
@@ -270,4 +263,3 @@ const ProductDetails = (text) => ({
     fontWeight: '600',
   },
 });
-
