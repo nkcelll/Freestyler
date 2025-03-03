@@ -19,12 +19,12 @@ export const MainHeader = {
     transition: 'top 0.3s ease',
   },
   Logo: {
-    attr: {
+    
       href: '/',
-    },
-    props: {
+    
+
       alignSelf: 'center',
-    },
+
   },
   // Nav Bar
   Nav: {
