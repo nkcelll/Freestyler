@@ -1,3 +1,5 @@
+import { openSideMenuBox } from "../../../functions";
+
 export const FilterMenu = {
   extend: 'Flex',
   tag: 'button',
@@ -45,7 +47,7 @@ export const FilterMenu = {
       //   openOverlay.style.pointerEvents = 'auto';
       //   document.body.style.overflow = 'hidden';
       // }
-      el.call('openSideMenuBox', 'side-filter', 'main-filter-overlay')
+      openSideMenuBox('side-filter', 'main-filter-overlay')
     },
   },
 };
