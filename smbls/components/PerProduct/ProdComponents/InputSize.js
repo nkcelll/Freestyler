@@ -17,7 +17,7 @@ export const InputSize = {
         state: 'sizes',
         type: 'radio',
         name: 'size',
-        value: (el, s) =>el.props.text, 
+        value: (el, s) =>s.value, 
       },
       props: {
         width: '40px',

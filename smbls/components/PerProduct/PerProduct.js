@@ -160,7 +160,7 @@ export const PerProducts = {
 
         // })),
         childExtend: 'InputSize',
-        $collection: (el, s) => (s.sizes?.sizeText || [])
+        $stateCollection: (el, s) => (s.sizes?.sizeText || [])
         // $collection: (el, s) => ({
         //   extend: 'inputSize',
         //   text: ({
