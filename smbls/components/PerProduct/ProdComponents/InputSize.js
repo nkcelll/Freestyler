@@ -17,9 +17,8 @@ export const InputSize = {
         state: 'sizes',
         type: 'radio',
         name: 'size',
-        value: (el, s) =>s.value, 
       },
-      props: {
+      props: (el, s) => ({
         width: '40px',
         height: '40px',
         border: '1px solid #333',
@@ -31,7 +30,7 @@ export const InputSize = {
         margin: 0,
         padding: 0,
         '::before': {
-          content: `""`, 
+          content: `"${s.value}"`, 
           position: 'absolute',
           inset: '0',
           display: 'flex',
@@ -45,7 +44,7 @@ export const InputSize = {
           backgroundColor: 'black',
           color: 'white',
         },
-      },
+      }),
     },
   ],
 };
