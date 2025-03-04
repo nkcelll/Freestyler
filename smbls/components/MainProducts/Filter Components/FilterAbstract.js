@@ -7,11 +7,11 @@ export const FilterAbstract = ({
   extend: ['Flex'],
   props: {
     flow: 'y',
+    class: 'filter-box',
     cursor: 'pointer'
   },
   attr: {
     id: mainID,
-    class: 'filter-box',
   },
   Category: {
     extend: 'Flex',
@@ -83,9 +83,9 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
   attr: {
     id: `${prefix}-${id}`,
     'aria-expanded': 'false',
-    class: 'filter-dropdown',
   },
   props: {
+    class: 'filter-dropdown',
     padding: '0 20px',
     backgroundColor: '#fff',
     flow: 'x',

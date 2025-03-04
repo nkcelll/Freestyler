@@ -114,10 +114,10 @@ const category = ({ topCat, id, url, subCategories, prefix }) => ({
   SubCategoryList: {
     extend: 'Flex',
     attr: {
-      class: `${prefix}-sub-category-dropdown`,
       'aria-expanded': 'false',
     },
     props: {
+      class: `${prefix}-sub-category-dropdown`,
       flexDirection: 'column',
       borderLeft: '1px solid grey',
       maxHeight: '0',
