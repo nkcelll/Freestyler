@@ -1,4 +1,4 @@
-export const inputSize = {
+export const InputSize = {
   extend: 'Flex',
   props: (el, s) => ({
     width: 'auto',
@@ -17,7 +17,7 @@ export const inputSize = {
         state: 'sizes',
         type: 'radio',
         name: 'size',
-        value: el.props.text, 
+        value: (el, s) =>el.props.text, 
       },
       props: {
         width: '40px',
@@ -31,7 +31,7 @@ export const inputSize = {
         margin: 0,
         padding: 0,
         '::before': {
-          content: `"${el.props.text}"`, 
+          content: `""`, 
           position: 'absolute',
           inset: '0',
           display: 'flex',

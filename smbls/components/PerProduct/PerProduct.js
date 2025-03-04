@@ -115,7 +115,7 @@ export const PerProducts = {
       },
     },
     H1: {
-      text: 'Bataleon Ecko mode',
+      text:'Bataleon Ecko mode',
       props: {
         fontSize: '32px',
         margin: '0',
@@ -159,13 +159,8 @@ export const PerProducts = {
         //   }
 
         // })),
-        $collection: (el, s) =>
-          (s.sizes?.sizeText || []).map((size) => ({
-            extend: 'inputSize',
-            props: {
-              text: size,
-            },
-          })),
+        childExtend: 'InputSize',
+        $collection: (el, s) => (s.sizes?.sizeText || [])
         // $collection: (el, s) => ({
         //   extend: 'inputSize',
         //   text: ({
