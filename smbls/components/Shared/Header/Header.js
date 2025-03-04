@@ -121,7 +121,7 @@ export const MainHeader = {
                 height: '100%',
                 borderRadius: '0',
                 padding: '0 35px 0 20px',
-                color: 'zebraInTheNight',
+                color: 'black',
                 outline: 'none',
                 border: '1px solid black',
                 backgroundColor: 'transparent',

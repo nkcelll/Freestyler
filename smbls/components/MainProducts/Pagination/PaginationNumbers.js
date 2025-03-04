@@ -23,7 +23,7 @@ export const PaginationNumbers = {
           },
           props: {
             textDecoration: 'none',
-            color: 'zebraInTheNight'
+            color: 'black'
           }
         }
       })

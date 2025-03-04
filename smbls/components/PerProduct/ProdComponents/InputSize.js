@@ -41,8 +41,8 @@ export const InputSize = {
           transition: 'background-color 0.2s ease, border-color 0.2s ease',
         },
         ':checked::before': {
-          backgroundcolor: 'zebraInTheNight',
-          color: 'zebra',
+          backgroundcolor: 'black',
+          color: 'white',
         },
       }),
     },
@@ -98,7 +98,7 @@ export const InputSize = {
 //         transition: 'background-color 0.2s ease, border-color 0.2s ease',
 //       },
 //       ':checked::before': {
-//         backgroundcolor: 'zebraInTheNight',
+//         backgroundcolor: 'black',
 //         border: '1px solid black',
 //         borderRadius: '0',
 //         transition: 'background-color 0.2s ease, border-color 0.2s ease',
@@ -127,7 +127,7 @@ export const InputSize = {
 //         top: '50%',
 //         left: '50%',
 //         transform: 'translate(-50%, -50%)',
-//         color: 'zebra',
+//         color: 'white',
 //         fontWeight: 'bold',
 //         opacity: '1',
 //       },

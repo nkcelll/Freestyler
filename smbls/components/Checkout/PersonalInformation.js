@@ -51,7 +51,7 @@ export const PersonalInformation = {
           fontSize: '20px',
           fontWeight: '700',
           letterSpacing: '1.2',
-          color: 'zebra',
+          color: 'white',
           margin: 0,
           padding: '0 20px',
         },
@@ -70,8 +70,8 @@ export const PersonalInformation = {
           height: '60px',
           justifyContent: 'center',
           align: 'center',
-          color: 'zebraInTheNight',
-          backgroundcolor: 'zebra'
+          color: 'black',
+          backgroundcolor: 'white'
         }
       },
       
@@ -118,7 +118,7 @@ export const PersonalInformation = {
           fontSize: '20px',
           fontWeight: '700',
           letterSpacing: '1.2',
-          color: 'zebra',
+          color: 'white',
           margin: 0,
           padding: '0 20px',
         },
@@ -195,7 +195,7 @@ export const PersonalInformation = {
       extend: 'Link',
       props: {
         cursor: 'pointer',
-        color: 'zebraInTheNight',
+        color: 'black',
         fontWeight: '300',
         textDecoration: 'underline'
       }

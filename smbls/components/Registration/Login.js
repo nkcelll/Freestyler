@@ -105,7 +105,7 @@ export const Login = {
                   'background-color 0.2s ease, border-color 0.2s ease',
               },
               ':checked::before': {
-                backgroundcolor: 'zebraInTheNight',
+                backgroundcolor: 'black',
                 border: '1px solid black',
                 borderRadius: '0',
                 transition:
@@ -148,7 +148,7 @@ export const Login = {
           cursor: 'pointer',
           alignSelf: 'flex-end',
           textDecoration: 'none',
-          color: 'zebraInTheNight',
+          color: 'black',
           fontSize: '14px',
           letterSpacing: '1.2px',
           ':hover': {
@@ -185,8 +185,8 @@ export const Login = {
           fontWeight: '400',
           letterSpacing: '1.2',
           ':hover': {
-            backgroundcolor: 'zebraInTheNight',
-            color: 'zebra',
+            backgroundcolor: 'black',
+            color: 'white',
           },
         },
       },
@@ -228,11 +228,11 @@ export const Login = {
 //       padding: '10px',
 //       borderRadius: '0',
 //       border: '1px solid #ccc',
-//       color: 'zebraInTheNight',
+//       color: 'black',
 //       cursor: 'text',
 //     },
 //     style: {
-//       color: 'zebraInTheNight',
+//       color: 'black',
 //       ':focus': {
 //         outline: 'none',
 //         border: '1px solid black',

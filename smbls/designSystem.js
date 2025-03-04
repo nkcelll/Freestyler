@@ -29,15 +29,13 @@ export default {
       '--gray 1 -16',
       '--gray 1 +16',
     ],
-    zebra: ['--white 1', '--black 1'],
-    zebraInTheNight: ['--black 1', '--white 1']
   },
   GRADIENT: {
   },
   THEME: {
     // document: {
     //   '@light': {
-    //     color: 'zebra',
+    //     color: 'white',
     //     background: 'transparent',
     //   '-webkit-tap-highlight-color': 'transparent'
     //   },
@@ -50,7 +48,7 @@ export default {
     document: {
       '@light': {
         color: 'black',
-        // color: 'zebraInTheNight',
+        // color: 'black',
         background: '#E4E2E2',
       '-webkit-tap-highlight-color': 'transparent'
       },

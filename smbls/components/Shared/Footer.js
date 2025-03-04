@@ -222,7 +222,7 @@ export const Footer = {
             cursor: 'pointer',
             width: 'auto',
             fontSize: '14px',
-            color: 'zebraInTheNight',
+            color: 'black',
           },
         },
         $propsCollection: () => [
@@ -321,7 +321,7 @@ export const Footer = {
             width: 'auto',
             fontSize: '14px',
             textDecoration: 'none',
-            color: 'zebraInTheNight',
+            color: 'black',
           },
         },
         $propsCollection: () => [

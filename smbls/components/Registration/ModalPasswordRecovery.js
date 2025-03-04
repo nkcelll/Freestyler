@@ -31,7 +31,7 @@ export const ModalPasswordRecovery = {
       width: '400px',
       padding: '20px',
       height: 'auto',
-      backgroundcolor: 'zebra',
+      backgroundcolor: 'white',
       gap: '30px',
       flow: 'y',
     },

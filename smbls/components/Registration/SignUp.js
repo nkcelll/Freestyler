@@ -93,8 +93,8 @@ export const SignUp = {
           fontWeight: '400',
           letterSpacing: '1.2px',
           ':hover': {
-            backgroundcolor: 'zebraInTheNight',
-            color: 'zebra',
+            backgroundcolor: 'black',
+            color: 'white',
           },
         },
       },
@@ -134,11 +134,11 @@ export const SignUp = {
 //       padding: '10px',
 //       borderRadius: '0',
 //       border: '1px solid #ccc',
-//       color: 'zebraInTheNight',
+//       color: 'black',
 //       cursor: 'text',
 //     },
 //     style: {
-//       color: 'zebraInTheNight',
+//       color: 'black',
 //       ':focus': {
 //         outline: 'none',
 //         border: '1px solid black',

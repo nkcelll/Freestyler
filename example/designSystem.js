@@ -26,16 +26,16 @@ const GRADIENT = {}
 const THEME = {
   document: {
     '@dark': {
-      color: 'zebra',
+      color: 'white',
       background: 'black'
     },
     '@light': {
-      background: 'zebra',
-      color: 'zebraInTheNight'
+      background: 'white',
+      color: 'black'
     },
     '@midnight': {
       background: '#112233',
-      color: 'zebra'
+      color: 'white'
     }
   }
 }

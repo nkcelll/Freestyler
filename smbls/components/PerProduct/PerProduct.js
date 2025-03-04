@@ -214,8 +214,8 @@ export const PerProducts = {
           backgroundColor: 'transparent',
           fontWeight: '400',
           ':hover': {
-            backgroundcolor: 'zebraInTheNight',
-            color: 'zebra',
+            backgroundcolor: 'black',
+            color: 'white',
           },
           '@tabletS': {
             width: '100%',
@@ -223,13 +223,13 @@ export const PerProducts = {
           },
           '@mobileL': {
             width: '100%',
-            backgroundcolor: 'zebraInTheNight',
-            color: 'zebra'
+            backgroundcolor: 'black',
+            color: 'white'
           },
           '@mobileM': {
             width: '100%',
-            backgroundcolor: 'zebraInTheNight',
-            color: 'zebra'
+            backgroundcolor: 'black',
+            color: 'white'
           },
         },
       },

@@ -68,7 +68,7 @@ export const MainFilterBox = {
       props: {
         width: '100%',
         height: 'auto',
-        color: 'zebra',
+        color: 'white',
         border: 'none',
         justifyContent: 'flex-end',
         align: 'center',

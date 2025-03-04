@@ -31,11 +31,11 @@ const RegisterForms = (labelText, id, inputType, placeHolder) => ({
       padding: '10px',
       borderRadius: '0',
       border: '1px solid #ccc',
-      color: 'zebraInTheNight',
+      color: 'black',
       cursor: 'text',
     },
     style: {
-      color: 'zebraInTheNight',
+      color: 'black',
       ':focus': {
         outline: 'none',
         border: '1px solid black',

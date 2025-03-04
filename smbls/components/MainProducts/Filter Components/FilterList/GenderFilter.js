@@ -71,7 +71,7 @@ export const GenderFilter = {
 //       flow: 'y',
 //       gap: '20px',
 //       overflow: 'hidden',
-//       backgroundcolor: 'zebra',
+//       backgroundcolor: 'white',
 //       transition: 'max-height 0.5s ease, opacity 0.5s ease',
 //     },
 //     $collecion: () => [
