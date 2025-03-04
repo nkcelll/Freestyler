@@ -7,11 +7,11 @@ export const FilterAbstract = ({
   extend: ['Flex'],
   props: {
     flow: 'y',
+    class: 'filter-box',
     cursor: 'pointer'
   },
   attr: {
     id: mainID,
-    class: 'filter-box',
   },
   Category: {
     extend: 'Flex',
@@ -23,7 +23,7 @@ export const FilterAbstract = ({
       height: '60px',
       flow: 'x',
       borderBottom: '1px solid grey',
-      backgroundColor: '#fff',
+      backgroundColor: 'white',
       justifyContent: 'space-between',
       align: 'center',
       padding: '0 20px',
@@ -83,9 +83,9 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
   attr: {
     id: `${prefix}-${id}`,
     'aria-expanded': 'false',
-    class: 'filter-dropdown',
   },
   props: {
+    class: 'filter-dropdown',
     padding: '0 20px',
     backgroundColor: '#fff',
     flow: 'x',
@@ -121,7 +121,7 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
         transition: 'background-color 0.2s ease, border-color 0.2s ease',
       },
       ':checked::before': {
-        backgroundColor: 'black',
+        backgroundcolor: 'black',
         border: '1px solid black',
         borderRadius: '0',
         transition: 'background-color 0.2s ease, border-color 0.2s ease',

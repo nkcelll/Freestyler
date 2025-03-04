@@ -6,7 +6,7 @@ export const Footer = {
     flow: 'y',
     gap: '5px',
     padding: '0 20px',
-    backgroundColor: '#E4E2E2',
+    
     borderTop: '1px solid grey',
     overflow: 'hidden',
     '@tabletS': {
@@ -228,21 +228,15 @@ export const Footer = {
         },
         $propsCollection: () => [
           {
-            attr: {
               href: '/',
-            },
             text: 'Size chart',
           },
           {
-            attr: {
               href: '/',
-            },
             text: 'Shipping policy',
           },
           {
-            attr: {
               href: '/',
-            },
             text: 'Terms and conditions',
           },
         ],
@@ -333,21 +327,15 @@ export const Footer = {
         },
         $propsCollection: () => [
           {
-            attr: {
               href: '/',
-            },
             text: 'Privacy and policy',
           },
           {
-            attr: {
               href: '/',
-            },
             text: 'Shipping policy',
           },
           {
-            attr: {
               href: '/',
-            },
             text: 'Terms and conditions',
           },
         ],

@@ -9,6 +9,7 @@ export const PerProducts = {
     gap: '30px',
     padding: '20px',
     backgroundColor: '#E4E2E2',
+    // flex: '1 1',
     '@mobileL': {
       flow: 'y',
     },
@@ -110,7 +111,7 @@ export const PerProducts = {
       },
     },
     H1: {
-      text: 'Bataleon Ecko mode',
+      text:'Bataleon Ecko mode',
       props: {
         fontSize: '32px',
         margin: '0',
@@ -164,8 +165,13 @@ export const PerProducts = {
             props: {
               text: size,
             },
-            
           })),
+        // $collection: (el, s) => ({
+        //   extend: 'inputSize',
+        //   text: ({
+        //     state
+        //   }) => state.sizes.sizeText.map((size) => size)
+        // })
       },
     },
     Description: {
@@ -214,7 +220,7 @@ export const PerProducts = {
           backgroundColor: 'transparent',
           fontWeight: '400',
           ':hover': {
-            backgroundColor: 'black',
+            backgroundcolor: 'black',
             color: 'white',
           },
           '@tabletS': {
@@ -223,12 +229,12 @@ export const PerProducts = {
           },
           '@mobileL': {
             width: '100%',
-            backgroundColor: 'black',
+            backgroundcolor: 'black',
             color: 'white'
           },
           '@mobileM': {
             width: '100%',
-            backgroundColor: 'black',
+            backgroundcolor: 'black',
             color: 'white'
           },
         },

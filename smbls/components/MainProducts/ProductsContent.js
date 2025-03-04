@@ -60,7 +60,7 @@ export const ProductsContent = {
         gap: '16px',
       },
     },
-    $priceCollection: () => [
+    ...[
       {
         props: {
           text: '{{ price }}',

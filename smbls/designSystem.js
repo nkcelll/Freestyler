@@ -49,7 +49,7 @@ export default {
       '@light': {
         color: 'black',
         // color: 'black',
-        background: '#BAB8B8',
+        background: '#E4E2E2',
       '-webkit-tap-highlight-color': 'transparent'
       },
       '@dark': {

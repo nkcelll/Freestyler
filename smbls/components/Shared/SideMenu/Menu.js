@@ -10,7 +10,7 @@ export const Menu = {
     flexFlow: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#E4E2E2',
+    
     // width: '15px',
     height: 'auto',
     position: 'relative',

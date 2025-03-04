@@ -7,7 +7,7 @@ export const Login = {
     height: '700px',
     justifyContent: 'center',
     align: 'center',
-    backgroundColor: '#E4E2E2',
+    
     position: 'relative',
   },
   LoginElements: {
@@ -105,7 +105,7 @@ export const Login = {
                   'background-color 0.2s ease, border-color 0.2s ease',
               },
               ':checked::before': {
-                backgroundColor: 'black',
+                backgroundcolor: 'black',
                 border: '1px solid black',
                 borderRadius: '0',
                 transition:
@@ -185,7 +185,7 @@ export const Login = {
           fontWeight: '400',
           letterSpacing: '1.2',
           ':hover': {
-            backgroundColor: 'black',
+            backgroundcolor: 'black',
             color: 'white',
           },
         },

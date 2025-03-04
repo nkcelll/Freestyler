@@ -7,7 +7,7 @@ export const SignUp = {
     height: '800px',
     justifyContent: 'center',
     align: 'center',
-    backgroundColor: '#E4E2E2',
+    
   },
   SignUpElements: {
     extend: 'Flex',
@@ -93,7 +93,7 @@ export const SignUp = {
           fontWeight: '400',
           letterSpacing: '1.2px',
           ':hover': {
-            backgroundColor: 'black',
+            backgroundcolor: 'black',
             color: 'white',
           },
         },

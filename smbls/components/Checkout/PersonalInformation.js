@@ -70,8 +70,8 @@ export const PersonalInformation = {
           height: '60px',
           justifyContent: 'center',
           align: 'center',
-          color: 'Black',
-          backgroundColor: 'white'
+          color: 'black',
+          backgroundcolor: 'white'
         }
       },
       

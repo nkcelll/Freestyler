@@ -33,7 +33,7 @@ export const Cart = {
     props: {
       width: '400px',
       height: '100%',
-      backgroundColor: '#E4E2E2',
+      
       transform: 'translateX(100%)', 
       transition: 'transform 0.5s ease-in-out',
       cursor: 'default',

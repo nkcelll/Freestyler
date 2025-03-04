@@ -1,4 +1,4 @@
-import { openSideMenuBox } from "../../../functions/domEvents/toggleSideboxes";
+import { openSideMenuBox } from "../../../functions";
 
 export const FilterMenu = {
   extend: 'Flex',
@@ -31,7 +31,7 @@ export const FilterMenu = {
   },
   MainFilterBox: {},
   on: {
-    click: (e) => {
+    click: (e, el) => {
       // const openSideMenu = document.getElementById('side-filter');
       // const openOverlay = document.getElementById('main-filter-overlay');
       // console.log(e.currentTarget);
@@ -48,7 +48,6 @@ export const FilterMenu = {
       //   document.body.style.overflow = 'hidden';
       // }
       openSideMenuBox('side-filter', 'main-filter-overlay')
-
     },
   },
 };

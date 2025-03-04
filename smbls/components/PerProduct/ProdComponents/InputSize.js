@@ -1,4 +1,4 @@
-export const inputSize = {
+export const InputSize = {
   extend: 'Flex',
   props: (el, s) => ({
     width: 'auto',
@@ -19,9 +19,8 @@ export const inputSize = {
         state: 'sizes',
         type: 'radio',
         name: 'size',
-        value: el.props.text, 
       },
-      props: {
+      props: (el, s) => ({
         width: '40px',
         height: '40px',
         border: '1px solid #333',
@@ -33,7 +32,7 @@ export const inputSize = {
         margin: 0,
         padding: 0,
         '::before': {
-          content: `"${el.props.text}"`, 
+          content: `"${s.value}"`, 
           position: 'absolute',
           inset: '0',
           display: 'flex',
@@ -44,10 +43,10 @@ export const inputSize = {
           transition: 'background-color 0.2s ease, border-color 0.2s ease',
         },
         ':checked::before': {
-          backgroundColor: 'black',
+          backgroundcolor: 'black',
           color: 'white',
         },
-      },
+      }),
     },
   ],
 };
@@ -101,7 +100,7 @@ export const inputSize = {
 //         transition: 'background-color 0.2s ease, border-color 0.2s ease',
 //       },
 //       ':checked::before': {
-//         backgroundColor: 'black',
+//         backgroundcolor: 'black',
 //         border: '1px solid black',
 //         borderRadius: '0',
 //         transition: 'background-color 0.2s ease, border-color 0.2s ease',

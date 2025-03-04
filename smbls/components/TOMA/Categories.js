@@ -36,7 +36,7 @@
 //           bottom: '0',
 //           width: '100%',
 //           height: '1px',
-//           backgroundColor: 'white',
+//           backgroundcolor: 'white',
 //           transform: 'scaleX(0)',
 //           transformOrigin: 'bottom right',
 //           transition: 'transform 0.7s ease',

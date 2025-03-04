@@ -7,7 +7,7 @@ export const MainHeader = {
     display: 'flex',
     flexFlow: 'row',
     justifyContent: 'space-between',
-    backgroundColor: '#E4E2E2',
+    
     padding: '0 20px',
     width: '100%',
     height: '77px',
@@ -19,12 +19,10 @@ export const MainHeader = {
     transition: 'top 0.3s ease',
   },
   Logo: {
-    attr: {
-      href: '/',
-    },
     props: {
+      href: '/',
       alignSelf: 'center',
-    },
+    }
   },
   // Nav Bar
   Nav: {
