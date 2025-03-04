@@ -19,8 +19,10 @@ export const MainHeader = {
     transition: 'top 0.3s ease',
   },
   Logo: {
-    href: '/',
-    alignSelf: 'center',
+    props: {
+      href: '/',
+      alignSelf: 'center',
+    }
   },
   // Nav Bar
   Nav: {

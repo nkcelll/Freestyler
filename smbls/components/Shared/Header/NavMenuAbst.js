@@ -57,7 +57,7 @@ const topCat = ({topCat, subCategory}) => ({
       flow: 'y'
     }
   },
-  $subNav: () => subCategory.map((item) => subCategories({ ...item }))
+  $collection: () => subCategory.map((item) => subCategories({ ...item }))
 })
 
 const subCategories = ({subCat, url}) => ({
