@@ -7,7 +7,7 @@ export const MainHeader = {
     display: 'flex',
     flexFlow: 'row',
     justifyContent: 'space-between',
-    backgroundColor: '#E4E2E2',
+    
     padding: '0 20px',
     width: '100%',
     height: '77px',
@@ -125,7 +125,7 @@ export const MainHeader = {
                 height: '100%',
                 borderRadius: '0',
                 padding: '0 35px 0 20px',
-                color: 'black',
+                color: 'zebraInTheNight',
                 outline: 'none',
                 border: '1px solid black',
                 backgroundColor: 'transparent',

@@ -8,7 +8,7 @@ export const PerProducts = {
     gap: '30px',
     // position: 'relative',
     padding: '20px',
-    backgroundColor: '#E4E2E2',
+    
     // flex: '1 1',
     '@mobileL': {
       flow: 'y',
@@ -214,8 +214,8 @@ export const PerProducts = {
           backgroundColor: 'transparent',
           fontWeight: '400',
           ':hover': {
-            backgroundColor: 'black',
-            color: 'white',
+            backgroundcolor: 'zebraInTheNight',
+            color: 'zebra',
           },
           '@tabletS': {
             width: '100%',
@@ -223,13 +223,13 @@ export const PerProducts = {
           },
           '@mobileL': {
             width: '100%',
-            backgroundColor: 'black',
-            color: 'white'
+            backgroundcolor: 'zebraInTheNight',
+            color: 'zebra'
           },
           '@mobileM': {
             width: '100%',
-            backgroundColor: 'black',
-            color: 'white'
+            backgroundcolor: 'zebraInTheNight',
+            color: 'zebra'
           },
         },
       },

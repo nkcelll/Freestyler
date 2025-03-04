@@ -35,7 +35,7 @@ export const HomeImageProducts = {
     },
     P: {
       text: '{{ title }}',
-      color: 'black',
+      color: 'zebraInTheNight',
       fontSize: '14px',
       fontWeight: '600',
       zIndex: '1',

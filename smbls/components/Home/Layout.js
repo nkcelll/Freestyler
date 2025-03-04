@@ -30,7 +30,7 @@ export const Layout = {
     order: '2',
     overflowX: 'auto',
     gap: '30px',
-    backgroundColor: '#E4E2E2',
+    
     padding: '0 20px',
     '::-webkit-scrollbar': { display: 'none' },
     childExtends: 'HomeImageProducts',

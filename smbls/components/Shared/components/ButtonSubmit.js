@@ -16,8 +16,8 @@ export const ButtonSubmit = {
     transition: 'background-color 0.2s ease, color 0.2s ease',
     cursor: 'pointer',
     ':hover': {
-      backgroundColor: 'black',
-      color: 'white',
+      backgroundcolor: 'zebraInTheNight',
+      color: 'zebra',
     },
   },
 }

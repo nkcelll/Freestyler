@@ -66,10 +66,10 @@ export const Product = {
     Hgroup: {
       gap: 'X',
       '@light': {
-        color: 'white',
+        color: 'zebra',
       },
       '@dark': {
-        color: 'white',
+        color: 'zebra',
       },
       H: {
         tag: 'span',

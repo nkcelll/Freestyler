@@ -5,7 +5,7 @@ export const Footer = {
     flow: 'y',
     gap: '5px',
     padding: '0 20px',
-    backgroundColor: '#E4E2E2',
+    
     borderTop: '1px solid grey',
     overflow: 'hidden',
     '@tabletS': {
@@ -222,26 +222,20 @@ export const Footer = {
             cursor: 'pointer',
             width: 'auto',
             fontSize: '14px',
-            color: 'black',
+            color: 'zebraInTheNight',
           },
         },
         $propsCollection: () => [
           {
-            attr: {
               href: '/',
-            },
             text: 'Size chart',
           },
           {
-            attr: {
               href: '/',
-            },
             text: 'Shipping policy',
           },
           {
-            attr: {
               href: '/',
-            },
             text: 'Terms and conditions',
           },
         ],
@@ -265,6 +259,7 @@ export const Footer = {
         flow: 'y',
         gap: '15px',
         padding: '20px 0 0 0',
+        Icon: { name: '' },
         '@tabletS': {
           gap: '20px',
           width: '100%',
@@ -327,26 +322,20 @@ export const Footer = {
             width: 'auto',
             fontSize: '14px',
             textDecoration: 'none',
-            color: 'black',
+            color: 'zebraInTheNight',
           },
         },
         $propsCollection: () => [
           {
-            attr: {
               href: '/',
-            },
             text: 'Privacy and policy',
           },
           {
-            attr: {
               href: '/',
-            },
             text: 'Shipping policy',
           },
           {
-            attr: {
               href: '/',
-            },
             text: 'Terms and conditions',
           },
         ],

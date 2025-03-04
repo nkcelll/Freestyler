@@ -128,7 +128,7 @@ export const Order = {
         },
         H5: {
           text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
+          color: 'zebraInTheNight',
           fontSize: '18px',
           fontWeight: '600',
           zIndex: '1',
@@ -179,7 +179,7 @@ export const Order = {
         },
         H5: {
           text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
+          color: 'zebraInTheNight',
           fontSize: '18px',
           fontWeight: '600',
           zIndex: '1',
@@ -229,7 +229,7 @@ export const Order = {
         },
         H5: {
           text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
+          color: 'zebraInTheNight',
           fontSize: '18px',
           fontWeight: '600',
           zIndex: '1',
@@ -279,7 +279,7 @@ export const Order = {
         },
         H5: {
           text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
+          color: 'zebraInTheNight',
           fontSize: '18px',
           fontWeight: '600',
           zIndex: '1',
@@ -329,7 +329,7 @@ export const Order = {
         },
         H5: {
           text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
+          color: 'zebraInTheNight',
           fontSize: '18px',
           fontWeight: '600',
           zIndex: '1',

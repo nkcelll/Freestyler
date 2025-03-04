@@ -33,7 +33,7 @@ export const Cart = {
     props: {
       width: '400px',
       height: '100%',
-      backgroundColor: '#E4E2E2',
+      
       transform: 'translateX(100%)', 
       transition: 'transform 0.5s ease-in-out',
       cursor: 'default',
@@ -232,7 +232,7 @@ export const Cart = {
               width: '100%',
               margin: '0 20px',
               height: '60px',
-              color: 'black',
+              color: 'zebraInTheNight',
               align: 'center',
               justifyContent: 'center',
               fontWeight: '600',
@@ -243,8 +243,8 @@ export const Cart = {
               transition: 'background-color 0.2s ease, color 0.2s ease',
               cursor: 'pointer',
               ':hover': {
-                backgroundColor: 'black',
-                color: 'white',
+                backgroundcolor: 'zebraInTheNight',
+                color: 'zebra',
               },
             },
           },

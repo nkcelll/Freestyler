@@ -159,7 +159,7 @@ export const SortBy = {
 //       gap: '20px',
 //       overflow: 'hidden',
 //       opacity: '0',
-//       backgroundColor: 'white',
+//       backgroundcolor: 'zebra',
 //       transition: 'max-height 0.5s ease, opacity 0.5s ease',
 //     },
 //     $collecion: () => [

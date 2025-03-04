@@ -4,7 +4,7 @@ export const Checkout = {
     width: '100%',
     height: 'auto',
     justifyContent: 'center',
-    backgroundColor: '#E4E2E2',
+    
     '@tabletS': {
       flow: 'y',
       justifyContent: 'row-reverse',

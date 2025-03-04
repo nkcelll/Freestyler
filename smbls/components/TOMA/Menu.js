@@ -41,7 +41,7 @@
 //     extends: 'Flex',
 //     gridColumn: 'span 2',
 //     margin: 'auto - -',
-//     color: 'white',
+//     color: 'zebra',
 //     gap: 'Z',
 //     flow: 'y',
 //     '@mobileL<': {

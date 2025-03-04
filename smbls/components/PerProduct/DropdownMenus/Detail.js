@@ -17,7 +17,7 @@ export const Detail = {
       width: '100%',
       height: '60px',
       borderRadius: '1px',
-      backgroundColor: '#E4E2E2',
+      
       padding: '15px 0',
     },
     H1: {
@@ -50,7 +50,7 @@ export const Detail = {
       overflow: 'hidden',
       opacity: '0',
       maxHeight: '0',
-      backgroundColor: '#E4E2E2',
+      
       transition: 'max-height 0.5s ease, opacity 0.5s ease',
     },
     P: {

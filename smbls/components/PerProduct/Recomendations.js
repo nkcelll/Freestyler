@@ -3,7 +3,7 @@ export const Recomendations = {
   props: {
     width: '100%',
     height: '500px',
-    backgroundColor: '#E4E2E2',
+    
     padding: '20px 20px',
     justifyContent: 'space-between',
     flow: 'y',

@@ -23,7 +23,7 @@ export const FilterAbstract = ({
       height: '60px',
       flow: 'x',
       borderBottom: '1px solid grey',
-      backgroundColor: '#fff',
+      backgroundColor: 'zebra',
       justifyContent: 'space-between',
       align: 'center',
       padding: '0 20px',
@@ -121,7 +121,7 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
         transition: 'background-color 0.2s ease, border-color 0.2s ease',
       },
       ':checked::before': {
-        backgroundColor: 'black',
+        backgroundcolor: 'zebraInTheNight',
         border: '1px solid black',
         borderRadius: '0',
         transition: 'background-color 0.2s ease, border-color 0.2s ease',

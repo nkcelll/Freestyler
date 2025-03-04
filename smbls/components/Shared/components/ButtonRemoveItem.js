@@ -17,7 +17,7 @@ export const ButtonRemoveItem = {
     cursor: 'pointer',
     ':hover': {
       backgroundColor: 'rgb(219, 219, 219)',
-      color: 'white',
+      color: 'zebra',
     },
   },
   Img: {

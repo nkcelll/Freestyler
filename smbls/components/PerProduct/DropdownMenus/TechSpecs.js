@@ -17,7 +17,7 @@ export const TechSpecs = {
       width: '100%',
       height: '60px',
       borderRadius: '1px',
-      backgroundColor: '#E4E2E2',
+      
       padding: '15px 0',
     },
     H5: {
@@ -52,7 +52,7 @@ export const TechSpecs = {
       opacity: '0',
       overflow: 'hidden',
       transition: 'max-height 0.5s ease, opacity 0.5s ease',
-      backgroundColor: '#E4E2E2',
+      
       '@mobileL': {
         justifyContent: 'flex-start',
       },

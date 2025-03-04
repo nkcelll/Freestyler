@@ -4,7 +4,7 @@ export const PerProductDetails = {
     width: '100%',
     height: 'auto',
     position: 'sticky',
-    backgroundColor: '#E4E2E2',
+    
     padding: '20px 20px',
   },
   DropDownContainer: {
@@ -30,7 +30,7 @@ export const PerProductDetails = {
 //     // height: '800px',
 //     // height: '500px',
 //     // backgroundColor: 'red',
-//     backgroundColor: '#E4E2E2',
+//     
 //     padding: '20px 20px',
 //     // borderTop: '1px solid grey'
 //   },

@@ -7,7 +7,7 @@ export const SignUp = {
     height: '800px',
     justifyContent: 'center',
     align: 'center',
-    backgroundColor: '#E4E2E2',
+    
   },
   SignUpElements: {
     extend: 'Flex',
@@ -93,8 +93,8 @@ export const SignUp = {
           fontWeight: '400',
           letterSpacing: '1.2px',
           ':hover': {
-            backgroundColor: 'black',
-            color: 'white',
+            backgroundcolor: 'zebraInTheNight',
+            color: 'zebra',
           },
         },
       },
@@ -134,11 +134,11 @@ export const SignUp = {
 //       padding: '10px',
 //       borderRadius: '0',
 //       border: '1px solid #ccc',
-//       color: 'black',
+//       color: 'zebraInTheNight',
 //       cursor: 'text',
 //     },
 //     style: {
-//       color: 'black',
+//       color: 'zebraInTheNight',
 //       ':focus': {
 //         outline: 'none',
 //         border: '1px solid black',
