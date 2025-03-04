@@ -259,7 +259,6 @@ export const Footer = {
         flow: 'y',
         gap: '15px',
         padding: '20px 0 0 0',
-        Icon: { name: '' },
         '@tabletS': {
           gap: '20px',
           width: '100%',

@@ -1,10 +1,8 @@
 export const NavMenuAbst = ({prefix, categories}) => ({
   HoverBox: {
     extend: 'Flex',
-    attr: {
-      class: `${prefix}-box-dropdown`
-    },
     props: {
+      class: `${prefix}-box-dropdown`,
       width: '100%',
       height: '500px',
       backgroundColor: 'rgb(214, 214, 214)',
@@ -65,10 +63,8 @@ const topCat = ({topCat, subCategory}) => ({
 const subCategories = ({subCat, url}) => ({
   extend: 'Link',
   text: subCat,
-  attr: {
-    href: url
-  },
   props: {
+    href: url,
     gap: '0px',
     fontSize: '14px',
     fontWeight: '400',
