@@ -8,7 +8,7 @@ export const PerProducts = {
     height: 'auto',
     gap: '30px',
     padding: '20px',
-    backgroundColor: '#E4E2E2',
+    background: '#E4E2E2',
     // flex: '1 1',
     '@mobileL': {
       flow: 'y',
@@ -17,75 +17,6 @@ export const PerProducts = {
   ProductImages: {
     width: '100%'
   },
-  // ImageGallery: {
-  //   extend: 'Grid',
-  //   props: {
-  //     width: '50%',
-  //     // height: '600px',
-  //     columns: 'repeat(2, 1fr)',
-  //     rows: 'repeat(2, 600px)',
-  //     gap: '15px',
-  //     '@tabletL': {},
-  //   },
-  //   $collection: () => [
-  //     {
-  //       Img: {
-  //         attr: {
-  //           src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-  //           // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
-  //         },
-  //         props: {
-  //           maxWidth: '100%',
-  //           maxHeight: '100%',
-
-  //           // objectFit: 'cover'
-  //         },
-  //       },
-  //     },
-  //     {
-  //       Img: {
-  //         attr: {
-  //           src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-  //           // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
-  //         },
-  //         props: {
-  //           width: '100%',
-  //           height: '100%',
-
-  //           // objectFit: 'cover'
-  //         },
-  //       },
-  //     },
-  //     {
-  //       Img: {
-  //         attr: {
-  //           src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-  //           // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
-  //         },
-  //         props: {
-  //           width: '100%',
-  //           height: '100%',
-
-  //           objectFit: 'cover',
-  //         },
-  //       },
-  //     },
-  //     {
-  //       Img: {
-  //         attr: {
-  //           src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-  //           // src: 'https://www.playground.ch/wp-content/uploads/2024/11/pip_snwoboard-action-spray-dark-bw_sq.jpg',
-  //         },
-  //         props: {
-  //           width: '100%',
-  //           height: '100%',
-
-  //           objectFit: 'cover',
-  //         },
-  //       },
-  //     },
-  //   ],
-  // },
   MainProduct: {
     extend: 'Flex',
     props: {
@@ -151,28 +82,9 @@ export const PerProducts = {
           gap: '15px',
           flow: 'row wrap',
         },
-
-        // $collection: (el, s) => (s.sizes?.sizeText || []).map(size => ({
-        //   childExtend: 'inputSize',
-        //   children: {
-        //     text: size
-        //   }
-
-        // })),
-        $collection: (el, s) =>
-          (s.sizes?.sizeText || []).map((size) => ({
-            extend: 'inputSize',
-            props: {
-              text: size,
-            },
-          })),
-        // $collection: (el, s) => ({
-        //   extend: 'inputSize',
-        //   text: ({
-        //     state
-        //   }) => state.sizes.sizeText.map((size) => size)
-        // })
-      },
+        childExtend: 'InputSize',
+        $stateCollection: (el, s) => s.sizes.sizeText
+      }
     },
     Description: {
       tag: 'p',
@@ -255,4 +167,9 @@ const chooseSizeReminder = () => {
   }
 }
 
+
+
+fetch('https://api.escuelajs.co/api/v1/products')
+  .then(response => response.json())
+  .then(data => console.log(data));
 
