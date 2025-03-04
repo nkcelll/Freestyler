@@ -243,7 +243,7 @@ export const Cart = {
               transition: 'background-color 0.2s ease, color 0.2s ease',
               cursor: 'pointer',
               ':hover': {
-                backgroundcolor: 'zebraInTheNight',
+                backgroundColor: 'zebraInTheNight',
                 color: 'zebra',
               },
             },

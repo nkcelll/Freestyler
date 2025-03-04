@@ -29,8 +29,8 @@ export default {
       '--gray 1 -16',
       '--gray 1 +16',
     ],
-    zebra: ['white', 'black'],
-    zebraInTheNight: ['black', 'white']
+    zebra: ['--white 1', '--black 1'],
+    zebraInTheNight: ['--black 1', '--white 1']
   },
   GRADIENT: {
   },
