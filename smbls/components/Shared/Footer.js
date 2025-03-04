@@ -1,3 +1,4 @@
+import {ButtonSubmit} from './components/ButtonSubmit'
 export const Footer = {
   extend: 'Flex',
   props: {

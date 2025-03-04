@@ -6,6 +6,7 @@ import { login } from './login';
 import { product } from './product';
 import { signup } from './sign-up';
 import { checkout } from './checkout';
+import { account } from './account';
 export default {
   '/': main,
   '/item': item,
@@ -14,5 +15,6 @@ export default {
   '/signup': signup,
   '/privacy-and-policy': privacyAndPolicy,
   '/product': product,
+  '/account': account,
   '/checkout': checkout
 }

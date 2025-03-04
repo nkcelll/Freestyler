@@ -36,6 +36,9 @@ export * from './Assets/Icons/IconArrowUp'
 export * from './Assets/Icons/IconSearch'
 export * from './Assets/Icons/IconChevLeft'
 export * from './Assets/Icons/IconChevRight'
+export * from './Assets/Icons/IconEdit'
+export * from './Assets/Icons/IconAdd'
+export * from './Assets/Icons/IconInfo'
 
 /////////////////////////////////// Filter Section///////////////////////////
 export* from './MainProducts/Filter Components/FilterList/SortBy'
@@ -85,6 +88,8 @@ export * from './Shared/SideMenu/ProductList/MenSidebar'
 export * from './Shared/SideMenu/ProductList/WomenSidebar'
 export * from './Shared/SideMenu/ProductList/AccessoriesSidebar'
 
+export * from './Shared/components/ReminderSpan'
+
 
 
 ////////////////////////////// Shared Components //////
@@ -95,6 +100,12 @@ export * from './Shared/components/ButtonRemoveItem'
 ///////////////////// CART
 export * from './Cart/Cart'
 export * from './Cart/ProductList'
+
+///////////// Account//////////
+export * from './Account/AccountLayout'
+export * from './Account/Profile'
+export * from './Account/AddAddress'
+export * from './Account/OrderHistory'
 
 /////////// Checkout
 export * from './Checkout/CheckoutLayout'

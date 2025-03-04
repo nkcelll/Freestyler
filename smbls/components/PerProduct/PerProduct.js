@@ -1,3 +1,4 @@
+import { ReminderSpan } from "../Shared/components/ReminderSpan";
 import { ModalImage } from "./ProdComponents/ModalImage";
 
 export const PerProducts = {
@@ -6,10 +7,8 @@ export const PerProducts = {
     width: '100%',
     height: 'auto',
     gap: '30px',
-    // position: 'relative',
     padding: '20px',
     backgroundColor: '#E4E2E2',
-    // flex: '1 1',
     '@mobileL': {
       flow: 'y',
     },
@@ -90,13 +89,9 @@ export const PerProducts = {
     extend: 'Flex',
     props: {
       width: '50%',
-      // height: '80vh',
-      // height: '800px',
       height: 'fit-content',
       flow: 'y',
-      // gap: '40px',
       gap: '30px',
-      // justifyContent: 'space-between',
       position: 'sticky',
       top: '77px',
       '@tabletL': {
@@ -143,6 +138,10 @@ export const PerProducts = {
           fontWeight: '600',
         },
       },
+      ReminderSpan: {
+        text: 'Please select size',
+        id: 'size-reminder'
+      },
       SizeBox: {
         extend: 'Flex',
         props: {
@@ -165,13 +164,8 @@ export const PerProducts = {
             props: {
               text: size,
             },
+            
           })),
-        // $collection: (el, s) => ({
-        //   extend: 'inputSize',
-        //   text: ({
-        //     state
-        //   }) => state.sizes.sizeText.map((size) => size)
-        // })
       },
     },
     Description: {
@@ -199,18 +193,19 @@ export const PerProducts = {
       props: {
         width: '100%',
         height: '50px',
-        // backgroundColor: 'red',
         justifyContent: 'center',
         
       },
       Button: {
         extend: 'Flex',
         text: 'Add to cart',
+        on: {
+          click: () => chooseSizeReminder()
+        },
         style: {
           border: '1px solid black',
           borderRadius: '0',
           transition: 'background-color 0.2s ease, color 0.2s ease',
-          
         },
         props: {
           height: '100%',
@@ -241,5 +236,17 @@ export const PerProducts = {
     },
     ShippingPolicy: {},
   },
-  
 };
+
+const chooseSizeReminder = () => {
+  const selectedSize = document.querySelector('input[name="size"]:checked');
+  const reminder = document.getElementById('size-reminder')
+  
+  if(!selectedSize) {
+    reminder.style.display = 'flex'
+  } else if(selectedSize) {
+    reminder.style.display = 'none'
+  }
+}
+
+

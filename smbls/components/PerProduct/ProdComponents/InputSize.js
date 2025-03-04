@@ -8,12 +8,14 @@ export const inputSize = {
     gap: '10px',
     padding: '5px',
     cursor: 'pointer',
-    padding: 0
+    padding: 0,
+    
   }),
   children: (el, s) => [
     {
       extend: 'Input',
       attr: {
+        id: `size-${el.props.text}`,
         state: 'sizes',
         type: 'radio',
         name: 'size',

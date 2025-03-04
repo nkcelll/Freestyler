@@ -10,7 +10,6 @@ const PerProductSpecsDropdown = (dropdown, downArrowIcon) => {
     const current = downArrowIcon.style.transform || 'rotate(0deg)';
     downArrowIcon.style.transform = current === 'rotate(0deg)' ? 'rotate(180deg)' : 'rotate(0deg)';
   }
-  console.log(downArrowIcon);
 }
 
 export default PerProductSpecsDropdown

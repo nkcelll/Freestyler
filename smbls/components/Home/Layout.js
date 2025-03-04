@@ -26,7 +26,7 @@ export const Layout = {
     width: '100vw',
     flexWrap: 'nowrap',
     width: 'auto',
-    height: 'calc(100vh - 77px)',
+    height: 'calc(100dvh - 77px)',
     order: '2',
     overflowX: 'auto',
     gap: '30px',
