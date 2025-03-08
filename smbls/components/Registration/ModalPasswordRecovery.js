@@ -16,6 +16,7 @@ export const ModalPasswordRecovery = {
     align: 'center',
     zIndex: '100',
     display: 'none',
+    cursor: 'pointer'
   },
   on: {
     click: (e) => {
@@ -31,9 +32,16 @@ export const ModalPasswordRecovery = {
       width: '400px',
       padding: '20px',
       height: 'auto',
-      backgroundcolor: 'white',
+      // backgroundcolor: 'currentColor',
       gap: '30px',
+      cursor: 'default',
       flow: 'y',
+      '@light': {
+        background: '#E4E2E2',
+      },
+      '@dark': {
+        background: '#1E201E',
+      },
     },
     IconClose: {
       props: {

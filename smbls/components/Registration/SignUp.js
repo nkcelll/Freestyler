@@ -79,10 +79,8 @@ export const SignUp = {
       toLogIn: {
         extend: ['Link', 'Flex'],
         text: 'Already have an account?',
-        attr: {
-          href: '/login',
-        },
         props: {
+          href: '/login',
           width: '100%',
           height: '35px',
           justifyContent: 'center',

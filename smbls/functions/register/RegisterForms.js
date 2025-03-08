@@ -15,7 +15,7 @@ const RegisterForms = (labelText, id, inputType, placeHolder) => ({
       fontSize: '16px',
       fontWeight: '400',
       letterSpacing: '1.5px',
-      borderBottom: '1px solid black',
+      borderBottom: '1px solid currentColor',
     },
   },
   Input: {
@@ -31,11 +31,8 @@ const RegisterForms = (labelText, id, inputType, placeHolder) => ({
       padding: '10px',
       borderRadius: '0',
       border: '1px solid #ccc',
-      color: 'black',
-      cursor: 'text',
     },
     style: {
-      color: 'black',
       ':focus': {
         outline: 'none',
         border: '1px solid black',

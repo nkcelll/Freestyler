@@ -12,7 +12,7 @@ export const ButtonSubmit = {
     height: '40px',
     align: 'center',
     padding: '0',
-    bordern: 'none',
+    border: 'none',
     justifyContent: 'center',
     backgroundColor: 'rgb(240, 240, 240)',
     letterSpacing: '1.2px',

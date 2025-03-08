@@ -1,3 +1,6 @@
+import { IconMinus } from "../../Assets/Icons/IconMinus";
+import { IconPlus } from "../../Assets/Icons/IconPlus";
+
 export const IncDecButton = {
   extend: 'Flex',
   props: {
@@ -20,9 +23,7 @@ export const IncDecButton = {
       padding: '0',
       backgroundColor: 'transparent',
     },
-    Img: {
-      src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi8e13f2be/e28e5bec-7ca8-49ed-9e65-8f4b59c7d2b1-dc3b3e6b-f161-4e22-8ab9-d60f24ada9f5-199cfb95-bcf6-4a71-bb93-45ea975ede8e.svg',
-    },
+    IconMinus: {},
     on: {
       click: (ev, el, s) =>
         s.root.order.quantity > 1 &&
@@ -50,9 +51,7 @@ export const IncDecButton = {
       cursor: 'pointer',
       backgroundColor: 'transparent',
     },
-    Img: {
-      src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi096f6eac/b12b40ea-80e4-43f3-a018-252a28ef8ce6-72875be9-8994-4a5e-bb68-83df8069c58f-bf8dfd6b-bab5-46f3-8387-5567bb328eec.svg',
-    },
+    IconPlus: {},
     on: {
       click: (ev, el, s) =>
         s.root.order.quantity < 30 &&

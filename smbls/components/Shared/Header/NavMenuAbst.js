@@ -5,7 +5,9 @@ export const NavMenuAbst = ({prefix, categories}) => ({
       class: `${prefix}-box-dropdown`,
       width: '100%',
       height: '500px',
-      backgroundColor: 'rgb(214, 214, 214)',
+      // backgroundColor: 'rgb(214, 214, 214)',
+      // backgroundColor: 'currentColor',
+      // color: 'currentColor',
       justifyContent: 'center', 
       opacity: '1',
       top: '77px',
@@ -15,6 +17,12 @@ export const NavMenuAbst = ({prefix, categories}) => ({
       visibility: 'hidden',
       opacity: '0',
       transition: 'opacity 1s ease',
+      '@light' : {
+        backgroundColor: 'rgb(214, 214, 214)',
+      },
+      '@dark': {
+        backgroundColor: '#4A4C4A',
+      }
     },
     childExtend: {
       extend: 'Flex',

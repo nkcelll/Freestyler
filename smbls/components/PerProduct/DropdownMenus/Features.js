@@ -17,8 +17,8 @@ export const Features = {
       width: '100%',
       height: '60px',
       borderRadius: '1px',
+      color: 'currentColor',
       backgroundColor: 'transparent', ///////// to Theme
-      
       padding: '15px 0',
     },
     H1: {
@@ -53,7 +53,6 @@ export const Features = {
       opacity: '0',
       overflow: 'hidden',
       transition: 'max-height 0.5s ease, opacity 0.5s ease',
-      
     },
     childExtend: {
       extend: 'Flex',

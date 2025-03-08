@@ -17,8 +17,8 @@ export const TechSpecs = {
       width: '100%',
       height: '60px',
       borderRadius: '1px',
+      color: 'currentColor',
       backgroundColor: 'transparent', ///////// to Theme
-      
       padding: '15px 0',
     },
     H5: {

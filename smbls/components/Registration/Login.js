@@ -99,17 +99,30 @@ export const Login = {
                 width: '20px',
                 height: '20px',
                 backgroundColor: 'transparent',
-                border: '1px solid black',
+                // border: '1px solid black',
                 borderRadius: '0',
-                transition:
-                  'background-color 0.2s ease, border-color 0.2s ease',
+                transition: 'background-color 0.2s ease, border-color 0.2s ease',
+                '@light': {
+                  border: '1px solid black',
+                },
+                '@dark': {
+                  border: '1px solid white',
+                },
               },
               ':checked::before': {
-                backgroundcolor: 'black',
+                background: 'black',
                 border: '1px solid black',
                 borderRadius: '0',
                 transition:
                   'background-color 0.2s ease, border-color 0.2s ease',
+                '@light': {
+                  background: 'black',
+                  border: '1px solid black',
+                },
+                '@dark': {
+                  background: 'white',
+                  border: '1px solid white',
+                },
               },
               '::after': {
                 content: '""',
@@ -123,6 +136,14 @@ export const Login = {
                 transform: 'translate(-50%, -50%) rotate(-45deg)',
                 opacity: '0',
                 transition: 'opacity 0.2s ease',
+                '@light': {
+                  borderLeft: '1px solid white',
+                  borderBottom: '1px solid white',
+                },
+                '@dark': {
+                  borderLeft: '1px solid black',
+                  borderBottom: '1px solid black',
+                },
               },
               ':checked::after': {
                 opacity: '1',
@@ -138,7 +159,7 @@ export const Login = {
         },
       },
       PassworRecovery: {
-        text: 'Forgot password?',
+        text: 'Forgot password ?',
         attr: {
           href: '',
         },
@@ -148,7 +169,6 @@ export const Login = {
           cursor: 'pointer',
           alignSelf: 'flex-end',
           textDecoration: 'none',
-          color: 'black',
           fontSize: '14px',
           letterSpacing: '1.2px',
           ':hover': {
@@ -170,23 +190,28 @@ export const Login = {
       toSignUp: {
         extend: ['Link', 'Flex'],
         text: 'Create an account',
-        attr: {
-          type: 'submit',
-          href: '/signup',
-        },
         props: {
+          href: '/signup',
           width: '100%',
-          height: '35px',
+          height: '40px',
           justifyContent: 'center',
           align: 'center',
-          backgroundColor: 'rgb(240, 240, 240)',
+          // backgroundColor: 'rgb(240, 240, 240)',
+          // backgroundColor: 'currentColor',
           transition: 'background-color 0.2s ease, color 0.2s ease',
           borderRadius: '0',
           fontWeight: '400',
           letterSpacing: '1.2',
+          color: 'currentColor',
           ':hover': {
-            backgroundcolor: 'black',
-            color: 'white',
+            '@light' : {
+              background: 'black',
+              color: 'white',
+            },
+            '@dark': {
+              background: 'white',
+              color: 'black',
+            },
           },
         },
       },

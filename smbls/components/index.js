@@ -47,6 +47,8 @@ export * from './Assets/Icons/IconPhone'
 export * from './Assets/Icons/IconEmailInfo'
 export * from './Assets/Icons/IconFacebook'
 export * from './Assets/Icons/IconInstagram'
+export * from './Assets/Icons/IconMinus'
+export * from './Assets/Icons/IconPlus'
 
 
 /////////////////////////////////// Filter Section///////////////////////////
