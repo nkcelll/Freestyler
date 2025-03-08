@@ -17,6 +17,7 @@ export const TechSpecs = {
       width: '100%',
       height: '60px',
       borderRadius: '1px',
+      backgroundColor: 'transparent', ///////// to Theme
       
       padding: '15px 0',
     },
@@ -26,6 +27,7 @@ export const TechSpecs = {
         fontSize: '18px',
         fontWeight: '600',
         letterSpacing: '1.2px',
+        color: 'currentColor'
       },
     },
     IconArrowDown: {},

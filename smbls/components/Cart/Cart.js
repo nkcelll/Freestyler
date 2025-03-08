@@ -44,6 +44,9 @@ export const Cart = {
       flow: 'y',
       gap: '20px',
       justifyContent: 'space-between',
+      backgroundColor: 'currentColor',
+      // backgroundColor: 'zebraWhite',
+
       '@mobileS': {
         width: '100%',
       },
@@ -57,6 +60,7 @@ export const Cart = {
         height: '100%',
         gap: '20px',
         flow: 'y',
+        // backgroundColor: '#E4E2E'
       },
       CartHeader: {
         extend: 'Flex',

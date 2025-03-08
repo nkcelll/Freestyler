@@ -1,5 +1,5 @@
-import { ReminderSpan } from "../Shared/components/ReminderSpan";
-import { ModalImage } from "./ProdComponents/ModalImage";
+import { ReminderSpan } from '../Shared/components/ReminderSpan';
+import { ModalImage } from './ProdComponents/ModalImage';
 
 export const PerProducts = {
   extend: 'Flex',
@@ -8,14 +8,14 @@ export const PerProducts = {
     height: 'auto',
     gap: '30px',
     padding: '20px',
-    background: '#E4E2E2',
+    // background: '#E4E2E2',
     // flex: '1 1',
     '@mobileL': {
       flow: 'y',
     },
   },
   ProductImages: {
-    width: '100%'
+    width: '100%',
   },
   MainProduct: {
     extend: 'Flex',
@@ -42,7 +42,7 @@ export const PerProducts = {
       },
     },
     H1: {
-      text:'Bataleon Ecko mode',
+      text: 'Bataleon Ecko mode',
       props: {
         fontSize: '32px',
         margin: '0',
@@ -72,7 +72,7 @@ export const PerProducts = {
       },
       ReminderSpan: {
         text: 'Please select size',
-        id: 'size-reminder'
+        id: 'size-reminder',
       },
       SizeBox: {
         extend: 'Flex',
@@ -83,8 +83,8 @@ export const PerProducts = {
           flow: 'row wrap',
         },
         childExtend: 'InputSize',
-        $stateCollection: (el, s) => s.sizes.sizeText
-      }
+        $stateCollection: (el, s) => s.sizes.sizeText,
+      },
     },
     Description: {
       tag: 'p',
@@ -112,20 +112,21 @@ export const PerProducts = {
         width: '100%',
         height: '50px',
         justifyContent: 'center',
-        
       },
       Button: {
         extend: 'Flex',
         text: 'Add to cart',
         on: {
-          click: () => chooseSizeReminder()
+          click: () => chooseSizeReminder(),
         },
         style: {
-          border: '1px solid black',
+          border: '1px solid currentColor',
           borderRadius: '0',
           transition: 'background-color 0.2s ease, color 0.2s ease',
         },
         props: {
+          // borderColor: 'currentColor',
+          color: 'currentColor',
           height: '100%',
           alignSelf: 'center',
           justifySelf: 'center',
@@ -137,17 +138,17 @@ export const PerProducts = {
           },
           '@tabletS': {
             width: '100%',
-            height: '50px'
+            height: '50px',
           },
           '@mobileL': {
             width: '100%',
             backgroundcolor: 'black',
-            color: 'white'
+            color: 'white',
           },
           '@mobileM': {
             width: '100%',
             backgroundcolor: 'black',
-            color: 'white'
+            color: 'white',
           },
         },
       },
@@ -158,18 +159,11 @@ export const PerProducts = {
 
 const chooseSizeReminder = () => {
   const selectedSize = document.querySelector('input[name="size"]:checked');
-  const reminder = document.getElementById('size-reminder')
-  
-  if(!selectedSize) {
-    reminder.style.display = 'flex'
-  } else if(selectedSize) {
-    reminder.style.display = 'none'
+  const reminder = document.getElementById('size-reminder');
+
+  if (!selectedSize) {
+    reminder.style.display = 'flex';
+  } else if (selectedSize) {
+    reminder.style.display = 'none';
   }
-}
-
-
-
-fetch('https://api.escuelajs.co/api/v1/products')
-  .then(response => response.json())
-  .then(data => console.log(data));
-
+};

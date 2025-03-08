@@ -8,12 +8,15 @@ export default {
     red: '#e15c55',
     yellow: '#EDCB38',
     orange: '#e97c16',
-    transparent: 'rgba(0, 0, 0, 0)',
+    // transparent: 'rgba(0, 0, 0, 0)',
     title: ['--gray 1 -168', '--gray 1 +168'],
     caption: ['--gray 1 -68', '--gray 1 +68'],
     paragraph: ['--gray 1 -42', '--gray 1 +42'],
     disabled: ['--gray 1 -26', '--gray 1 +26'],
     line: ['--gray 1 -16', '--gray 1 +16'],
+    
+    zebra: ['--white 1', '--black 1', '--red'],
+    zebraInTheNight: ['--black 1', '--white 1']
   },
   GRADIENT: {},
   THEME: {
@@ -37,10 +40,11 @@ export default {
         '-webkit-tap-highlight-color': 'transparent',
       },
       '@dark': {
-        color: '#f3f3f3',
-        background: 'black',
+        color: 'white',
+        background: '#1E201E',
         '-webkit-tap-highlight-color': 'transparent',
       },
+      
     },
     none: {
       color: 'none',
@@ -50,16 +54,16 @@ export default {
       color: 'currentColor',
       background: 'transparent',
     },
-    primary: {
-      '@dark': {
-        color: 'currentColor',
-        background: 'gray',
-      },
-      '@light': {
-        color: 'currentColor',
-        background: 'gray',
-      },
-    },
+    // primary: {
+    //   '@dark': {
+    //     color: 'currentColor',
+    //     background: 'gray',
+    //   },
+    //   '@light': {
+    //     color: 'currentColor',
+    //     background: 'gray',
+    //   },
+    // },
   },
   FONT: {
     SourceUrban: {

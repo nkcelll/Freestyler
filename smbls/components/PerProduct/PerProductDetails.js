@@ -13,6 +13,7 @@ export const PerProductDetails = {
       width: '100%',
       height: '100%',
       flow: 'y',
+
     },
     Detail: {},
     TechSpecs: {},

@@ -1,4 +1,9 @@
-import {ButtonSubmit} from './components/ButtonSubmit'
+import { IconEmailInfo } from '../Assets/Icons/IconEmailInfo';
+import { IconFacebook } from '../Assets/Icons/IconFacebook';
+import { IconInstagram } from '../Assets/Icons/IconInstagram';
+import { IconLocation } from '../Assets/Icons/IconLocation';
+import { IconPhone } from '../Assets/Icons/IconPhone';
+import { ButtonSubmit } from './components/ButtonSubmit';
 export const Footer = {
   extend: 'Flex',
   props: {
@@ -6,7 +11,7 @@ export const Footer = {
     flow: 'y',
     gap: '5px',
     padding: '0 20px',
-    
+
     borderTop: '1px solid grey',
     overflow: 'hidden',
     '@tabletS': {
@@ -15,7 +20,6 @@ export const Footer = {
       gap: '50px',
       width: '100%',
       height: 'auto',
-      
     },
   },
   Section: {
@@ -223,20 +227,21 @@ export const Footer = {
             cursor: 'pointer',
             width: 'auto',
             fontSize: '14px',
-            color: 'black',
+            // color: 'black',
+            color: 'currentColor',
           },
         },
         $propsCollection: () => [
           {
-              href: '/',
+            href: '/',
             text: 'Size chart',
           },
           {
-              href: '/',
+            href: '/',
             text: 'Shipping policy',
           },
           {
-              href: '/',
+            href: '/',
             text: 'Terms and conditions',
           },
         ],
@@ -322,20 +327,20 @@ export const Footer = {
             width: 'auto',
             fontSize: '14px',
             textDecoration: 'none',
-            color: 'black',
+            // color: 'black',
           },
         },
         $propsCollection: () => [
           {
-              href: '/',
+            href: '/',
             text: 'Privacy and policy',
           },
           {
-              href: '/',
+            href: '/',
             text: 'Shipping policy',
           },
           {
-              href: '/',
+            href: '/',
             text: 'Terms and conditions',
           },
         ],
@@ -419,13 +424,9 @@ export const Footer = {
           extend: 'Flex',
           props: {
             gap: '10px',
+            align: 'center',
           },
-          Img: {
-            style: {
-              width: '16px',
-            },
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fib7c382eb/699decbf-c586-4ca9-9072-86f228ba77b8-0aee9e47-41ff-45a4-be2f-3ff9638659c5-6b646751-a245-43b1-934b-29ac40b62eb0.svg',
-          },
+          IconLocation:{},
           p: {
             text: ' Tbilisi, Didi Digomi, Mirian Mefis St. N17',
             props: {
@@ -437,13 +438,9 @@ export const Footer = {
           extend: 'Flex',
           props: {
             gap: '10px',
+            align: 'center'
           },
-          Img: {
-            style: {
-              width: '16px',
-            },
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fifbb48117/c9090620-ee1f-4ef0-b66f-2643f27e5a5b-39de5e06-8675-4a0c-9ea2-a4ee33a1aa8e-24bea797-bb95-418b-99c4-bb2d9836e6c8.svg',
-          },
+          IconPhone: {},
           p: {
             text: ': +995 511233001',
             props: {
@@ -455,13 +452,9 @@ export const Footer = {
           extend: 'Flex',
           props: {
             gap: '10px',
+            align: 'center'
           },
-          Img: {
-            style: {
-              width: '16px',
-            },
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi5437af5f/6e15b033-b346-433a-bc9f-ed1b5f6f587b-859fb9e7-7b72-480e-b272-b3df44715a30-e76c0844-ac65-48d9-89da-7e702028242a.svg',
-          },
+          IconEmailInfo: {},
           p: {
             text: 'info@freestyler.ge',
             props: {
@@ -480,7 +473,7 @@ export const Footer = {
           Iframe: {
             background: 'gray .05',
             src: (el, s) =>
-              `https://www.google.com/maps?q=${s.mapLocation.lat},${s.mapLocation.lng}&z=15&output=embed`,
+              `https://www.google.com/maps?q=${s.root.mapLocation.lat},${s.root.mapLocation.lng}&z=15&output=embed`,
             allowfullscreen: '',
             loading: 'lazy',
             referrerpolicy: 'no-referrer-when-downgrade',
@@ -559,22 +552,6 @@ export const Footer = {
               },
             },
           },
-          // Button: {
-          //   attr: {
-          //     type: 'submit',
-          //   },
-          //   style: {
-          //     borderRadius: '0',
-          //   },
-          //   props: {
-          //     backgroundColor: 'rgba(138, 84, 84, 0.5);',
-          //     border: 'none',
-          //     width: '1px',
-          //   },
-          //   Img: {
-          //     src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi692710b8/c16e4fe8-3b80-45ad-bf28-d35abe23d410-debdd4b5-8a04-4607-aa3d-bd132d48ce52-6f7d43a4-8cce-4a56-bdb5-b047b7f8d961.svg',
-          //   },
-          // },
           ButtonSubmit: {
             style: {
               borderRadius: '0',
@@ -641,11 +618,7 @@ export const Footer = {
             href: 'https://www.facebook.com/FreeStylerShop',
             target: '_blank',
           },
-          Img: {
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/ficedd977b/8ea779c8-5857-4611-ae88-d015ae936e9a-03606ae3-21c8-4771-b62a-596aebd4b745-994c27f9-5bb4-48e3-8280-1e453f143db0.svg',
-            alt: 'Facebook Logo',
-            width: '20px',
-          },
+          IconFacebook: {},
         },
       },
       Ig: {
@@ -662,11 +635,7 @@ export const Footer = {
             href: 'https://www.instagram.com/freestylershop',
             target: '_blank',
           },
-          Img: {
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid618a2a0/eead73a4-316a-4300-b8aa-b6632e690ecd-49359f4d-9e6b-40d7-b1ae-b0f0dd778798-b21fcd26-1392-4f1e-89c4-5a1fe812e2e0.svg',
-            alt: 'Instagram Logo',
-            width: '20px',
-          },
+          IconInstagram: {}
         },
       },
     },

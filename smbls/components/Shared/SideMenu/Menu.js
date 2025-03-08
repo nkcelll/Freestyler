@@ -4,14 +4,11 @@ export const Menu = {
   attr: {
     id: 'all-menu-button',
   },
-
   props: {
     display: 'none',
     flexFlow: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    
-    // width: '15px',
     height: 'auto',
     position: 'relative',
     zIndex: '15',

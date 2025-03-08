@@ -7,7 +7,9 @@ export const MainHeader = {
     display: 'flex',
     flexFlow: 'row',
     justifyContent: 'space-between',
-    
+    // background: 'zebra',
+    // backgroundColor: '#E4E2E',
+    // backgroundColor: 'white',
     padding: '0 20px',
     width: '100%',
     height: '77px',
@@ -53,7 +55,7 @@ export const MainHeader = {
       SearchButton: {
         tag: 'button',
         attr: {
-          type: 'submit',
+          type: 'button',
         },
         props: {
           border: 'none',
@@ -61,16 +63,21 @@ export const MainHeader = {
           cursor: 'pointer',
           padding: 0,
         },
-        Img: {
-          attr: {
-            id: 'search-button-icon',
-            src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi65e55c45/787d10da-8b01-4d27-ad6e-c9db8f5df28f-7a610c2d-2707-460d-8bbe-3948ca8cf389-be0fd83d-7d8e-4284-aae3-c2495d0cb97e.svg',
-          },
-          style: {
-            right: '3px',
-            transition: 'right 0.7s ease',
-          },
+        IconSearch: {
+          id: 'search-button-icon',
         },
+        /////// Backup original Search
+        // Img: {
+        //   attr: {
+        //     id: 'search-button-icon',
+        //     src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi65e55c45/787d10da-8b01-4d27-ad6e-c9db8f5df28f-7a610c2d-2707-460d-8bbe-3948ca8cf389-be0fd83d-7d8e-4284-aae3-c2495d0cb97e.svg',
+        //   },
+        //   style: {
+        //     right: '3px',
+        //     transition: 'right 0.7s ease',
+        //   },
+        // },
+        ///////////////////////////////
         on: {
           click: (e) => {
             const searchClick = document.getElementById('search-input-expand');
@@ -95,6 +102,7 @@ export const MainHeader = {
             justifyContent: 'center',
             align: 'center',
             backgroundColor: 'rgb(214, 214, 214)',
+            // backgroundColor: 'currentColor',
             inset: '0',
             opacity: '0',
             pointerEvents: 'none',
@@ -102,7 +110,6 @@ export const MainHeader = {
             cursor: 'auto',
             transition: 'top 0.5s ease, opacity 0.5s ease',
           },
-
           Div: {
             extend: 'Flex',
             props: {
@@ -171,19 +178,11 @@ export const MainHeader = {
         },
       },
     },
-    UserButton: {
-      tag: 'a',
-      attr: {
-        href: '/login',
-      },
+    
+    IconUser:{
       props: {
-        border: 'none',
-        backgroundColor: 'transparent',
-        cursor: 'pointer',
-      },
-      Img: {
-        src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi2ebf1055/b0d2c691-460f-4adf-8b2e-0e626d545db1-58412f45-a750-4c43-98e2-f7406ff4b568-527bad1c-45eb-4d5c-b3c5-7b6cfcb674be.svg',
-      },
+        href: '/login'
+      }
     },
     CartButton: {
       tag: 'a',
@@ -192,9 +191,7 @@ export const MainHeader = {
         backgroundColor: 'transparent',
         cursor: 'pointer',
       },
-      Img: {
-        src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi84c2dad5/d42a458a-4d2f-4575-975d-865814329e98-c6165623-9ed5-4cf5-a979-1233da52198d-2f260202-7fc0-4022-90ee-0634b9e5e221.svg',
-      },
+      IconCart:{},
       Cart: {},
       on: {
         click: () => {

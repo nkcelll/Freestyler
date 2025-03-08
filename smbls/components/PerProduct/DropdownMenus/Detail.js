@@ -12,11 +12,13 @@ export const Detail = {
     extend: 'Flex',
     style: {
       justifyContent: 'space-between',
+
     },
     props: {
       width: '100%',
       height: '60px',
       borderRadius: '1px',
+      backgroundColor: 'transparent', ///////// to Theme
       
       padding: '15px 0',
     },

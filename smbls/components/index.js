@@ -39,6 +39,15 @@ export * from './Assets/Icons/IconChevRight'
 export * from './Assets/Icons/IconEdit'
 export * from './Assets/Icons/IconAdd'
 export * from './Assets/Icons/IconInfo'
+export * from './Assets/Icons/IconUser'
+export * from './Assets/Icons/IconCart'
+export * from './Assets/Icons/IconBurgerMenu'
+export * from './Assets/Icons/IconLocation'
+export * from './Assets/Icons/IconPhone'
+export * from './Assets/Icons/IconEmailInfo'
+export * from './Assets/Icons/IconFacebook'
+export * from './Assets/Icons/IconInstagram'
+
 
 /////////////////////////////////// Filter Section///////////////////////////
 export* from './MainProducts/Filter Components/FilterList/SortBy'

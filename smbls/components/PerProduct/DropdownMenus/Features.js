@@ -17,6 +17,7 @@ export const Features = {
       width: '100%',
       height: '60px',
       borderRadius: '1px',
+      backgroundColor: 'transparent', ///////// to Theme
       
       padding: '15px 0',
     },

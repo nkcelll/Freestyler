@@ -1,14 +1,14 @@
 export default {
-  'logo.png': {
-    content: {
-      id: 'fi1e8a71f9',
-      src: 'https://files.symbo.ls/fi1e8a71f9/32e66aa2-77c3-4d38-8f98-5fdd14677d39-622f21bb-f764-4c31-9961-fb84050f6102-f9408dc2-8910-439e-b5dc-2a0398c60b6c.png',
-    },
-    code: '',
-    key: 'logo.png',
-    type: 'file',
-    format: 'png',
-  },
+  // 'logo.png': {
+  //   content: {
+  //     id: 'fi1e8a71f9',
+  //     src: 'https://files.symbo.ls/fi1e8a71f9/32e66aa2-77c3-4d38-8f98-5fdd14677d39-622f21bb-f764-4c31-9961-fb84050f6102-f9408dc2-8910-439e-b5dc-2a0398c60b6c.png',
+  //   },
+  //   code: '',
+  //   key: 'logo.png',
+  //   type: 'file',
+  //   format: 'png',
+  // },
   'tokojange.jpg': {
     content: {
       src: '/tokojange.jpeg'

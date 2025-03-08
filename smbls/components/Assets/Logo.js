@@ -1,8 +1,8 @@
 export const Logo = {
   extend: 'Link',
-    // attr: {
-    //   href: '/'
-    // },
+  // attr: {
+  //   href: '/'
+  // },
   //   Img: {
   //     src: 'logo.png',
   //     props: {
