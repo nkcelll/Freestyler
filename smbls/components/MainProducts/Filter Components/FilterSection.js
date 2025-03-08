@@ -4,7 +4,7 @@ export const FilterSection = {
   props: {
     width: '100%',
     height: '60px',
-    backgroundColor: '#D8D5D5',
+    // backgroundColor: '#D8D5D5',
     justifyContent: 'space-between',
     align: 'center',
   },
@@ -12,7 +12,7 @@ export const FilterSection = {
     text: '45 Products',
     props: {
       margin: '12px 0 12px 46px',
-      fontSize: '16px'
+      fontSize: '16px',
     }
   },
   FilterMenu:{}

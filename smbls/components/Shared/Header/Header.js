@@ -10,6 +10,7 @@ export const MainHeader = {
     // background: 'zebra',
     // backgroundColor: '#E4E2E',
     // backgroundColor: 'white',
+    backgroundColor: 'currentColor',
     padding: '0 20px',
     width: '100%',
     height: '77px',
@@ -19,6 +20,12 @@ export const MainHeader = {
     position: 'sticky',
     top: '0',
     transition: 'top 0.3s ease',
+    '@light': {
+      background: '#CDCBCB',
+    },
+    '@dark': {
+      background: '#343634',
+    },
   },
   Logo: {
     props: {
@@ -101,14 +108,20 @@ export const MainHeader = {
             zIndex: '200',
             justifyContent: 'center',
             align: 'center',
-            backgroundColor: 'rgb(214, 214, 214)',
-            // backgroundColor: 'currentColor',
+            // backgroundColor: 'rgb(214, 214, 214)',
+            backgroundColor: 'currentColor',
             inset: '0',
             opacity: '0',
             pointerEvents: 'none',
             top: '-100%',
             cursor: 'auto',
             transition: 'top 0.5s ease, opacity 0.5s ease',
+            '@light': {
+              background: '#CDCBCB'
+            },
+            '@dark': {
+              background: '#343634'
+            },
           },
           Div: {
             extend: 'Flex',
@@ -130,9 +143,9 @@ export const MainHeader = {
                 height: '100%',
                 borderRadius: '0',
                 padding: '0 35px 0 20px',
-                color: 'black',
+                // color: 'black',
                 outline: 'none',
-                border: '1px solid black',
+                border: '1px solid currentColor',
                 backgroundColor: 'transparent',
                 letterSpacing: '2px',
                 style: {

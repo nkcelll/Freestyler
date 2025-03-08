@@ -1,5 +1,5 @@
 export const ButtonSubmit = {
-  tag:'button',
+  tag: 'button',
   extend: 'Flex',
   attr: {
     type: 'submit',
@@ -11,16 +11,31 @@ export const ButtonSubmit = {
     width: '100%',
     height: '40px',
     align: 'center',
+    fontSize: '16px',
     padding: '0',
     border: 'none',
     justifyContent: 'center',
-    backgroundColor: 'rgb(240, 240, 240)',
+    // backgroundColor: 'rgb(240, 240, 240)', 
     letterSpacing: '1.2px',
     transition: 'background-color 0.2s ease, color 0.2s ease',
     cursor: 'pointer',
-    ':hover': {
-      backgroundcolor: 'black',
+    '@light': {
+      background: 'rgb(240, 240, 240)',
+      color: 'black',
+    },
+    '@dark': {
+      background: '#4d504d',
       color: 'white',
     },
+    ':hover': {
+      '@light': {
+        background: 'black',
+        color: 'white',
+      },
+      '@dark': {
+        background: 'rgb(240, 240, 240)',
+        color: 'black',
+      },
+    },
   },
-}
+};

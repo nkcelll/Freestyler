@@ -115,6 +115,10 @@ export const PerProducts = {
       },
       Button: {
         extend: 'Flex',
+        attr: {
+          id: 'add-to-cart',
+          type: 'button',
+        },
         text: 'Add to cart',
         on: {
           click: () => chooseSizeReminder(),

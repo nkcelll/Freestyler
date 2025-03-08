@@ -1,4 +1,4 @@
-import { openSideMenuBox } from "../../../functions";
+import { openSideMenuBox } from '../../../functions';
 
 export const FilterMenu = {
   extend: 'Flex',
@@ -27,6 +27,13 @@ export const FilterMenu = {
       text: 'Filter & Sort',
       margin: '0',
       fontSize: '14px',
+      color: 'currentColor',
+      '@light': {
+        color: 'dark',
+      },
+      '@dark': {
+        color: 'white',
+      },
     },
   },
   MainFilterBox: {},
@@ -35,7 +42,7 @@ export const FilterMenu = {
       // const openSideMenu = document.getElementById('side-filter');
       // const openOverlay = document.getElementById('main-filter-overlay');
       // console.log(e.currentTarget);
-      
+
       // if (e.currentTarget) {
       //   // openSideMenu.style.visibility = 'visible';
       //   openSideMenu.style.opacity = '1';
@@ -47,7 +54,7 @@ export const FilterMenu = {
       //   openOverlay.style.pointerEvents = 'auto';
       //   document.body.style.overflow = 'hidden';
       // }
-      openSideMenuBox('side-filter', 'main-filter-overlay')
+      openSideMenuBox('side-filter', 'main-filter-overlay');
     },
   },
 };

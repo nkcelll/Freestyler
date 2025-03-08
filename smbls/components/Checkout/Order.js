@@ -18,12 +18,17 @@ export const Order = {
     props: {
       width: '100%',
       height: '60px',
-      backgroundColor: 'rgb(201, 201, 201)',
       justifyContent: 'space-between',
       align: 'center',
       flow: 'x',
       padding: '0 20px',
       fontWeight: '800',
+      '@light': {
+          background: '#c3c4c3',
+        },
+      '@dark': {
+        background: '#696c69',
+      }
     },
     H1: {
       extend: 'Flex',
@@ -77,8 +82,8 @@ export const Order = {
       padding: '0 20px',
       fontSize: '20px',
       fontWeight: '700',
-      borderTop: '1px solid black',
-      borderBottom: '1px solid black',
+      borderTop: '1px solid currentColor',
+      borderBottom: '1px solid currentColor',
       letterSpacing: '1.2',
     },
     Span: {
@@ -128,7 +133,7 @@ export const Order = {
         },
         H5: {
           text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
+          color: 'currentColor',
           fontSize: '18px',
           fontWeight: '600',
           zIndex: '1',
@@ -153,206 +158,206 @@ export const Order = {
       },
     },
     /////////////// Test Case
-    OrderContentA: {
-      extend: 'Flex',
-      props: (el, s) => ({
-        width: 'auto',
-        height: 'auto',
-        flow: 'x',
-        justifyContent: 'flex-start',
-        gap: '20px',
-      }),
-      Img: {
-        state: 'posters/0',
-        src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-        // src: '{{ src }}',
-        width: '120px',
-        maxHeight: '160px',
-      },
-      TextBox: {
-        extend: 'Flex',
-        props: {
-          width: 'auto',
-          gap: '10px',
-          pointerEvents: 'all',
-          flow: 'y',
-        },
-        H5: {
-          text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
-          fontSize: '18px',
-          fontWeight: '600',
-          zIndex: '1',
-          width: '100%',
-          margin: '0',
-        },
-        Size: {
-          tag: 'span',
-          text: 'Size: 150',
-        },
-        Quantity: {
-          tag: 'span',
-          text: 'Quantity: 1',
-        },
-        Total: {
-          tag: 'span',
-          text: 'Total: 500$',
-          props: {
-            fontWeight: '700',
-          },
-        },
-      },
-    },
-    OrderContentB: {
-      extend: 'Flex',
-      props: (el, s) => ({
-        width: 'auto',
-        height: 'auto',
-        flow: 'x',
-        justifyContent: 'flex-start',
-        gap: '20px',
-      }),
-      Img: {
-        state: 'posters/0',
-        src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-        // src: '{{ src }}',
-        width: '120px',
-        maxHeight: '160px',
-      },
-      TextBox: {
-        extend: 'Flex',
-        props: {
-          width: 'auto',
-          gap: '10px',
-          pointerEvents: 'all',
-          flow: 'y',
-        },
-        H5: {
-          text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
-          fontSize: '18px',
-          fontWeight: '600',
-          zIndex: '1',
-          width: '100%',
-          margin: '0',
-        },
-        Size: {
-          tag: 'span',
-          text: 'Size: 150',
-        },
-        Quantity: {
-          tag: 'span',
-          text: 'Quantity: 1',
-        },
-        Total: {
-          tag: 'span',
-          text: 'Total: 500$',
-          props: {
-            fontWeight: '700',
-          },
-        },
-      },
-    },
-    OrderContentC: {
-      extend: 'Flex',
-      props: (el, s) => ({
-        width: 'auto',
-        height: 'auto',
-        flow: 'x',
-        justifyContent: 'flex-start',
-        gap: '20px',
-      }),
-      Img: {
-        state: 'posters/0',
-        src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-        // src: '{{ src }}',
-        width: '120px',
-        maxHeight: '160px',
-      },
-      TextBox: {
-        extend: 'Flex',
-        props: {
-          width: 'auto',
-          gap: '10px',
-          pointerEvents: 'all',
-          flow: 'y',
-        },
-        H5: {
-          text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
-          fontSize: '18px',
-          fontWeight: '600',
-          zIndex: '1',
-          width: '100%',
-          margin: '0',
-        },
-        Size: {
-          tag: 'span',
-          text: 'Size: 150',
-        },
-        Quantity: {
-          tag: 'span',
-          text: 'Quantity: 1',
-        },
-        Total: {
-          tag: 'span',
-          text: 'Total: 500$',
-          props: {
-            fontWeight: '700',
-          },
-        },
-      },
-    },
-    OrderContentD: {
-      extend: 'Flex',
-      props: (el, s) => ({
-        width: 'auto',
-        height: 'auto',
-        flow: 'x',
-        justifyContent: 'flex-start',
-        gap: '20px',
-      }),
-      Img: {
-        state: 'posters/0',
-        src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
-        // src: '{{ src }}',
-        width: '120px',
-        maxHeight: '160px',
-      },
-      TextBox: {
-        extend: 'Flex',
-        props: {
-          width: 'auto',
-          gap: '10px',
-          pointerEvents: 'all',
-          flow: 'y',
-        },
-        H5: {
-          text: 'Burton Family Tree Hometown Hero Camber Snowboard',
-          color: 'black',
-          fontSize: '18px',
-          fontWeight: '600',
-          zIndex: '1',
-          width: '100%',
-          margin: '0',
-        },
-        Size: {
-          tag: 'span',
-          text: 'Size: 150',
-        },
-        Quantity: {
-          tag: 'span',
-          text: 'Quantity: 1',
-        },
-        Total: {
-          tag: 'span',
-          text: 'Total: 500$',
-          props: {
-            fontWeight: '700',
-          },
-        },
-      },
-    },
+    // OrderContentA: {
+    //   extend: 'Flex',
+    //   props: (el, s) => ({
+    //     width: 'auto',
+    //     height: 'auto',
+    //     flow: 'x',
+    //     justifyContent: 'flex-start',
+    //     gap: '20px',
+    //   }),
+    //   Img: {
+    //     state: 'posters/0',
+    //     src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+    //     // src: '{{ src }}',
+    //     width: '120px',
+    //     maxHeight: '160px',
+    //   },
+    //   TextBox: {
+    //     extend: 'Flex',
+    //     props: {
+    //       width: 'auto',
+    //       gap: '10px',
+    //       pointerEvents: 'all',
+    //       flow: 'y',
+    //     },
+    //     H5: {
+    //       text: 'Burton Family Tree Hometown Hero Camber Snowboard',
+    //       color: 'black',
+    //       fontSize: '18px',
+    //       fontWeight: '600',
+    //       zIndex: '1',
+    //       width: '100%',
+    //       margin: '0',
+    //     },
+    //     Size: {
+    //       tag: 'span',
+    //       text: 'Size: 150',
+    //     },
+    //     Quantity: {
+    //       tag: 'span',
+    //       text: 'Quantity: 1',
+    //     },
+    //     Total: {
+    //       tag: 'span',
+    //       text: 'Total: 500$',
+    //       props: {
+    //         fontWeight: '700',
+    //       },
+    //     },
+    //   },
+    // },
+    // OrderContentB: {
+    //   extend: 'Flex',
+    //   props: (el, s) => ({
+    //     width: 'auto',
+    //     height: 'auto',
+    //     flow: 'x',
+    //     justifyContent: 'flex-start',
+    //     gap: '20px',
+    //   }),
+    //   Img: {
+    //     state: 'posters/0',
+    //     src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+    //     // src: '{{ src }}',
+    //     width: '120px',
+    //     maxHeight: '160px',
+    //   },
+    //   TextBox: {
+    //     extend: 'Flex',
+    //     props: {
+    //       width: 'auto',
+    //       gap: '10px',
+    //       pointerEvents: 'all',
+    //       flow: 'y',
+    //     },
+    //     H5: {
+    //       text: 'Burton Family Tree Hometown Hero Camber Snowboard',
+    //       color: 'black',
+    //       fontSize: '18px',
+    //       fontWeight: '600',
+    //       zIndex: '1',
+    //       width: '100%',
+    //       margin: '0',
+    //     },
+    //     Size: {
+    //       tag: 'span',
+    //       text: 'Size: 150',
+    //     },
+    //     Quantity: {
+    //       tag: 'span',
+    //       text: 'Quantity: 1',
+    //     },
+    //     Total: {
+    //       tag: 'span',
+    //       text: 'Total: 500$',
+    //       props: {
+    //         fontWeight: '700',
+    //       },
+    //     },
+    //   },
+    // },
+    // OrderContentC: {
+    //   extend: 'Flex',
+    //   props: (el, s) => ({
+    //     width: 'auto',
+    //     height: 'auto',
+    //     flow: 'x',
+    //     justifyContent: 'flex-start',
+    //     gap: '20px',
+    //   }),
+    //   Img: {
+    //     state: 'posters/0',
+    //     src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+    //     // src: '{{ src }}',
+    //     width: '120px',
+    //     maxHeight: '160px',
+    //   },
+    //   TextBox: {
+    //     extend: 'Flex',
+    //     props: {
+    //       width: 'auto',
+    //       gap: '10px',
+    //       pointerEvents: 'all',
+    //       flow: 'y',
+    //     },
+    //     H5: {
+    //       text: 'Burton Family Tree Hometown Hero Camber Snowboard',
+    //       color: 'black',
+    //       fontSize: '18px',
+    //       fontWeight: '600',
+    //       zIndex: '1',
+    //       width: '100%',
+    //       margin: '0',
+    //     },
+    //     Size: {
+    //       tag: 'span',
+    //       text: 'Size: 150',
+    //     },
+    //     Quantity: {
+    //       tag: 'span',
+    //       text: 'Quantity: 1',
+    //     },
+    //     Total: {
+    //       tag: 'span',
+    //       text: 'Total: 500$',
+    //       props: {
+    //         fontWeight: '700',
+    //       },
+    //     },
+    //   },
+    // },
+    // OrderContentD: {
+    //   extend: 'Flex',
+    //   props: (el, s) => ({
+    //     width: 'auto',
+    //     height: 'auto',
+    //     flow: 'x',
+    //     justifyContent: 'flex-start',
+    //     gap: '20px',
+    //   }),
+    //   Img: {
+    //     state: 'posters/0',
+    //     src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+    //     // src: '{{ src }}',
+    //     width: '120px',
+    //     maxHeight: '160px',
+    //   },
+    //   TextBox: {
+    //     extend: 'Flex',
+    //     props: {
+    //       width: 'auto',
+    //       gap: '10px',
+    //       pointerEvents: 'all',
+    //       flow: 'y',
+    //     },
+    //     H5: {
+    //       text: 'Burton Family Tree Hometown Hero Camber Snowboard',
+    //       color: 'black',
+    //       fontSize: '18px',
+    //       fontWeight: '600',
+    //       zIndex: '1',
+    //       width: '100%',
+    //       margin: '0',
+    //     },
+    //     Size: {
+    //       tag: 'span',
+    //       text: 'Size: 150',
+    //     },
+    //     Quantity: {
+    //       tag: 'span',
+    //       text: 'Quantity: 1',
+    //     },
+    //     Total: {
+    //       tag: 'span',
+    //       text: 'Total: 500$',
+    //       props: {
+    //         fontWeight: '700',
+    //       },
+    //     },
+    //   },
+    // },
     ////////////////////
     
   },

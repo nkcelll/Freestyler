@@ -1,5 +1,3 @@
-import { IconInfo } from "../Assets/Icons/IconInfo";
-
 export const AddAddress = {
   extend: 'Flex',
   props: {
@@ -7,7 +5,6 @@ export const AddAddress = {
     height: '200px',
     justifyContent: 'center',
     align: 'center',
-    backgroundColor: '#E4E2E2',
   },
   AddressContainer: {
     extend: 'Flex',
@@ -17,8 +14,8 @@ export const AddAddress = {
       gap: '20px',
       flow: 'y',
       '@mobileL': {
-        width: '80%'
-      }
+        width: '80%',
+      },
     },
     AddressDetailBox: {
       extend: 'Flex',
@@ -28,7 +25,7 @@ export const AddAddress = {
         flow: 'y',
         gap: '20px',
         padding: '20px 20px',
-        border: '1px solid black',
+        border: '1px solid currentColor',
       },
       NameSection: {
         extend: 'Flex',
@@ -55,7 +52,16 @@ export const AddAddress = {
             padding: '0',
             backgroundColor: 'transparent',
           },
-          IconAdd: {},
+          IconAdd: {
+            on: {
+              click: () => {
+                document.getElementById(
+                  'open-address-change-profile'
+                ).style.display = 'flex';
+                console.log('s');
+              },
+            },
+          },
         },
       },
       AddressSection: {
@@ -66,21 +72,25 @@ export const AddAddress = {
           justifyContent: 'center',
           backgroundColor: 'rgb(212, 212, 212)',
           flow: 'y',
+          '@light': {
+            background: 'rgb(212, 212, 212)',
+          },
+          '@dark': {
+            background: '#4d4e4d',
+          },
         },
         NoAddressAdded: {
           extend: 'Flex',
-          props: { 
+          props: {
             gap: '20px',
-            padding: '0 20px'
+            padding: '0 20px',
           },
-          IconInfo:{
-
-          },
+          IconInfo: {},
           span: {
-            text: 'No address added'
-          }
-        }
+            text: 'No address added',
+          },
+        },
       },
     },
   },
-}
+};

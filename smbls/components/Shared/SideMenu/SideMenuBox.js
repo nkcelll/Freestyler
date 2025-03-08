@@ -1,4 +1,5 @@
 import { closeSideMenuBox } from '../../../functions/domEvents/toggleSideboxes';
+import { SocialsLinks } from '../SocialLinks';
 
 export const SideMenuBox = {
   Overlay: {
@@ -49,17 +50,22 @@ export const SideMenuBox = {
       height: '100dvh',
       flow: 'y',
       justifyContent: 'space-between',
-      backgroundColor: '#fff',
+      // backgroundColor: '#fff',
+      backgroundColor: 'currentColor',
       position: 'fixed',
       zIndex: '150',
       right: '0',
-      // inset: 0,
       top: '0',
       whiteSpace: 'none',
       overflow: 'hidden',
-      // opacity: '0',
       transition: 'opacity 0.5s ease, transform 0.5s ease',
       transform: 'translateX(100%)',
+      '@light': {
+        backgroundColor: '#fff',
+      },
+      '@dark': {
+        backgroundColor: '#414341',
+      },
     },
     BoxContainer: {
       extend: 'Flex',
@@ -131,58 +137,8 @@ export const SideMenuBox = {
         ////////////////////////
       },
     },
-    SocialsLink: {
-      extend: 'Flex',
-
-      props: {
-        flow: 'x',
-        height: '100px',
-        justifyItems: 'center',
-        align: 'center',
-        textAlign: 'center',
-        marginTop: 'auto',
-        flexShrink: '0',
-      },
-      childExtend: {
-        extend: ['Link', 'Flex'],
-        props: {
-          gap: '20px',
-          padding: '0 0 0 15px',
-          margin: 'auto',
-        },
-      },
-      $socialCollection: () => [
-        {
-          a: {
-            attr: {
-              href: 'https://www.facebook.com/FreeStylerShop',
-            },
-            Img: {
-              props: {
-                src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/ficedd977b/8ea779c8-5857-4611-ae88-d015ae936e9a-03606ae3-21c8-4771-b62a-596aebd4b745-994c27f9-5bb4-48e3-8280-1e453f143db0.svg',
-                alt: 'Instagram Logo',
-                width: '18px',
-                height: '18px',
-              },
-            },
-          },
-        },
-        {
-          a: {
-            attr: {
-              href: 'https://www.instagram.com/freestylershop',
-            },
-            Img: {
-              props: {
-                src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fid618a2a0/eead73a4-316a-4300-b8aa-b6632e690ecd-49359f4d-9e6b-40d7-b1ae-b0f0dd778798-b21fcd26-1392-4f1e-89c4-5a1fe812e2e0.svg',
-                alt: 'Instagram Logo',
-                width: '18px',
-                height: '18px',
-              },
-            },
-          },
-        },
-      ],
+    SocialsLinks: {
+      margin: '20px 20px',
     },
   },
 };

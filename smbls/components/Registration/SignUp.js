@@ -1,4 +1,4 @@
-import RegisterForms from "../../functions/register/RegisterForms";
+import RegisterForms from '../../functions/register/RegisterForms';
 
 export const SignUp = {
   extend: 'Flex',
@@ -7,7 +7,6 @@ export const SignUp = {
     height: '800px',
     justifyContent: 'center',
     align: 'center',
-    
   },
   SignUpElements: {
     extend: 'Flex',
@@ -69,12 +68,12 @@ export const SignUp = {
           ),
         },
       ],
-      ButtonSubmit:{
+      ButtonSubmit: {
         text: 'Sign Up',
         id: '123',
         onClick: (e) => {
-          e.preventDefault()
-        }
+          e.preventDefault();
+        },
       },
       toLogIn: {
         extend: ['Link', 'Flex'],
@@ -82,7 +81,7 @@ export const SignUp = {
         props: {
           href: '/login',
           width: '100%',
-          height: '35px',
+          height: '40px',
           justifyContent: 'center',
           align: 'center',
           backgroundColor: 'rgb(240, 240, 240)',
@@ -90,9 +89,23 @@ export const SignUp = {
           borderRadius: '0',
           fontWeight: '400',
           letterSpacing: '1.2px',
-          ':hover': {
-            backgroundcolor: 'black',
+          '@light': {
+            background: 'rgb(240, 240, 240)',
+            color: 'black',
+          },
+          '@dark': {
+            background: '#4d504d',
             color: 'white',
+          },
+          ':hover': {
+            '@light': {
+              background: 'black',
+              color: 'white',
+            },
+            '@dark': {
+              background: 'rgb(240, 240, 240)',
+              color: 'black',
+            },
           },
         },
       },

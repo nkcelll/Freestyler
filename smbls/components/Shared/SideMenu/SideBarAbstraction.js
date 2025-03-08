@@ -21,10 +21,18 @@ export const SideBarAbstaction = ({
       height: '60px',
       flow: 'x',
       borderBottom: '1px solid grey',
-      backgroundColor: '#fff',
+      color: 'currentColor',
       justifyContent: 'space-between',
       align: 'center',
       padding: '0 20px',
+      '@light': {
+        color: 'black',
+        backgroundColor: '#fff',
+      },
+      '@dark': {
+        color: 'white',
+        backgroundColor: '#4d504d',
+      },
     },
     P: {
       text: title,
@@ -71,18 +79,22 @@ const category = ({ topCat, id, url, subCategories, prefix }) => ({
   props: {
     display: 'flex',
     padding: '0 20px',
-    backgroundColor: '#fff',
     flow: 'y',
     maxHeight: '0',
     opacity: '0',
     visibility: 'hidden',
+    '@light': {
+      color: 'black',
+    },
+    '@dark': {
+      color: 'white',
+    },
   },
   Items: {
     extend: ['Link', 'Flex'],
     props: {
       justifyContent: 'space-between',
       width: '100%',
-
       align: 'center',
       href: url,
     },
@@ -139,12 +151,16 @@ const subCategoriesComponent = ({ subCat, url }) => ({
     gap: '100px',
     align: 'center',
     padding: '0 20px',
+    fontWeight: '200',
+    '@light': {
+      color: 'black',
+    },
+    '@dark': {
+      color: 'white',
+    },
   },
   P: {
     text: subCat,
-    props: {
-      fontWeight: '200',
-    },
   },
   attr: {
     href: url,

@@ -44,7 +44,12 @@ export const Cart = {
       flow: 'y',
       gap: '20px',
       justifyContent: 'space-between',
-      backgroundColor: 'currentColor',
+      '@light': {
+        backgroundColor: '#fff',
+      },
+      '@dark': {
+        backgroundColor: '#414341',
+      },
       // backgroundColor: 'zebraWhite',
 
       '@mobileS': {
@@ -85,11 +90,7 @@ export const Cart = {
           },
           on: {
             click: (e) => {
-              // const overlayBox = document.getElementById('cart-overlay');
-              // const cart = document.getElementById('cart-box-side');
-              // if (cart && overlayBox) {
-              //   closeSideMenuBox(cart, overlayBox);
-              // }
+              
               closeSideMenuBox('cart-box-side', 'cart-overlay');
             },
           },
@@ -222,17 +223,15 @@ export const Cart = {
             height: '60px',
             justifyContent: 'center',
           },
-          a: {
-            extend: 'Flex',
+          toCheckout: {
+            extend: ['Link', 'Flex'],
             text: 'Check Out',
-            attr: {
-              href: '/checkout',
-            },
             style: {
               listStyleType: 'none',
               textDecoration: 'none',
             },
             props: {
+              href: '/checkout',
               width: '100%',
               margin: '0 20px',
               height: '60px',
@@ -247,7 +246,7 @@ export const Cart = {
               transition: 'background-color 0.2s ease, color 0.2s ease',
               cursor: 'pointer',
               ':hover': {
-                backgroundColor: 'black',
+                background: 'black',
                 color: 'white',
               },
             },

@@ -8,7 +8,7 @@ export const FilterAbstract = ({
   props: {
     flow: 'y',
     class: 'filter-box',
-    cursor: 'pointer'
+    cursor: 'pointer',
   },
   attr: {
     id: mainID,
@@ -23,10 +23,18 @@ export const FilterAbstract = ({
       height: '60px',
       flow: 'x',
       borderBottom: '1px solid grey',
-      backgroundColor: 'white',
+      // backgroundColor: 'white',
       justifyContent: 'space-between',
       align: 'center',
       padding: '0 20px',
+      '@light': {
+        color: 'black',
+        backgroundColor: '#fff',
+      },
+      '@dark': {
+        color: 'white',
+        backgroundColor: '#4d504d',
+      },
     },
     P: {
       text: title,
@@ -87,7 +95,7 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
   props: {
     class: 'filter-dropdown',
     padding: '0 20px',
-    backgroundColor: '#fff',
+    // backgroundColor: '#fff',
     flow: 'x',
     gap: '20px',
     height: '42px',
@@ -95,6 +103,14 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
     maxHeight: '0',
     opacity: '0',
     visibility: 'hidden',
+    '@light': {
+      color: 'black',
+      backgroundColor: '#fff',
+    },
+    '@dark': {
+      color: 'white',
+      backgroundColor: '#414341',
+    },
   },
   Input: {
     attr: {
@@ -116,15 +132,28 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
         width: '20px',
         height: '20px',
         backgroundColor: 'transparent',
-        border: '1px solid black',
         borderRadius: '0',
         transition: 'background-color 0.2s ease, border-color 0.2s ease',
+        '@light': {
+          border: '1px solid black',
+        },
+        '@dark': {
+          border: '1px solid white',
+        },
       },
       ':checked::before': {
         backgroundcolor: 'black',
         border: '1px solid black',
         borderRadius: '0',
         transition: 'background-color 0.2s ease, border-color 0.2s ease',
+        '@light': {
+          color: 'white',
+          background: 'black',
+        },
+        '@dark': {
+          color: 'black',
+          background: 'white',
+        },
       },
       '::after': {
         content: '""',
@@ -138,13 +167,20 @@ const inputSec = ({ spanText, id, inputId, prefix }) => ({
         transform: 'translate(-50%, -50%) rotate(-45deg)',
         opacity: '0',
         transition: 'opacity 0.2s ease',
+        '@light': {
+          borderLeft: '1px solid white',
+          borderBottom: '1px solid white',
+        },
+        '@dark': {
+          borderLeft: '1px solid black',
+          borderBottom: '1px solid black',
+        },
       },
 
       ':checked::after': {
         opacity: '1',
       },
     },
-
     on: {
       click: (e) => {
         const isChecked = e.target.checked;

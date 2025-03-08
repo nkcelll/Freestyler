@@ -7,7 +7,7 @@ export const Login = {
     height: '700px',
     justifyContent: 'center',
     align: 'center',
-    
+
     position: 'relative',
   },
   LoginElements: {
@@ -101,7 +101,8 @@ export const Login = {
                 backgroundColor: 'transparent',
                 // border: '1px solid black',
                 borderRadius: '0',
-                transition: 'background-color 0.2s ease, border-color 0.2s ease',
+                transition:
+                  'background-color 0.2s ease, border-color 0.2s ease',
                 '@light': {
                   border: '1px solid black',
                 },
@@ -196,20 +197,26 @@ export const Login = {
           height: '40px',
           justifyContent: 'center',
           align: 'center',
-          // backgroundColor: 'rgb(240, 240, 240)',
-          // backgroundColor: 'currentColor',
           transition: 'background-color 0.2s ease, color 0.2s ease',
           borderRadius: '0',
           fontWeight: '400',
           letterSpacing: '1.2',
           color: 'currentColor',
+          '@light': {
+            background: 'rgb(240, 240, 240)',
+            color: 'black',
+          },
+          '@dark': {
+            background: '#4d504d',
+            color: 'white',
+          },
           ':hover': {
-            '@light' : {
+            '@light': {
               background: 'black',
               color: 'white',
             },
             '@dark': {
-              background: 'white',
+              background: 'rgb(240, 240, 240)',
               color: 'black',
             },
           },

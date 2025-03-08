@@ -1,3 +1,5 @@
+import { cursorTo } from "readline";
+
 export const PersonalInformation = {
   extend: 'Flex',
   props: {
@@ -20,10 +22,16 @@ export const PersonalInformation = {
       height: '60px',
       letterSpacing: '1.2',
       fontWeight: '800',
-      backgroundColor: 'rgb(201, 201, 201)',
+      // backgroundColor: 'rgb(201, 201, 201)',
       align: 'center',
       padding: '0 20px',
       margin: 0,
+      '@light': {
+        background: '#c3c4c3',
+        },
+      '@dark': {
+        background: '#696c69',
+      }
     },
   },
   ContactSection: {
@@ -39,10 +47,15 @@ export const PersonalInformation = {
       props: {
         width: '100%',
         height: '60px',
-        backgroundColor: '222831',
         justifyContent: 'space-between',
         align: 'center',
-        flow: 'x'
+        flow: 'x',
+        '@light': {
+          background: '#eaebea',
+        },
+        '@dark': {
+          background: '#434543',
+        }
       },
       H5: {
         extend: 'Flex',
@@ -51,27 +64,29 @@ export const PersonalInformation = {
           fontSize: '20px',
           fontWeight: '700',
           letterSpacing: '1.2',
-          color: 'white',
+          color: 'currentColor',
           margin: 0,
           padding: '0 20px',
         },
       },
-      a: {
-        extend: 'Flex',
+      ToLogIn: {
+        extend: ['Link', 'Flex'],
         text: 'Login',
         attr: {
-          href: '/login'
         },
         style: {
           textDecoration: 'none'
         },
         props: {
-          width: '100px',
+          href: '/login',
+          width: 'auto',
           height: '60px',
+          margin: '0 20px',
           justifyContent: 'center',
           align: 'center',
-          color: 'black',
-          backgroundcolor: 'white'
+          color: 'currentColor',
+          backgroundcolor: 'white',
+          cursor: 'pointer'
         }
       },
       
@@ -106,10 +121,15 @@ export const PersonalInformation = {
       props: {
         width: '100%',
         height: '60px',
-        backgroundColor: '222831',
         // justifyContent: 'space-between',
         align: 'center',
-        flow: 'x'
+        flow: 'x',
+        '@light': {
+          background: '#eaebea',
+        },
+        '@dark': {
+          background: '#434543',
+        }
       },
       H5: {
         extend: 'Flex',
@@ -118,7 +138,7 @@ export const PersonalInformation = {
           fontSize: '20px',
           fontWeight: '700',
           letterSpacing: '1.2',
-          color: 'white',
+          color: 'currentColor',
           margin: 0,
           padding: '0 20px',
         },
@@ -195,7 +215,7 @@ export const PersonalInformation = {
       extend: 'Link',
       props: {
         cursor: 'pointer',
-        color: 'black',
+        color: 'currentColor',
         fontWeight: '300',
         textDecoration: 'underline'
       }
@@ -277,7 +297,7 @@ const inputForm = (labelText, inputType, id, inputPlaceHolder) => ({
       padding: '0 20px',
       borderRadius: '0',
       backgroundColor: 'transparent',
-      border: '1px solid black',
+      border: '1px solid currentColor',
       fontSize: '16px'
     },
   },

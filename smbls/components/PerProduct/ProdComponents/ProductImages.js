@@ -56,7 +56,7 @@ export const ProductImages = {
     {
       Img: {
         attr: {
-          src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+          src: 'https://bataleon.com/cdn/shop/files/surfer-786407.jpg?v=1740809018&width=823',
         },
         // props: {
         //   maxWidth: '100%',
@@ -70,7 +70,7 @@ export const ProductImages = {
     {
       Img: {
         attr: {
-          src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+          src: 'https://bataleon.com/cdn/shop/files/surfer-786407.jpg?v=1740809018&width=823',
         },
         // props: {
         //   maxWidth: '100%',
@@ -82,7 +82,7 @@ export const ProductImages = {
     {
       Img: {
         attr: {
-          src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+          src: 'https://bataleon.com/cdn/shop/files/surfer-786407.jpg?v=1740809018&width=823',
         },
         // props: {
         //   maxWidth: '100%',
@@ -94,7 +94,7 @@ export const ProductImages = {
     {
       Img: {
         attr: {
-          src: 'https://bataleon.com/cdn/shop/files/Bataleon-Surfer_2025-Bataleon-Snowboards_-product-image-2025-Surfer_2025-Bataleon-Snowboards_-1_106a6796-f2d7-4eb7-8a72-0356a651545e.jpg?v=1724326204&width=823',
+          src: 'https://bataleon.com/cdn/shop/files/surfer-786407.jpg?v=1740809018&width=823',
         },
         // props: {
         //   maxWidth: '100%',

@@ -13,6 +13,8 @@ export * from './Shared/Header/NavMenuAbst'
 export * from './Shared/Header/MenuList/MenAbst'
 export * from './Shared/Header/MenuList/WomenAbst'
 
+export * from './Shared/SocialLinks'
+
 export * from "./Shared/Header/SaleMenu";
 export * from './MainProducts/MarkingText'
 export * from './MainProducts/ProductsContent'
@@ -117,6 +119,8 @@ export * from './Account/AccountLayout'
 export * from './Account/Profile'
 export * from './Account/AddAddress'
 export * from './Account/OrderHistory'
+export * from './Account/ModalNameChange'
+export * from './Account/ModalAddress'
 
 /////////// Checkout
 export * from './Checkout/CheckoutLayout'

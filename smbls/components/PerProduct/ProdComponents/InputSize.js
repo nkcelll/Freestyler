@@ -8,7 +8,7 @@ export const InputSize = {
     gap: '10px',
     padding: '5px',
     cursor: 'pointer',
-    padding: 0
+    padding: 0,
   }),
   children: (el, s) => [
     {
@@ -30,7 +30,7 @@ export const InputSize = {
         margin: 0,
         padding: 0,
         '::before': {
-          content: `"${s.value}"`, 
+          content: `"${s.value}"`,
           position: 'absolute',
           inset: '0',
           display: 'flex',
@@ -39,19 +39,29 @@ export const InputSize = {
           backgroundColor: 'transparent',
           border: '1px solid black',
           transition: 'background-color 0.2s ease, border-color 0.2s ease',
+          '@light': {
+            border: '1px solid black',
+          },
+          '@dark': {
+            border: '1px solid white',
+          },
         },
         ':checked::before': {
-          backgroundColor: 'black',
-          color: 'white',
+          backgroundColor: 'currentColor',
+          color: 'currentColor',
+          '@light': {
+            color: 'white',
+            backgroundColor: 'black',
+          },
+          '@dark': {
+            color: 'black',
+            backgroundColor: 'white',
+          },
         },
       }),
     },
   ],
 };
-
-
-
-
 
 // export const inputSize = {
 //   extend: 'Flex',
@@ -119,7 +129,7 @@ export const InputSize = {
 
 //       ':checked::after': {
 //         content: `""`,
-//         // content: `"${sizeText}"`,  
+//         // content: `"${sizeText}"`,
 //         position: 'absolute',
 //         justifyContent: 'center',
 //         alignItems: 'center',

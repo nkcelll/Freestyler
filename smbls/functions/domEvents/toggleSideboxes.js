@@ -1,5 +1,3 @@
-import { version } from "process";
-
 const openSideMenuBox = (openMenu, openOverlay) => {
   const overlayBox = document.getElementById(openOverlay)
   const menuSide = document.getElementById(openMenu)

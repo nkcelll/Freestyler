@@ -5,7 +5,6 @@ export const Profile = {
     height: '200px',
     justifyContent: 'center',
     align: 'center',
-    backgroundColor: '#E4E2E2',
   },
   ProfileContainer: {
     extend: 'Flex',
@@ -48,7 +47,7 @@ export const Profile = {
         flow: 'y',
         gap: '20px',
         padding: '20px 20px',
-        border: '1px solid black',
+        border: '1px solid currentColor',
       },
       NameSection: {
         extend: 'Flex',
@@ -75,7 +74,14 @@ export const Profile = {
             padding: '0',
             backgroundColor: 'transparent',
           },
-          IconEdit: {},
+          IconEdit: {
+            on:{
+              click: () => {
+                document.getElementById('open-name-change-profile')
+                  .style.display = 'flex'
+              }
+            }
+          },
         },
       },
       EmailSection: {

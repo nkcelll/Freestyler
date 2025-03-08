@@ -1,4 +1,4 @@
-import { closeSideMenuBox } from "../../../functions/domEvents/toggleSideboxes";
+import { closeSideMenuBox } from '../../../functions/domEvents/toggleSideboxes';
 
 export const MainFilterBox = {
   OverlayBox: {
@@ -34,7 +34,7 @@ export const MainFilterBox = {
         //     document.body.style.overflow = 'visible';
         //   }, 15);
         // }
-        closeSideMenuBox('side-filter', 'main-filter-overlay')
+        closeSideMenuBox('side-filter', 'main-filter-overlay');
       },
     },
   },
@@ -49,7 +49,7 @@ export const MainFilterBox = {
       top: '0',
       right: '0',
       zIndex: '200',
-      backgroundColor: '#fff',
+      // backgroundColor: '#fff',
       width: '320px',
       height: '100dvh',
       flow: 'y',
@@ -58,6 +58,12 @@ export const MainFilterBox = {
       // opacity: '0',
       transition: 'opacity 0.5s ease, transform 0.5s ease',
       transform: 'translateX(100%)',
+      '@light': {
+        backgroundColor: '#fff',
+      },
+      '@dark': {
+        backgroundColor: '#414341',
+      },
       // '@screenL<': {
       //   width: '600px',
       // },
@@ -102,7 +108,7 @@ export const MainFilterBox = {
             //   closeOverlay.style.pointerEvents = 'none';
             //   document.body.style.overflow = 'visible';
             // }, 10);
-            closeSideMenuBox('side-filter', 'main-filter-overlay')
+            closeSideMenuBox('side-filter', 'main-filter-overlay');
           },
         },
       },

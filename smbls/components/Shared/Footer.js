@@ -4,6 +4,7 @@ import { IconInstagram } from '../Assets/Icons/IconInstagram';
 import { IconLocation } from '../Assets/Icons/IconLocation';
 import { IconPhone } from '../Assets/Icons/IconPhone';
 import { ButtonSubmit } from './components/ButtonSubmit';
+import { SocialsLink } from './SocialLinks';
 export const Footer = {
   extend: 'Flex',
   props: {
@@ -594,51 +595,7 @@ export const Footer = {
         align: 'center',
       },
     },
-    SocialsLink: {
-      extend: 'Flex',
-      props: {
-        height: 'auto',
-        justifyItems: 'center',
-        align: 'center',
-        gap: '16px',
-        textAlign: 'center',
-      },
-      Fb: {
-        extend: 'flex',
-        props: {
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          width: '100%',
-          height: '100%',
-          textAlign: 'center',
-        },
-        a: {
-          attr: {
-            href: 'https://www.facebook.com/FreeStylerShop',
-            target: '_blank',
-          },
-          IconFacebook: {},
-        },
-      },
-      Ig: {
-        extend: 'flex',
-        props: {
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          width: '100%',
-          height: '100%',
-        },
-        a: {
-          attr: {
-            href: 'https://www.instagram.com/freestylershop',
-            target: '_blank',
-          },
-          IconInstagram: {}
-        },
-      },
-    },
+    SocialsLinks:{}
   },
 };
 

@@ -104,7 +104,7 @@ export const ProductsContent = {
     border: '0 solid black',
     borderRight: '1px solid grey',
     borderBottom: '1px solid grey',
-    backgroundColor: 'rgb(214, 214, 214)',
+    // backgroundColor: 'rgb(214, 214, 214)',
 
     flow: 'y',
     href: '/product',

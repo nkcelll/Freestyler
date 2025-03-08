@@ -50,10 +50,10 @@ export default {
       color: 'none',
       background: 'none',
     },
-    transparent: {
-      color: 'currentColor',
-      background: 'transparent',
-    },
+    // transparent: {
+    //   color: 'currentColor',
+    //   background: 'transparent',
+    // },
     // primary: {
     //   '@dark': {
     //     color: 'currentColor',
