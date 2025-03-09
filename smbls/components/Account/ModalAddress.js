@@ -31,8 +31,9 @@ export const ModalAddress = {
     props: {
       width: '400px',
       padding: '20px',
-      maxHeight: '400px',
-      overflowX: 'scroll',
+      maxHeight: '500px',
+      overflowY: 'scroll',
+      // overflowY: 'hidden',
       // backgroundcolor: 'currentColor',
       gap: '30px',
       cursor: 'default',
@@ -44,7 +45,7 @@ export const ModalAddress = {
         background: '#1E201E',
       },
     },
-    AddAddress: {
+    AddAddressDetails: {
       extend: 'Flex',
       props: {
         width: '100%',
@@ -160,7 +161,33 @@ export const ModalAddress = {
           width: '80px',
           height: '40px',
         },
+        on: {
+          click: () => requiredFieldReminder()
+        }
       },
     },
   },
 }
+
+const requiredFieldReminder = () => {
+  const reminder = document.querySelector('field-reminder');
+
+  const fields = [
+    document.getElementById('address-first'),
+    document.getElementById('address-last'),
+    document.getElementById('address-address'),
+    document.getElementById('address-appartment'),
+    document.getElementById('address-phone'),
+  ];
+  console.log(fields);
+  
+
+  // Check if any field is empty
+  const hasEmptyField = fields.some(field => !field.value.trim());
+
+  if (hasEmptyField) {
+    reminder.style.display = 'flex';
+  } else {
+    reminder.style.display = 'none';
+  }
+};

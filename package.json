@@ -22,6 +22,7 @@
     "assert": "^2.1.0",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
+    "console-browserify": "^1.2.0",
     "crypto-browserify": "^3.12.1",
     "eslint": "^8.42.0",
     "eslint-config-standard": "^17.1.0",

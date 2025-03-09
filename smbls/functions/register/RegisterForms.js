@@ -18,13 +18,22 @@ const RegisterForms = (labelText, id, inputType, placeHolder) => ({
       borderBottom: '1px solid currentColor',
     },
   },
+  Span: {
+    text: 'Please fill the field',
+    class: 'field-reminder',
+    props: {
+      display: 'none',
+      color: 'red',
+      fontSize: '14px'
+    }
+  },
   Input: {
     attr: {
       type: inputType,
       id: id,
       placeholder: placeHolder,
       required: true,
-      autocomplete: id === 'login-id' ? 'username' : 'current-password',
+      // autocomplete: id === 'login-id' ? 'username' : 'current-password',
     },
     props: {
       width: '100%',
@@ -40,5 +49,14 @@ const RegisterForms = (labelText, id, inputType, placeHolder) => ({
     },
   },
 });
+// const requiredFieldReminder = () => {
+//   const reminder = document.getElementById('size-reminder');
+
+//   if (reminder.length) {
+//     reminder.style.display = 'flex';
+//   } else if (selectedSize) {
+//     reminder.style.display = 'none';
+//   }
+// };
 
 export default RegisterForms;

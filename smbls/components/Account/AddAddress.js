@@ -52,14 +52,12 @@ export const AddAddress = {
             padding: '0',
             backgroundColor: 'transparent',
           },
-          IconAdd: {
-            on: {
-              click: () => {
-                document.getElementById(
-                  'open-address-change-profile'
-                ).style.display = 'flex';
-                console.log('s');
-              },
+          IconAdd: {},
+          on: {
+            click: () => {
+              document.getElementById(
+                'open-address-change-profile'
+              ).style.display = 'flex';
             },
           },
         },
