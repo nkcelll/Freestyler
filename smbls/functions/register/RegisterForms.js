@@ -1,4 +1,4 @@
-const RegisterForms = (labelText, id, inputType, placeHolder) => ({
+const RegisterForms = (labelText, id, inputType, placeHolder, spanClassId) => ({
   extend: 'Flex',
   props: {
     justifyContent: 'flex-start',
@@ -19,13 +19,15 @@ const RegisterForms = (labelText, id, inputType, placeHolder) => ({
     },
   },
   Span: {
-    text: 'Please fill the field',
-    class: 'field-reminder',
+    text: 'Fill the field',
+    attr: {
+      class: spanClassId,
+    },
     props: {
       display: 'none',
       color: 'red',
-      fontSize: '14px'
-    }
+      fontSize: '14px',
+    },
   },
   Input: {
     attr: {
@@ -49,14 +51,5 @@ const RegisterForms = (labelText, id, inputType, placeHolder) => ({
     },
   },
 });
-// const requiredFieldReminder = () => {
-//   const reminder = document.getElementById('size-reminder');
-
-//   if (reminder.length) {
-//     reminder.style.display = 'flex';
-//   } else if (selectedSize) {
-//     reminder.style.display = 'none';
-//   }
-// };
 
 export default RegisterForms;

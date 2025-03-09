@@ -1,4 +1,5 @@
 import RegisterForms from "../../functions/register/RegisterForms";
+import modalReminders from "../../functions/domEvents/modalReminders";
 
 export const ModalAddress = {
   extend: 'Flex',
@@ -89,19 +90,19 @@ export const ModalAddress = {
       },
       $collection: () => [
         {
-          form: RegisterForms('First Name', 'address-first', 'text', ''),
+          form: RegisterForms('First Name', 'address-first', 'text', '', 'field-reminder'),
         },
         {
-          form: RegisterForms('Last Name', 'address-last', 'text', ''),
+          form: RegisterForms('Last Name', 'address-last', 'text', '', 'field-reminder'),
         },
         {
-          form: RegisterForms('Address', 'address-address', 'text', ''),
+          form: RegisterForms('Address', 'address-address', 'text', '', 'field-reminder'),
         },
         {
-          form: RegisterForms('Appartment', 'address-appartment', 'text', ''),
+          form: RegisterForms('Appartment', 'address-appartment', 'text', '', 'field-reminder'),
         },
         {
-          form: RegisterForms('Phone Number', 'address-phone', 'text', ''),
+          form: RegisterForms('Phone Number', 'address-phone', 'text', '', 'field-reminder'),
         },
       ],
     },
@@ -162,32 +163,17 @@ export const ModalAddress = {
           height: '40px',
         },
         on: {
-          click: () => requiredFieldReminder()
+          // click: () => requiredFieldReminder()
+          click: () => modalReminders('field-reminder', 
+            [
+              'address-first',
+              'address-last',
+              'address-address',
+              'address-appartment',
+              'address-phone'
+            ])
         }
       },
     },
   },
 }
-
-const requiredFieldReminder = () => {
-  const reminder = document.querySelector('field-reminder');
-
-  const fields = [
-    document.getElementById('address-first'),
-    document.getElementById('address-last'),
-    document.getElementById('address-address'),
-    document.getElementById('address-appartment'),
-    document.getElementById('address-phone'),
-  ];
-  console.log(fields);
-  
-
-  // Check if any field is empty
-  const hasEmptyField = fields.some(field => !field.value.trim());
-
-  if (hasEmptyField) {
-    reminder.style.display = 'flex';
-  } else {
-    reminder.style.display = 'none';
-  }
-};

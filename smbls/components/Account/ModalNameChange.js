@@ -1,4 +1,5 @@
 import RegisterForms from '../../functions/register/RegisterForms';
+import modalReminders from '../../functions/domEvents/modalReminders';
 
 export const ModalNameChange = {
   extend: 'Flex',
@@ -87,10 +88,22 @@ export const ModalNameChange = {
       },
       $collection: () => [
         {
-          form: RegisterForms('First Name', 'profile-first-name', 'text', ''),
+          form: RegisterForms(
+            'First Name',
+            'profile-first-name',
+            'text',
+            '',
+            'nameModal-reminder'
+          ),
         },
         {
-          form: RegisterForms('Last Name', 'profile-last-name', 'text', ''),
+          form: RegisterForms(
+            'Last Name',
+            'profile-last-name',
+            'text',
+            '',
+            'nameModal-reminder'
+          ),
         },
       ],
     },
@@ -149,6 +162,15 @@ export const ModalNameChange = {
         props: {
           width: '80px',
           height: '40px',
+        },
+        on: {
+          click: () =>
+            modalReminders('nameModal-reminder',
+            [
+              'profile-first-name',
+              'profile-last-name',
+            ]
+          ),
         },
       },
     },
