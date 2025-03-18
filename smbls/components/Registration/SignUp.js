@@ -1,4 +1,5 @@
 import RegisterForms from '../../functions/register/RegisterForms';
+import modalReminders from '../../functions/domEvents/modalReminders'
 
 export const SignUp = {
   extend: 'Flex',
@@ -46,34 +47,37 @@ export const SignUp = {
       },
       $signUpCollection: () => [
         {
-          form: RegisterForms('Name', 'first-name', 'text', 'Name'),
+          form: RegisterForms('Name', 'signup-first-name', 'text', 'Name', 'singUp-reminder'),
         },
         {
-          form: RegisterForms('Surname', 'last-name', 'text', 'Surname'),
+          form: RegisterForms('Surname', 'signup-last-name', 'text', 'Surname', 'singUp-reminder',),
         },
         {
           form: RegisterForms(
             'Email',
-            'email-id',
+            'signup-email',
             'email',
-            'Example@gmail.com'
+            'Example@gmail.com',
+            'singUp-reminder',
           ),
         },
         {
           form: RegisterForms(
             'Password',
-            'password-id',
+            'signup-password',
             'password',
-            '********'
+            '********',
+            'singUp-reminder',
           ),
         },
       ],
       ButtonSubmit: {
         text: 'Sign Up',
         id: '123',
-        onClick: (e) => {
-          e.preventDefault();
-        },
+        onClick:(ev, el, s) => {
+          ev.preventDefault()
+          modalReminders('singUp-reminder', ['signup-first-name', 'signup-last-name','signup-email', 'signup-password'])
+        }
       },
       toLogIn: {
         extend: ['Link', 'Flex'],

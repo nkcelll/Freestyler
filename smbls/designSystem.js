@@ -35,7 +35,6 @@ export default {
     document: {
       '@light': {
         color: 'black',
-        // color: 'black',
         background: '#E4E2E2',
         '-webkit-tap-highlight-color': 'transparent',
       },

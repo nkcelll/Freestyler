@@ -1,0 +1,68 @@
+{
+  "snowboards": [
+    {
+      "key": "snowboard-001",
+      "name": "Alpha Pro Snowboard",
+      "size": ["155 cm", "158 cm", "160 cm"],
+      "price": 499.99,
+      "specs": {
+        "terrain": "All-mountain",
+        "coreMaterial": "Wood",
+        "baseType": "Sintered",
+        "flex": "Medium",
+        "recommendedFor": "Intermediate - Advanced",
+        "weight": "2.9 kg"
+      },
+      "image": "/images/snowboard-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-002",
+      "name": "Explorer X Snowboard",
+      "size": ["148 cm", "152 cm", "155 cm"],
+      "price": 399.99,
+      "specs": {
+        "terrain": "Freestyle",
+        "coreMaterial": "Aspen",
+        "baseType": "Extruded",
+        "flex": "Soft",
+        "recommendedFor": "Beginner - Intermediate",
+        "weight": "2.7 kg"
+      },
+      "image": "/images/snowboard-002.jpg",
+      "availability": "Out of Stock"
+    },
+    {
+      "key": "snowboard-003",
+      "name": "Rider 360 Snowboard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 599.99,
+      "specs": {
+        "terrain": "Powder",
+        "coreMaterial": "Bamboo",
+        "baseType": "Sintered",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "image": "/images/snowboard-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-004",
+      "name": "Velocity Snowboard",
+      "size": ["153 cm", "157 cm", "160 cm"],
+      "price": 450.00,
+      "specs": {
+        "terrain": "All-mountain",
+        "coreMaterial": "Wood and Carbon",
+        "baseType": "Extruded",
+        "flex": "Medium",
+        "recommendedFor": "Intermediate",
+        "weight": "2.8 kg"
+      },
+      "image": "/images/snowboard-004.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

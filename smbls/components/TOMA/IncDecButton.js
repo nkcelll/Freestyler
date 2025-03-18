@@ -29,6 +29,7 @@ export const IncDecButton = {
         background: 'white .25',
       },
     },
+    
     on: {
       click: (ev, el, s) => s.root.order.quantity > 1 && s.rootUpdate({
             order: {

@@ -1,4 +1,5 @@
 import { openSideMenuBox } from '../../../functions/domEvents/toggleSideboxes';
+import { IconMoon } from '../../Assets/Icons/IconMoon';
 export const MainHeader = {
   attr: {
     id: 'main-header',
@@ -10,7 +11,7 @@ export const MainHeader = {
     // background: 'zebra',
     // backgroundColor: '#E4E2E',
     // backgroundColor: 'white',
-    backgroundColor: 'currentColor',
+    backgroundColor: 'currentColor[0]',
     padding: '0 20px',
     width: '100%',
     height: '77px',
@@ -25,6 +26,7 @@ export const MainHeader = {
     },
     '@dark': {
       background: '#343634',
+      // background: '#1E201E',
     },
   },
   Logo: {
@@ -212,6 +214,8 @@ export const MainHeader = {
         },
       },
     },
+    IconMoon:{},
+
     Menu: {
       '@tabletS': {
         display: 'flex',

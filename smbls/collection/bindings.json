@@ -1,0 +1,68 @@
+{
+  "bindings": [
+    {
+      "key": "binding-001",
+      "name": "X1 Pro Snowboard Bindings",
+      "size": ["S", "M", "L"],
+      "price": 199.99,
+      "specs": {
+        "flex": "Medium",
+        "strapType": "Hybrid",
+        "highbackMaterial": "Fiberglass",
+        "basePlateMaterial": "Aluminum",
+        "weight": "1.4 kg",
+        "recommendedFor": "All-mountain"
+      },
+      "image": "/images/binding-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "binding-002",
+      "name": "RideX Freestyle Bindings",
+      "size": ["M", "L"],
+      "price": 159.99,
+      "specs": {
+        "flex": "Soft",
+        "strapType": "Traditional",
+        "highbackMaterial": "Nylon",
+        "basePlateMaterial": "Plastic",
+        "weight": "1.2 kg",
+        "recommendedFor": "Freestyle"
+      },
+      "image": "/images/binding-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "binding-003",
+      "name": "Carbon Edge Bindings",
+      "size": ["S", "M", "L"],
+      "price": 299.99,
+      "specs": {
+        "flex": "Stiff",
+        "strapType": "Hybrid",
+        "highbackMaterial": "Carbon Fiber",
+        "basePlateMaterial": "Carbon",
+        "weight": "1.1 kg",
+        "recommendedFor": "Advanced - Freeride"
+      },
+      "image": "/images/binding-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "binding-004",
+      "name": "All Mountain Pro Bindings",
+      "size": ["M", "L"],
+      "price": 249.99,
+      "specs": {
+        "flex": "Medium-Stiff",
+        "strapType": "Hybrid",
+        "highbackMaterial": "Composite",
+        "basePlateMaterial": "Aluminum",
+        "weight": "1.3 kg",
+        "recommendedFor": "All-mountain"
+      },
+      "image": "/images/binding-004.jpg",
+      "availability": "Out of Stock"
+    }
+  ]
+}

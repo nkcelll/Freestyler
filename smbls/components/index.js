@@ -51,6 +51,8 @@ export * from './Assets/Icons/IconFacebook'
 export * from './Assets/Icons/IconInstagram'
 export * from './Assets/Icons/IconMinus'
 export * from './Assets/Icons/IconPlus'
+export * from './Assets/Icons/IconSun'
+export * from './Assets/Icons/IconMoon'
 
 
 /////////////////////////////////// Filter Section///////////////////////////

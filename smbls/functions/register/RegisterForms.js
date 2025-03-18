@@ -35,6 +35,7 @@ const RegisterForms = (labelText, id, inputType, placeHolder, spanClassId) => ({
       id: id,
       placeholder: placeHolder,
       required: true,
+      autocomplete: 'off'
       // autocomplete: id === 'login-id' ? 'username' : 'current-password',
     },
     props: {

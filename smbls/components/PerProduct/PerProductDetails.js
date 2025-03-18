@@ -4,7 +4,7 @@ export const PerProductDetails = {
     width: '100%',
     height: 'auto',
     position: 'sticky',
-    
+    background: 'currentColor[0]',
     padding: '20px 20px',
   },
   DropDownContainer: {

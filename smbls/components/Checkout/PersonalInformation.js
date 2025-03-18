@@ -1,4 +1,4 @@
-import { cursorTo } from "readline";
+import modalReminders from '../../functions/domEvents/modalReminders';
 
 export const PersonalInformation = {
   extend: 'Flex',
@@ -28,10 +28,10 @@ export const PersonalInformation = {
       margin: 0,
       '@light': {
         background: '#c3c4c3',
-        },
+      },
       '@dark': {
         background: '#696c69',
-      }
+      },
     },
   },
   ContactSection: {
@@ -39,8 +39,7 @@ export const PersonalInformation = {
     props: {
       width: '100%',
       height: 'auto',
-      flow: 'y'
-      
+      flow: 'y',
     },
     ContactHeader: {
       extend: 'Flex',
@@ -55,7 +54,7 @@ export const PersonalInformation = {
         },
         '@dark': {
           background: '#434543',
-        }
+        },
       },
       H5: {
         extend: 'Flex',
@@ -72,10 +71,9 @@ export const PersonalInformation = {
       ToLogIn: {
         extend: ['Link', 'Flex'],
         text: 'Login',
-        attr: {
-        },
+        attr: {},
         style: {
-          textDecoration: 'none'
+          textDecoration: 'none',
         },
         props: {
           href: '/login',
@@ -86,10 +84,9 @@ export const PersonalInformation = {
           align: 'center',
           color: 'currentColor',
           backgroundcolor: 'white',
-          cursor: 'pointer'
-        }
+          cursor: 'pointer',
+        },
       },
-      
     },
     EmailInfo: {
       childExtend: {
@@ -103,9 +100,8 @@ export const PersonalInformation = {
         },
       },
       $emailFormCheckout: () => ({
-        Form: inputForm('Email Address', 'email', 'checkout-email'),
-      })
-      
+        Form: inputForm('Email Address', 'email', 'checkout-email', '', 'checkout-reminder'),
+      }),
     },
   },
   BillingSection: {
@@ -113,8 +109,7 @@ export const PersonalInformation = {
     props: {
       width: '100%',
       height: 'auto',
-      flow: 'y'
-      
+      flow: 'y',
     },
     Billing: {
       extend: 'Flex',
@@ -129,7 +124,7 @@ export const PersonalInformation = {
         },
         '@dark': {
           background: '#434543',
-        }
+        },
       },
       H5: {
         extend: 'Flex',
@@ -157,10 +152,10 @@ export const PersonalInformation = {
       },
       $billingFormCheckout: () => [
         {
-          Form: inputForm('First Name', 'text', 'text'),  
+          Form: inputForm('First Name', 'text', 'checkout-firstName', '', 'checkout-reminder'),
         },
         {
-          Form: inputForm('Last Name', 'text', 'text'),
+          Form: inputForm('Last Name', 'text', 'checkout-lastName', '', 'checkout-reminder'),
         },
         // {
         //   Label: {
@@ -188,20 +183,35 @@ export const PersonalInformation = {
         //   }
         // },
         {
-          Form: inputForm('Street Address', 'text', 'text'),
+          Form: inputForm('Street Address', 'text', 'checkout-address', '', 'checkout-reminder'),
         },
         {
-          Form: inputForm('Zip Code', 'text', 'text'),
+          Form: inputForm('Zip Code', 'text', 'checkout-zipCode', '', 'checkout-reminder'),
         },
         {
-          Form: inputForm('Phone Number', 'text', 'text', '+995 '),
+          Form: inputForm('Phone Number', 'text', 'checkout-phone', '+995 ', 'checkout-reminder'),
         },
-      ]
+      ],
     },
   },
   ButtonSubmit: {
     text: 'Proceed Checkout',
-    height: '60px',
+    props: {
+      height: '60px',
+
+    },
+    on: {
+      click: () => modalReminders('checkout-reminder', 
+        [
+          'checkout-email',
+          'checkout-firstName',
+          'checkout-lastName',
+          'checkout-address',
+          'checkout-zipCode',
+          'checkout-phone'
+        ]
+      )
+    }
   },
   Policy: {
     extend: 'Flex',
@@ -209,7 +219,7 @@ export const PersonalInformation = {
       width: '100%',
       height: 'auto',
       margin: '50px 0 0 0',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
     },
     childExtend: {
       extend: 'Link',
@@ -217,72 +227,81 @@ export const PersonalInformation = {
         cursor: 'pointer',
         color: 'currentColor',
         fontWeight: '300',
-        textDecoration: 'underline'
-      }
+        textDecoration: 'underline',
+      },
     },
     $propsCollection: () => [
       {
         text: 'Refund Policy',
-        href: '/'
+        href: '/',
       },
       {
         text: 'Shipping Policy',
-        href: '/'
+        href: '/',
       },
       {
         text: 'Privacy policy',
-        href: '/'
+        href: '/',
       },
       {
         text: 'Terms of service',
-        href: '/'
+        href: '/',
       },
-    ]
+    ],
   },
-  
-}
+};
 
-const inputForm = (labelText, inputType, id, inputPlaceHolder) => ({
+const inputForm = (labelText, inputType, id, inputPlaceHolder, spanClassId) => ({
   extend: 'Flex',
   props: {
     gap: '5px',
-    flow: 'y'
+    flow: 'y',
   },
-  
-    Label: {
-      text: labelText,
-      extend: 'Flex',
-      props: {
-        width: '80%',
-        height: 'auto',
-        flow: 'y',
-        fontSize: '16px',
-        padding: '0 20px',
-        fontWeight: '400',
-        gap: '10px',
-        flow: 'x'
+
+  Label: {
+    text: labelText,
+    extend: 'Flex',
+    props: {
+      width: '80%',
+      height: 'auto',
+      flow: 'y',
+      fontSize: '16px',
+      padding: '0 20px',
+      fontWeight: '400',
+      gap: '10px',
+      flow: 'x',
+    },
+    Abbr: {
+      attr: {
+        title: 'required',
       },
-      Abbr: {
-        attr:{ 
-          title: 'required',
-  
-        },
-        props: {
-          textDecoration: 'none',
-          color: 'red',
-          fontSize: '20px'
-        },
-        text: '*'
-      }
+      props: {
+        textDecoration: 'none',
+        color: 'red',
+        fontSize: '20px',
+      },
+      text: '*',
+    },
   },
-  
+  Span: {
+    text: 'Fill the field',
+    attr: {
+      class: spanClassId,
+    },
+    props: {
+      display: 'none',
+      color: 'red',
+      padding: '0 20px',
+      fontSize: '14px',
+    },
+  },
   Input: {
     extend: 'Flex',
     attr: {
       type: inputType,
       id: id,
       required: true,
-      placeholder: inputPlaceHolder
+      placeholder: inputPlaceHolder,
     },
     style: {
       borderRadius: '0',
@@ -298,7 +317,7 @@ const inputForm = (labelText, inputType, id, inputPlaceHolder) => ({
       borderRadius: '0',
       backgroundColor: 'transparent',
       border: '1px solid currentColor',
-      fontSize: '16px'
+      fontSize: '16px',
     },
   },
 });

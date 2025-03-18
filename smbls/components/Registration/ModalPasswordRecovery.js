@@ -1,4 +1,5 @@
 import RegisterForms from '../../functions/register/RegisterForms';
+import modalReminders from '../../functions/domEvents/modalReminders'
 
 export const ModalPasswordRecovery = {
   extend: 'Flex',
@@ -91,13 +92,18 @@ export const ModalPasswordRecovery = {
             'Email',
             'recovery-password',
             'email',
-            'Example@gmail.com'
+            'Example@gmail.com',
+            'recovery-reminder'
           ),
         },
       ],
     },
     ButtonSubmit: {
       text: 'Send',
+      onClick:(ev, el, s) => {
+        ev.preventDefault()
+        modalReminders('recovery-reminder',['recovery-password'])
+      }
     },
   },
 };
