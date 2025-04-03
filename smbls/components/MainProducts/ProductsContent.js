@@ -107,10 +107,7 @@ export const ProductsContent = {
   },
 };
 
-fetch('../../collection/snowboard.json')
-  .then(res => res.json())
-  .then(res => console.log(res))
-console.log('ae')
+
 
 
 

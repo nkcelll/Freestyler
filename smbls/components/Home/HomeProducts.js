@@ -1,10 +1,9 @@
 export const HomeImageProducts = {
   extend: ['Link', 'Flex'],
-  props: (el, s) => (
-    console.log(s),
-    {
+  props: (el, s) => ({
     display: 'flex',
-    href: '/products/' + s.key,
+    // href: '/products/' + s.key,
+    href: '/products/',
     flow: 'y',
     width: '200px',
     height: 'auto',
@@ -47,6 +46,20 @@ export const HomeImageProducts = {
   },
 };
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const snowboard = async() => {
+//     try {
+//     const snowprod =  await fetch('./snowboard.json')
+//     const data = snowprod.json()
+//     console.log(data);
+    
+//     } catch (error) {
+//       console.log(error.message)
+//     }
+  
+//   }
+//   snowboard()
+// })
 
 
 

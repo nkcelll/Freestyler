@@ -35,7 +35,10 @@ export const Layout = {
     '::-webkit-scrollbar': { display: 'none' },
     childExtends: 'HomeImageProducts',
     childrenAs: 'state',
-    children: (el, s) => Object.values(s.products.data),
+    // children: (el, s) => Object.values(s.products.data),
+    children: (el, s) => (
+      console.log(s.products),
+      Object.values(s.products.data)),
 
     '@tabletS': {
       // padding: '0 20px 0 0',
