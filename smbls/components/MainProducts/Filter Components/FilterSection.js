@@ -7,6 +7,12 @@ export const FilterSection = {
     // backgroundColor: '#D8D5D5',
     justifyContent: 'space-between',
     align: 'center',
+    '@light': {
+      background: '#CDCBCB',
+    },
+    '@dark': {
+      background: '#343634',
+    },
   },
   P: {
     text: '45 Products',

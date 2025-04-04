@@ -12,7 +12,8 @@ export const ProductsContent = {
     border: '0 solid black',
     borderRight: '1px solid grey',
     borderBottom: '1px solid grey',
-    backgroundColor: 'rgb(214, 214, 214)',
+    // backgroundColor: 'rgb(214, 214, 214)',
+    // backgroundColor: 'black',
     flow: 'y',
     href: state.href || '/product/' + state.id,
     target: state.href && '_blank',
@@ -27,16 +28,16 @@ export const ProductsContent = {
       overflow: 'hidden',
       position: 'relative',
       justifyContent: 'center',
+      align: 'center'
     },
     Img: {
-      // Access the product images correctly
-      state: (el, state) => state.images,  // Ensure this points to the first image of the current product
+     
+      state: (el, state) => state.images, 
       props: {
-        // Dynamically assign the src based on productData.images
-        src: (el, state) => state.images || '', // Default to empty if no images available
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover', // Ensures the image covers the whole container
+        src: (el, state) => state.images || '', 
+        width: '90%',
+        height: '90%',
+        objectFit: 'cover', 
       },
     },
   
@@ -66,9 +67,8 @@ export const ProductsContent = {
       borderTop: '1px solid grey',
       borderBottom: '1px solid grey',
     },
-    H: {
-      // text: '{{ title }}',
-      // text:(el, s) => {s.productsData.price}, 
+    productName: {
+      tag: 'span',
       text: '{{ title }}' ,
       height: 'auto',
       fontSize: '16px',
@@ -80,30 +80,35 @@ export const ProductsContent = {
         flow: 'x',
         gap: '16px',
       },
+
     },
-    ...[
-      {
-        props: {
+    priceSection: {
+      extend: 'Flex',
+      props: {
+        gap: '16px'
+      },
+      price: {
+        tag: 'span',
+        props: (el, s) => ({
           text: `$ ${'{{ price }}'}`,
-          // text: '{{ originalPrice }}',
           margin: '0',
           fontSize: '14px',
           fontWeight: '500',
-          // style: {
-          //   textDecorationLine: 'line-through',
-          // },
-        },
+          textDecoration: s.salePrice ? 'line-through' : 'none', 
+        }),
       },
-      {
-        props: {
-          text: '{{ price }}',
+      salePrice: {
+        tag: 'span',
+        props: (el, s) => ({
+          text: s.salePrice ? `$ ${'{{ salePrice }}'}` : '',
           margin: '0',
           fontSize: '14px',
           fontWeight: '700',
           color: 'red',
-        },
-      },
-    ],
+        }),
+
+      }
+    }
   },
 };
 

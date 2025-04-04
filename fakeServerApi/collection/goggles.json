@@ -1,10 +1,11 @@
 {
-  "boots": [
+  "goggles": [
     {
       "key": "boot-001",
       "name": "Alpha Snowboard Boots",
       "size": ["7", "8", "9", "10", "11", "12", "13"],
       "price": 229.99,
+      "description": "good",
       "specs": {
         "material": "Synthetic leather, mesh",
         "closureType": "Boa lacing system",

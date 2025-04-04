@@ -37,7 +37,7 @@ export const Layout = {
     childrenAs: 'state',
     // children: (el, s) => Object.values(s.products.data),
     children: (el, s) => (
-      console.log(s.products),
+      // console.log(s.products),
       Object.values(s.products.data)),
 
     '@tabletS': {
@@ -48,14 +48,92 @@ export const Layout = {
   },
 };
 
+
+
+/// SOL 1
+// function setupSmoothScroll(scrollContainer) {
+//   if (scrollContainer.dataset.smoothScrollInitialized) {
+//     return; // Already initialized
+//   }
+
+//   let targetScrollLeft = scrollContainer.scrollLeft;
+//   let currentScrollLeft = scrollContainer.scrollLeft;
+//   let isAnimating = false;
+//   const easeFactor = 0.07;
+
+//   function smoothScroll() {
+//     const delta = targetScrollLeft - currentScrollLeft;
+//     currentScrollLeft += delta * easeFactor;
+//     scrollContainer.scrollLeft = currentScrollLeft;
+
+//     if (Math.abs(delta) > 0.9) {
+//       requestAnimationFrame(smoothScroll);
+//     } else {
+//       scrollContainer.scrollLeft = targetScrollLeft;
+//       isAnimating = false;
+//     }
+//   }
+
+//   function handleWheel(e) {
+//     e.preventDefault();
+//     targetScrollLeft += e.deltaY * 2;
+//     const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+//     targetScrollLeft = Math.max(0, Math.min(targetScrollLeft, maxScrollLeft));
+
+//     if (!isAnimating) {
+//       isAnimating = true;
+//       requestAnimationFrame(smoothScroll);
+//     }
+//   }
+
+//   scrollContainer.addEventListener('wheel', handleWheel, { passive: false });
+//   scrollContainer.dataset.smoothScrollInitialized = 'true'; // Mark as initialized
+// }
+
+// function initializeSmoothScroll() {
+//   // Initialize if element exists on first load
+//   const initialScrollContainer = document.getElementById('content-wheel');
+//   console.log(initialScrollContainer);
+  
+//   if (initialScrollContainer) {
+//     setupSmoothScroll(initialScrollContainer);
+//   }
+
+//   // Set up observer to watch for dynamic additions
+//   const observer = new MutationObserver((mutations) => {
+//     mutations.forEach((mutation) => {
+//       mutation.addedNodes?.forEach((node) => {
+//         // Check added node or its children for the scroll container
+//         const scrollContainer = node.nodeType === Node.ELEMENT_NODE 
+//           ? node.querySelector('#content-wheel') || (node.id === 'content-wheel' ? node : null)
+//           : null;
+//         if (scrollContainer) {
+//           setupSmoothScroll(scrollContainer);
+//         }
+//       });
+//     });
+//   });
+
+//   observer.observe(document.body, {
+//     childList: true,
+//     subtree: true
+//   });
+// }
+
+// document.addEventListener('DOMContentLoaded', initializeSmoothScroll);
+
+
+
+
+///////// ORIGINAL
 function initializeSmoothScroll() {
   const scrollContainer = document.getElementById('content-wheel');
+  console.log(scrollContainer);
 
   if (!scrollContainer) {
-    setTimeout(initializeSmoothScroll, 100);  
+    // setTimeout(initializeSmoothScroll, 100);  
     return;
-  }
-
+  } 
   let targetScrollLeft = scrollContainer.scrollLeft;
   let currentScrollLeft = scrollContainer.scrollLeft;
   let isAnimating = false;

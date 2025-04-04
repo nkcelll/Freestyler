@@ -15,7 +15,7 @@ export const PerProducts = {
     },
   },
   ProductImages: {
-    width: '100%',
+    // width: '100%',
   },
   MainProduct: {
     extend: 'Flex',
@@ -42,12 +42,13 @@ export const PerProducts = {
       },
     },
     H1: {
-      text: 'Bataleon Ecko mode',
-      props: {
+      props: (el,s) => ({
+        text: 'Bataleon Ecko mode',
+        // text: s.name ? '{{ name }}' : '',
         fontSize: '32px',
         margin: '0',
         fontWeight: '500',
-      },
+      }),
     },
     p: {
       text: `Price -  900$`,

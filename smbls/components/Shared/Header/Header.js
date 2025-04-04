@@ -11,7 +11,7 @@ export const MainHeader = {
     // background: 'zebra',
     // backgroundColor: '#E4E2E',
     // backgroundColor: 'white',
-    backgroundColor: 'currentColor[0]',
+    backgroundColor: 'currentColor',
     padding: '0 20px',
     width: '100%',
     height: '77px',
@@ -74,6 +74,7 @@ export const MainHeader = {
         },
         IconSearch: {
           id: 'search-button-icon',
+          color: 'currentColor'
         },
         /////// Backup original Search
         // Img: {
