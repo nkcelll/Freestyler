@@ -1,3 +1,5 @@
+import { SectionName } from "./SectionName";
+
 export const ProductsLayout = {
   extend: 'Flex',
   props: {},
@@ -25,7 +27,10 @@ export const ProductsLayout = {
         return { productsDatadata: []}
       }
       const productsData = data[category]
-      return { productsData };
+      return { 
+        productsData,
+        category
+      };
 
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -43,11 +48,14 @@ export const ProductsLayout = {
     '@tabletS': {},
   },
 
+  SectionName: {
+    
+  },
+
   FilterSection: {
     // overflow: 'hidden',
     props: (el, s) => {
       const totalProducts = s.productsData || [];
-      console.log(totalProducts)
       return totalProducts;
     }
   },
@@ -87,7 +95,7 @@ export const ProductsLayout = {
         title: product.name,
         description: product.description,
         price: product.price,
-        images: (product.images && product.images.length > 0) ? product.images[0] : '',
+        images: product.images,
         salePrice: product.salePrice
       }));
     },

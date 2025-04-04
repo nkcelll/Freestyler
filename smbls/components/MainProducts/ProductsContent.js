@@ -4,7 +4,8 @@ export const ProductsContent = {
     id: state.id
   }),
   props: (el, state) => ({
-    height: '480px',
+    height: '640px',
+    // height: '480px',
     width: 'auto',
     overflow: 'hidden',
     align: 'center',
@@ -20,29 +21,48 @@ export const ProductsContent = {
     cursor: 'pointer'
   }),
 
+  
   ImageContent: {
     extend: 'Flex',
     props: {
       width: '100%',
-      height: '400px',
+      height: '100%',
+      // height: '400px',
       overflow: 'hidden',
       position: 'relative',
       justifyContent: 'center',
       align: 'center'
     },
     Img: {
-     
-      state: (el, state) => state.images, 
       props: {
-        src: (el, state) => state.images || '', 
+        src: (el, state) => state.images?.[0] || '',
         width: '90%',
         height: '90%',
-        objectFit: 'cover', 
-        ':hover': {
-          src: (el, state) => state.images[1] || '',
-        }
+        objectFit: 'cover',
+        transition: 'opacity 0.8s ease-in-out'
       },
-    },
+      on: {
+        mouseover: (ev, el, s) => {
+          if (s.images?.[1]) {
+            el.node.style.opacity = 0
+            setTimeout(() => {
+              el.node.src = s.images[1]
+              el.node.style.opacity = 1
+            }, 100)
+          }
+        },
+        mouseout: (ev, el, s) => {
+          if (s.images?.[0]) {
+            el.node.style.opacity = 0
+            setTimeout(() => {
+              el.node.src = s.images[0]
+              el.node.style.opacity = 1
+            }, 100);
+          }
+        }
+      }
+    }
+    
   },
 
   titleBody: {

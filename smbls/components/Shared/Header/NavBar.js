@@ -4,7 +4,8 @@ export const Nav = {
   extend: 'Flex',
   props: {
     gap: '25px',
-    flex: '1',
+    // width: '300px',
+    // flex: '1',
     justifyContent: 'center',
     '@tabletS': {
       display: 'none',

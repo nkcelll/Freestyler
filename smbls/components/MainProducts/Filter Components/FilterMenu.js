@@ -12,8 +12,13 @@ export const FilterMenu = {
     borderRadius: '0',
     backgroundColor: 'transparent',
     position: 'relative',
-    margin: '12px 46px 12px 0',
+    margin: '0 46px 0 0',
+    padding: 0,
     outline: 'none',
+    '@mobileL': {
+      margin: '0 16px 0 0',
+      
+    }
   },
   Filter: {
     extend: 'Flex',

@@ -29,12 +29,23 @@ export const MainHeader = {
       // background: '#1E201E',
     },
   },
-  Logo: {
+  LogoBox: {
+    extend: 'Flex',
     props: {
-      href: '/',
-      alignSelf: 'center',
-    }
+      width: '172px',
+      '@mobileL': {
+        width: 'auto'
+      }
+
+    },
+    Logo: {
+      props: {
+        href: '/',
+        alignSelf: 'center',
+      }
+    },
   },
+  
   // Nav Bar
   Nav: {
     props: {
@@ -135,6 +146,9 @@ export const MainHeader = {
               alignItems: 'center',
               position: 'relative',
               transform: '0.5s ease',
+              '@mobileS': {
+                width: '90%'
+              }
             },
             Input: {
               extend: 'Flex',
@@ -146,12 +160,17 @@ export const MainHeader = {
                 height: '100%',
                 borderRadius: '0',
                 padding: '0 35px 0 20px',
-                // color: 'black',
+                color: 'currentColor',
                 outline: 'none',
+
                 border: '1px solid currentColor',
                 backgroundColor: 'transparent',
                 letterSpacing: '2px',
                 style: {
+                  '::placeholder': {
+                    color: 'currentColor', // or any color you want
+                    opacity: 1,    // make sure it's not semi-transparent
+                  },
                   ':focus': {
                     outline: 'none',
                   },
