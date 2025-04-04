@@ -36,7 +36,10 @@
         "recommendedFor": "Beginner - Intermediate",
         "weight": "2.7 kg"
       },
-      "image": "/images/snowboard-002.jpg",
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
       "availability": "Out of Stock"
     },
     {

@@ -38,22 +38,11 @@ export const ProductsContent = {
         width: '90%',
         height: '90%',
         objectFit: 'cover', 
+        ':hover': {
+          src: (el, state) => state.images[1] || '',
+        }
       },
     },
-  
-    // Img: {
-    //   state: (el, state) => state?.productData?.images[0],  
-    //   props: {
-    //     // Dynamically assign src based on productData.category.image
-    //     src: (el, state) => state.productData?.images[0],
-    //     width: '100%',
-    //     height: '100%',
-    //     // maxWidth: '100%',
-    //     // maxHeight: '100%',
-    //     objectFit: 'cover',
-    //     // display: 'block',
-    //   },
-    // },
   },
 
   titleBody: {
@@ -69,10 +58,14 @@ export const ProductsContent = {
     },
     productName: {
       tag: 'span',
-      text: '{{ title }}' ,
-      height: 'auto',
-      fontSize: '16px',
-      fontWeight: '500',
+      // text: '{{ title }}' ,
+      text: (el, s) => s.title ,
+      props: {
+        height: 'auto',
+        fontSize: '16px',
+        fontWeight: '500',
+      }
+      
     },
     childExtend: {
       extend: 'Flex',
@@ -99,13 +92,13 @@ export const ProductsContent = {
       },
       salePrice: {
         tag: 'span',
-        props: (el, s) => ({
-          text: s.salePrice ? `$ ${'{{ salePrice }}'}` : '',
+        text: (el, s) => s.salePrice ? `$ ${'{{ salePrice }}'}` : '',
+        props:{
           margin: '0',
           fontSize: '14px',
           fontWeight: '700',
           color: 'red',
-        }),
+        },
 
       }
     }

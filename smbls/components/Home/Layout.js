@@ -128,7 +128,7 @@ export const Layout = {
 ///////// ORIGINAL
 function initializeSmoothScroll() {
   const scrollContainer = document.getElementById('content-wheel');
-  console.log(scrollContainer);
+  // console.log(scrollContainer);
 
   if (!scrollContainer) {
     // setTimeout(initializeSmoothScroll, 100);  

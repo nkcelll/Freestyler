@@ -2,15 +2,54 @@ export const ProductsLayout = {
   extend: 'Flex',
   props: {},
 
+  state: async (el, s) => {
+    const url = new URL(window.location.href);
+    const category = url.pathname.split('/')[2]; 
+
+    if (!category) {
+      console.error('Category not found in URL');
+      return productsData
+    }
+
+    try {
+      const response = await fetch(`http://localhost:5000/api/products/${category}`);
+
+      if (!response.ok) {
+        throw new Error('Network problem');
+      }
+
+      const data = await response.json();
+
+      if(!data[category]) {
+        console.error(`${category} not found`)
+        return { productsDatadata: []}
+      }
+      const productsData = data[category]
+      return { productsData };
+
+    } catch (error) {
+      console.error('Error fetching products:', error);
+      return { productsData: [] };
+    }
+  },
+
   MainHeader: {},
+
   MarkingText: {
     overflow: 'hidden',
   },
+
   GifTop: {
     '@tabletS': {},
   },
+
   FilterSection: {
-    overflow: 'hidden',
+    // overflow: 'hidden',
+    props: (el, s) => {
+      const totalProducts = s.productsData || [];
+      console.log(totalProducts)
+      return totalProducts;
+    }
   },
   GridContent: {
     attr: {
@@ -33,46 +72,15 @@ export const ProductsLayout = {
       columns: 'repeat(1, 1fr)',
     },
 
-    state: async (el, s) => {
-      // Manually get category from URL
-      const url = new URL(window.location.href);
-      const category = url.pathname.split('/')[2];  // Assuming /products/:category
-
-      if (!category) {
-        console.error('Category not found in URL');
-        return productsData
-      }
-
-      try {
-        const response = await fetch(`http://localhost:5000/api/products/${category}`);
-
-        if (!response.ok) {
-          throw new Error('Network problem');
-        }
-
-        const data = await response.json();
-
-        if(!data[category]) {
-          console.error(`${category} not found`)
-          return { productsDatadata: []}
-        }
-
-        const productsData = data[category]
-
-        return { productsData };
-      } catch (error) {
-        console.error('Error fetching products:', error);
-        return { productsData: [] };
-      }
-    },
+    
 
     childExtends: 'ProductsContent',
     childrenAs: 'state',
     children: (el, state) => {
       const products = Array.isArray(state.productsData) ? state.productsData : [];
-      console.log(state);
-      console.log('Products inside children:', products);
-      console.log(products);
+      // console.log(state);
+      // console.log('Products inside children:', products);
+      // console.log(products);
       
       return products.map(product => ({
         id: product.key,

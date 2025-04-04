@@ -15,11 +15,13 @@ export const FilterSection = {
     },
   },
   P: {
-    text: '45 Products',
+    text: (el, s) => `${s.productsData.length ?? 0} Products`,
     props: {
       margin: '12px 0 12px 46px',
       fontSize: '16px',
     }
   },
-  FilterMenu:{}
+  FilterMenu:{
+    
+  }
 };
