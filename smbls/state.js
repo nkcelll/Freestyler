@@ -338,4 +338,21 @@ export default {
   // routeInContent: '/new-project-0',
   debugging: false,
   
+  // gridRow: {
+  //   default: {
+  //     columns: 'repeat(4, 1fr)',
+  //   },
+  //   rowMap: {
+  //     'grid-row-2': 'repeat(2, 1fr)',
+  //     'grid-row-3': 'repeat(3, 1fr)',
+  //     'grid-row-4': 'repeat(4, 1fr)',
+  //   },
+  //   row2: {
+  //     columns: 'repeat(2, 1fr)',
+  //   },
+  //   row3: {
+  //     columns: 'repeat(3, 1fr)',
+  //   },
+    
+  // }
 };

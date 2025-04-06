@@ -84,6 +84,7 @@ export const ProductsContent = {
         height: 'auto',
         fontSize: '16px',
         fontWeight: '500',
+        letterSpacing: '1.2',
       }
       
     },
@@ -107,6 +108,7 @@ export const ProductsContent = {
           margin: '0',
           fontSize: '14px',
           fontWeight: '500',
+          letterSpacing: '1.2',
           textDecoration: s.salePrice ? 'line-through' : 'none', 
         }),
       },

@@ -54,6 +54,9 @@ export * from './Assets/Icons/IconMinus'
 export * from './Assets/Icons/IconPlus'
 export * from './Assets/Icons/IconSun'
 export * from './Assets/Icons/IconMoon'
+export * from './Assets/Icons/IconGrid2'
+export * from './Assets/Icons/IconGrid3'
+export * from './Assets/Icons/IconGrid4'
 
 
 /////////////////////////////////// Filter Section///////////////////////////

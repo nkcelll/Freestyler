@@ -31,8 +31,9 @@ export const FilterMenu = {
     P: {
       text: 'Filter & Sort',
       margin: '0',
-      fontSize: '14px',
+      fontSize: '16px',
       color: 'currentColor',
+      letterSpacing: '1.2',
       '@light': {
         color: 'dark',
       },

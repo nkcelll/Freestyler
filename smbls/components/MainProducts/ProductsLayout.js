@@ -1,5 +1,3 @@
-import { SectionName } from "./SectionName";
-
 export const ProductsLayout = {
   extend: 'Flex',
   props: {},
@@ -61,8 +59,29 @@ export const ProductsLayout = {
   },
   GridContent: {
     attr: {
-      id: 'product-page-scroll',
+      // id: 'product-page-scroll',
+      id: 'products-grid-container',
+
     },
+
+    // on: {
+    //   render: () => {
+    //       const stored = localStorage.getItem('grid-row');
+    //       const gridContainer = document.getElementById('products-grid-container');
+          
+    //       if (gridContainer && stored) {
+    //         const columnsMap = {
+    //           'grid-row-2': 'repeat(2, 1fr)',
+    //           'grid-row-3': 'repeat(3, 1fr)',
+    //           'grid-row-4': 'repeat(4, 1fr)',
+    //         };
+    //         gridContainer.style.gridTemplateColumns = columnsMap[stored] || 'repeat(4, 1fr)';
+    //       }
+    //   },
+    // },
+
+
+
     extends: 'Grid',
     flexGrow: 1,
     width: '100%',
@@ -86,9 +105,6 @@ export const ProductsLayout = {
     childrenAs: 'state',
     children: (el, state) => {
       const products = Array.isArray(state.productsData) ? state.productsData : [];
-      // console.log(state);
-      // console.log('Products inside children:', products);
-      // console.log(products);
       
       return products.map(product => ({
         id: product.key,
@@ -104,162 +120,4 @@ export const ProductsLayout = {
   Pagination: {},
   Footer: {},
 };
-
-
-// export const ProductsLayout = {
-//   extend: 'Flex',
-//   props: {},
-
-//   MainHeader: {},
-//   MarkingText: {
-//     overflow: 'hidden',
-//   },
-//   GifTop: {
-//     '@tabletS': {},
-//   },
-//   FilterSection: {
-//     overflow: 'hidden',
-//   },
-//   GridContent: {
-//     attr: {
-//       id: 'product-page-scroll',
-//     },
-//     extends: 'Grid',
-//     flexGrow: 1,
-//     width: '100%',
-//     columns: 'repeat(4, 1fr)',
-//     '@tabletM': {
-//       columns: 'repeat(4, 1fr)',
-//     },
-//     '@tabletS': {
-//       columns: 'repeat(3, 1fr)',
-//     },
-//     '@mobileL': {
-//       columns: 'repeat(2, 1fr)',
-//     },
-//     '@mobileS': {
-//       columns: 'repeat(1, 1fr)',
-//     },
-
-//     state: async () => {
-//       try {
-//       const response = await fetch('https://api.escuelajs.co/api/v1/products')
-
-//         if(!response.ok) {
-//           throw new Error('Network prob')
-//         }
-//         const productsData = await response.json()
-//         // console.log(productsData);
-//         return { productsData }
-//       } catch (error) {
-//         console.error('error fetchin', error)
-//         return { productsData: []}
-//       }
-//     },
-
-//     childExtends: 'ProductsContent',
-//     childrenAs: 'state',
-//     children: (el, s) => {
-//       const products = s.productsData;  
-    
-//       console.log(products);  
-//       return products.map(product => ({
-//         id: product.id,
-//         title: product.title,
-//         description: product.description,
-//         price: product.price,
-//         images: product.images,
-//       }));
-//     },
-    
-//     // children: async(el, state) => {
-
-//     //   const fetched = await state.productsData
-//     //   console.log(fetched);
-      
-//     // },
-//   },
-//   GifBottom: {},
-//   Pagination: {},
-//   Footer: {},
-// };
-
-
-
-
-
-
-
-
-
-
-
-// export const ProductsLayout = {
-//   extend: 'Flex',
-//   props: {
-
-//     // width: '100dvw',
-//     // height: 'auto',
-//   },
-//   MainHeader:{
-//     // position: 'sticky',
-//     // top: '0', 
-//     // zIndex: '5',
-    
-//   },
-//   MarkingText: {
-//     overflow: 'hidden',
-//   },
-//   GifTop: {
-//     '@tabletS': {
-//     },
-//   },
-//   FilterSection: {
-//     overflow: 'hidden',
-    
-//   },
-//   GridContent: {
-//     attr: {
-//       id: 'product-page-scroll'
-//     },
-//     extends: 'Grid',
-//     flexGrow: 1,
-//     width: '100%',
-//     columns: 'repeat(4, 1fr)',
-//     '@tabletM': {
-//       columns: 'repeat(4, 1fr)',
-//     },
-//     '@tabletS': {
-//       columns: 'repeat(3, 1fr)',
-//     },
-//     '@mobileL': {
-//       columns: 'repeat(2, 1fr)',
-//     },
-//     '@mobileS': {
-//       columns: 'repeat(1, 1fr)',
-//     },
-//     childExtends: 'ProductsContent',
-//     childrenAs: 'state',
-//     // children: (el, s) => Object.values(s.rawData.data),
-//     children: (el, s) => {
-//       const urlParams = new URLSearchParams(window.location.search)
-//       const currentPage = Number(urlParams.get('page') || 1)
-//       const productsPerPage = s.productsAmountPerPage.amount
-//       // console.log(productsPerPage);
-      
-//       const startIndex = (currentPage - 1) * productsPerPage
-
-//       return Object.values(s.rawData.data).slice(startIndex, startIndex + productsPerPage)
-//     }
-//   },
- 
-//   GifBottom: {
-//   },
-//   Pagination: {
-
-//   },
-//   Footer: {
-//   }
-// } 
-
 
