@@ -51,12 +51,16 @@ export const ProductsLayout = {
   },
 
   FilterSection: {
-    // overflow: 'hidden',
     props: (el, s) => {
       const totalProducts = s.productsData || [];
       return totalProducts;
     }
   },
+
+  NoItemsFound: {
+    
+  },
+
   GridContent: {
     attr: {
       // id: 'product-page-scroll',
@@ -64,21 +68,7 @@ export const ProductsLayout = {
 
     },
 
-    // on: {
-    //   render: () => {
-    //       const stored = localStorage.getItem('grid-row');
-    //       const gridContainer = document.getElementById('products-grid-container');
-          
-    //       if (gridContainer && stored) {
-    //         const columnsMap = {
-    //           'grid-row-2': 'repeat(2, 1fr)',
-    //           'grid-row-3': 'repeat(3, 1fr)',
-    //           'grid-row-4': 'repeat(4, 1fr)',
-    //         };
-    //         gridContainer.style.gridTemplateColumns = columnsMap[stored] || 'repeat(4, 1fr)';
-    //       }
-    //   },
-    // },
+   
 
 
 
@@ -86,19 +76,20 @@ export const ProductsLayout = {
     flexGrow: 1,
     width: '100%',
     columns: 'repeat(4, 1fr)',
-    '@tabletM': {
-      columns: 'repeat(4, 1fr)',
-    },
-    '@tabletS': {
-      columns: 'repeat(3, 1fr)',
-    },
-    '@mobileL': {
-      columns: 'repeat(2, 1fr)',
-    },
-    '@mobileS': {
-      columns: 'repeat(1, 1fr)',
-    },
 
+    // '@tabletM': {
+    //   columns: 'repeat(4, 1fr)',
+    // },
+    // '@tabletS': {
+    //   columns: 'repeat(3, 1fr)',
+    // },
+    // '@mobileL': {
+    //   columns: 'repeat(2, 1fr)',
+    // },
+    // '@mobileS': {
+    //   columns: 'repeat(1, 1fr)',
+    // },
+    
     
 
     childExtends: 'ProductsContent',
@@ -114,6 +105,7 @@ export const ProductsLayout = {
         images: product.images,
         salePrice: product.salePrice
       }));
+      
     },
   },
   GifBottom: {},

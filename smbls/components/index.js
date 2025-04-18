@@ -27,6 +27,8 @@ export * from './MainProducts/Filter Components/FilterAbstract'
 export * from './MainProducts/Filter Components/FilterMenu'
 export * from './MainProducts/Pagination/PaginationNumbers'
 export * from './MainProducts/SectionName'
+export * from './MainProducts/NoItemsFound'
+
 export * from './Shared/Footer'
 ///////////////////////////////////
 export * from "./Assets/Logo";

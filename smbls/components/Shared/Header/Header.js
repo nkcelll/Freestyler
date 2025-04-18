@@ -125,9 +125,11 @@ export const MainHeader = {
             // backgroundColor: 'rgb(214, 214, 214)',
             backgroundColor: 'currentColor',
             inset: '0',
-            opacity: '0',
-            pointerEvents: 'none',
-            top: '-100%',
+            // opacity: '0', /////
+            opacity: '1',
+            // pointerEvents: 'none', //////
+            // top: '-100%', //////
+            top: '0',
             cursor: 'auto',
             transition: 'top 0.5s ease, opacity 0.5s ease',
             '@light': {
@@ -153,7 +155,9 @@ export const MainHeader = {
             Input: {
               extend: 'Flex',
               attr: {
+                type: 'search',
                 placeholder: 'Search...',
+                id: 'search-input'
               },
               props: {
                 width: '100%',
@@ -168,8 +172,8 @@ export const MainHeader = {
                 letterSpacing: '2px',
                 style: {
                   '::placeholder': {
-                    color: 'currentColor', // or any color you want
-                    opacity: 1,    // make sure it's not semi-transparent
+                    color: 'currentColor', 
+                    opacity: 1,   
                   },
                   ':focus': {
                     outline: 'none',
@@ -191,6 +195,24 @@ export const MainHeader = {
                 backgroundColor: 'transparent',
               },
               IconSearch: {},
+              on: {
+                click: (ev, el, s) => {
+                  const inputSearch = document.getElementById('search-input').value.toLowerCase().trim();
+
+                  const mapping = s.productsData
+
+                  const filteredProducts = s.productsData.filter(product => 
+                    product.name.toLowerCase().includes(inputSearch)
+                  );
+                  console.log(filteredProducts);
+                  
+                  const final = inputSearch === '' ? [] : filteredProducts
+
+                  s.update(final)
+
+                  s.productsData = final || mapping
+                }
+              }
             },
             IconClose: {
               attr: { id: 'close-search' },

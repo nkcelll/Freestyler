@@ -18,7 +18,10 @@ export const ProductsContent = {
     flow: 'y',
     href: state.href || '/product/' + state.id,
     target: state.href && '_blank',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    '@mobileS': {
+      borderRight: 'none',
+    }
   }),
 
   

@@ -14,6 +14,7 @@ export const GifTop = {
         width: '100dvw',
         maxWidth: '100%',
         height: '64px',
+        filter: 'saturate(4)'
       },
     },
   },

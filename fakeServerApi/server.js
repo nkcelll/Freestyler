@@ -18,7 +18,7 @@ app.use(express.json());
 const getProducts = (file) => {
   try {
     const filePath = path.join(__dirname, "collection", file); // Construct file path
-    console.log("Looking for file at:", filePath); // Log the file path for debugging
+    // console.log("Looking for file at:", filePath); // Log the file path for debugging
     const data = fs.readFileSync(filePath, "utf-8"); // Read file data
     return JSON.parse(data); // Parse and return the JSON data
   } catch (error) {
