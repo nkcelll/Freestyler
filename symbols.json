@@ -1,5 +1,5 @@
 {
   "key": "freestyler.symbo.ls",
-  "distDir": "./smbls",
+  "distDir": "./uikit",
   "packageManager": "npm"
 }

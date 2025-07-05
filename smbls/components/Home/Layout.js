@@ -126,14 +126,9 @@ export const Layout = {
 
 
 ///////// ORIGINAL
-function initializeSmoothScroll() {
-  const scrollContainer = document.getElementById('content-wheel');
-  // console.log(scrollContainer);
+function setupSmoothScroll(scrollContainer) {
+  if (scrollContainer.dataset.smoothScrollInitialized) return;
 
-  if (!scrollContainer) {
-    // setTimeout(initializeSmoothScroll, 100);  
-    return;
-  } 
   let targetScrollLeft = scrollContainer.scrollLeft;
   let currentScrollLeft = scrollContainer.scrollLeft;
   let isAnimating = false;
@@ -165,6 +160,32 @@ function initializeSmoothScroll() {
   }
 
   scrollContainer.addEventListener('wheel', handleWheel, { passive: false });
+  scrollContainer.dataset.smoothScrollInitialized = 'true';
 }
-document.addEventListener("DOMContentLoaded", initializeSmoothScroll);
 
+function observeAndAttachScroll() {
+  const observer = new MutationObserver(() => {
+    const el = document.getElementById('content-wheel');
+    if (el) setupSmoothScroll(el);
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+}
+
+function startPollingForScrollContainer() {
+  const interval = setInterval(() => {
+    const el = document.getElementById('content-wheel');
+    if (el) {
+      setupSmoothScroll(el);
+      clearInterval(interval); // Stop polling once found and attached
+    }
+  }, 500); // Every 500ms (adjust if needed)
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  observeAndAttachScroll();
+  startPollingForScrollContainer();
+});

@@ -125,9 +125,9 @@ export const MainHeader = {
             // backgroundColor: 'rgb(214, 214, 214)',
             backgroundColor: 'currentColor',
             inset: '0',
-            // opacity: '0', /////
-            opacity: '1',
-            // pointerEvents: 'none', //////
+            opacity: '0', /////
+            // opacity: '1',
+            pointerEvents: 'none', //////
             // top: '-100%', //////
             top: '0',
             cursor: 'auto',
@@ -198,21 +198,45 @@ export const MainHeader = {
               on: {
                 click: (ev, el, s) => {
                   const inputSearch = document.getElementById('search-input').value.toLowerCase().trim();
-
-                  const mapping = s.productsData
-
-                  const filteredProducts = s.productsData.filter(product => 
+              
+                  // Save the original array once (unchanged)
+                  if (!s.searchProducts) {
+                    s.searchProducts = [...s.productsData];
+                  }
+                  
+              
+                  
+                  // if (inputSearch === '') {
+                  //   ev.preventDefault()
+                  //   return;
+                  // }
+                  
+                  // const filteredProducts = s.searchProducts.filter(product =>
+                  //   product.name.toLowerCase().includes(inputSearch)
+                  // );
+                  // console.log(filteredProducts);
+              
+                  
+                  // s.update(filteredProducts);
+                  console.log(s);
+                  
+                  
+                  const filteredProducts = s.searchProducts.filter(product =>
                     product.name.toLowerCase().includes(inputSearch)
                   );
                   console.log(filteredProducts);
-                  
-                  const final = inputSearch === '' ? [] : filteredProducts
-
-                  s.update(final)
-
-                  s.productsData = final || mapping
-                }
+              
+                  // if(filteredProducts.length > 0) {
+                  //   s.productsData = filteredProducts
+                  //   // s.update(filteredProducts)
+                  // }
+                  // s.searchProducts = filteredProducts
+                  // s.productsData = s.searchProducts
+                  s.update(filteredProducts);
+                },
               }
+              
+              
             },
             IconClose: {
               attr: { id: 'close-search' },

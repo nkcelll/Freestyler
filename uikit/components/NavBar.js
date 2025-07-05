@@ -1,11 +1,7 @@
-import { showDropdown, hideDropdown } from '../../../functions';
-
-export const Nav = {
+export const NavBar = {
   extend: 'Flex',
   props: {
     gap: '25px',
-    // width: '300px',
-    // flex: '1',
     justifyContent: 'center',
     '@tabletS': {
       display: 'none',
@@ -14,7 +10,10 @@ export const Nav = {
   Men: {
     extend: 'Flex',
     a: {
-      extend: ['Flex', 'Link'],
+      extend: [
+        'Flex',
+        'Link',
+      ],
       text: 'MEN /',
       props: {
         href: '/',
@@ -25,22 +24,26 @@ export const Nav = {
         padding: '0',
         margin: '0',
         fontWeight: '400',
-        overflow: 'visible'
+        overflow: 'visible',
       },
     },
-    MenAbst: {},
+    MenAbst: {
+    },
     on: {
-      mouseover: () => showDropdown('.men-box-dropdown'),
-      mouseout: () => hideDropdown('.men-box-dropdown'),
     },
   },
   Women: {
     extend: 'Flex',
     a: {
-      extend: ['Flex', 'Link'],
+      extend: [
+        'Flex',
+        'Link',
+      ],
       text: 'WOMEN /',
-      props: {
+      attr: {
         href: '/',
+      },
+      props: {
         height: '77px',
         justifyContent: 'center',
         align: 'center',
@@ -50,12 +53,11 @@ export const Nav = {
         fontWeight: '400',
       },
     },
-    WomenAbst: {},
+    WomenAbst: {
+    },
     on: {
       mouseover: () => showDropdown('.women-box-dropdown'),
       mouseout: () => hideDropdown('.women-box-dropdown'),
     },
   },
 };
-
-

@@ -14,7 +14,7 @@ export const SectionName = {
   },
   span: {
     props: (el, s) => {
-      const category = s.category || 'Category not found';
+      const category = s.category || 'No Items Found';
       return {
         text: category.charAt(0).toUpperCase() + category.slice(1),
         fontSize: '24px',
